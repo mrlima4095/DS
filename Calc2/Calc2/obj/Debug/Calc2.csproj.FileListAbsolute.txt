@@ -1,0 +1,11 @@
+D:\DS\Calc2\Calc2\bin\Debug\Calc2.exe.config
+D:\DS\Calc2\Calc2\bin\Debug\Calc2.exe
+D:\DS\Calc2\Calc2\bin\Debug\Calc2.pdb
+D:\DS\Calc2\Calc2\obj\Debug\Calc2.csproj.AssemblyReference.cache
+D:\DS\Calc2\Calc2\obj\Debug\Calc2.Form1.resources
+D:\DS\Calc2\Calc2\obj\Debug\Calc2.Properties.Resources.resources
+D:\DS\Calc2\Calc2\obj\Debug\Calc2.csproj.GenerateResource.cache
+D:\DS\Calc2\Calc2\obj\Debug\Calc2.csproj.CoreCompileInputs.cache
+D:\DS\Calc2\Calc2\obj\Debug\Calc2.exe
+D:\DS\Calc2\Calc2\obj\Debug\Calc2.pdb
+D:\DS\Calc2\Calc2\obj\Debug\Calc2.csproj.SuggestedBindingRedirects.cache

@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2886CD0-B597-4DBB-AF47-E17B9140461E}</ProjectGuid>
+    <ProjectGuid>{726710FF-CFE4-489B-95CB-95361910C5A8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Calc</RootNamespace>
-    <AssemblyName>Calc</AssemblyName>
+    <RootNamespace>Calc2</RootNamespace>
+    <AssemblyName>Calc2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -81,7 +81,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image.jpg" />
+    <None Include="Resources\plus_icon-icons.com_70890.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-gross-horizontal-straight-line-symbol_icon-icons.com_74137.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_icon_232307.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divisionsign_81003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_127102793_T3xjCOEUKV5vy3WgNMxpDRnEMSFFHh5b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_507666066_J8zsoPcCnW0uGcEYzoT0RElpHACKxd6e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4115235-exit-logout-sign-out_114030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4115235-exit-logout-sign-out_1140301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder-broom-clean-service-labor-website-4622511_122412.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
