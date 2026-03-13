@@ -1,0 +1,14 @@
+
+Cálculo de salário liquido
+
+elabore uma aplicação que leia horas trabalhadas, valor da hora e percentual de desconto (em numero), 
+efetue o cálculo do salario bruto (horas trabalhadas * valor da hora), 
+total de descontos(percentual de desconto/100)*salário bruto) e por fim chegue ao 
+salário liquido (salário bruto-total de desconto).
+Procure uma forma de configurar o resultado para apenas 2 casa decimais.
+
+40 horas
+50,10 reais
+30,35 desconto
+------
+R$ 1395.79

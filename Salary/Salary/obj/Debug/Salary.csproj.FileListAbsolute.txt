@@ -1,0 +1,11 @@
+D:\DS\Salary\Salary\bin\Debug\Salary.exe.config
+D:\DS\Salary\Salary\bin\Debug\Salary.exe
+D:\DS\Salary\Salary\bin\Debug\Salary.pdb
+D:\DS\Salary\Salary\obj\Debug\Salary.csproj.AssemblyReference.cache
+D:\DS\Salary\Salary\obj\Debug\Salary.csproj.SuggestedBindingRedirects.cache
+D:\DS\Salary\Salary\obj\Debug\Salary.Form1.resources
+D:\DS\Salary\Salary\obj\Debug\Salary.Properties.Resources.resources
+D:\DS\Salary\Salary\obj\Debug\Salary.csproj.GenerateResource.cache
+D:\DS\Salary\Salary\obj\Debug\Salary.csproj.CoreCompileInputs.cache
+D:\DS\Salary\Salary\obj\Debug\Salary.exe
+D:\DS\Salary\Salary\obj\Debug\Salary.pdb
