@@ -8,3 +8,4 @@ D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.csproj.Genera
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.csproj.CoreCompileInputs.cache
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.exe
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.pdb
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex1.resources

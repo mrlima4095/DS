@@ -21,5 +21,16 @@ namespace Lista_1___Felipe
         {
 
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ex1_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex1 Exercicio1 = new ex1();
+            Exercicio1.Show();
+        }
     }
 }

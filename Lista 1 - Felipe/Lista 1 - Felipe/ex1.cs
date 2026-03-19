@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lista_1___Felipe.Properties
+namespace Lista_1___Felipe
 {
-    public partial class Form1 : Form
+    public partial class ex1 : Form
     {
-        public Form1()
+        public ex1()
         {
             InitializeComponent();
+        }
+
+        private void ex1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -85,6 +85,7 @@
             this.ex1_choiceBtn.TabIndex = 0;
             this.ex1_choiceBtn.Text = "1. Calculadora de Circunferencia";
             this.ex1_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex1_choiceBtn.Click += new System.EventHandler(this.ex1_choiceBtn_Click);
             // 
             // ex2_choiceBtn
             // 
@@ -339,6 +340,7 @@
             this.exitBtn.TabIndex = 44;
             this.exitBtn.Text = "Sair";
             this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // menu
             // 
@@ -346,7 +348,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Chocolate;
             this.CancelButton = this.exitBtn;
-            this.ClientSize = new System.Drawing.Size(1051, 654);
+            this.ClientSize = new System.Drawing.Size(1051, 655);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.ex21_choiceBtn);
             this.Controls.Add(this.ex20_choiceBtn);
