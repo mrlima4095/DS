@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|d:\\ds\\lista 1 - felipe\\lista 1 - felipe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|solutionrelative:lista 1 - felipe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|d:\\ds\\lista 1 - felipe\\lista 1 - felipe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|solutionrelative:lista 1 - felipe\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\Form1.cs",
+              "RelativeDocumentMoniker": "Lista 1 - Felipe\\Form1.cs",
+              "ToolTip": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\Form1.cs",
+              "RelativeToolTip": "Lista 1 - Felipe\\Form1.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAASwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T14:19:14.938Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
