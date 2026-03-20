@@ -23,6 +23,13 @@ namespace Lista_1___Felipe
         }
         private void fireBtn_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(textBox1.Text) || String.IsNullOrEmpty(textBox2.Text))
+            {
+                result_textBox.Text = "Preencha todos os campos deste formulario para realizar a operação!";
+            }
+
+            double area = Convert.ToDouble(textBox1.Text), raio = Convert.ToDouble(textBox2.Text);
+
 
         }
         private void clearBtn_Click(object sender, EventArgs e)

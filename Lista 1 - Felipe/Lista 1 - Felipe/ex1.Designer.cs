@@ -91,7 +91,7 @@
             this.result_textBox.Name = "result_textBox";
             this.result_textBox.ReadOnly = true;
             this.result_textBox.Size = new System.Drawing.Size(935, 119);
-            this.result_textBox.TabIndex = 51;
+            this.result_textBox.TabIndex = 10;
             this.result_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // exitBtn
@@ -162,7 +162,7 @@
             this.fireBtn.Location = new System.Drawing.Point(28, 457);
             this.fireBtn.Name = "fireBtn";
             this.fireBtn.Size = new System.Drawing.Size(935, 66);
-            this.fireBtn.TabIndex = 56;
+            this.fireBtn.TabIndex = 2;
             this.fireBtn.UseVisualStyleBackColor = false;
             // 
             // ex1
