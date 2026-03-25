@@ -111,6 +111,7 @@
             this.ex3_choiceBtn.TabIndex = 25;
             this.ex3_choiceBtn.Text = "3. Calculadora de Salario (Hora)";
             this.ex3_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex3_choiceBtn.Click += new System.EventHandler(this.ex3_choiceBtn_Click);
             // 
             // ex4_choiceBtn
             // 
@@ -123,6 +124,7 @@
             this.ex4_choiceBtn.TabIndex = 26;
             this.ex4_choiceBtn.Text = "4. Conversor de Temperatura";
             this.ex4_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex4_choiceBtn.Click += new System.EventHandler(this.ex4_choiceBtn_Click);
             // 
             // ex5_choiceBtn
             // 
