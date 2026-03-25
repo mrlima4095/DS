@@ -98,6 +98,7 @@
             this.ex2_choiceBtn.TabIndex = 24;
             this.ex2_choiceBtn.Text = "2. Calculadora de Adição";
             this.ex2_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex2_choiceBtn.Click += new System.EventHandler(this.ex2_choiceBtn_Click);
             // 
             // ex3_choiceBtn
             // 

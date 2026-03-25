@@ -32,5 +32,11 @@ namespace Lista_1___Felipe
             ex1 Exercicio1 = new ex1();
             Exercicio1.Show();
         }
+
+        private void ex2_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex2 Exercicio2 = new ex2();
+            Exercicio2.Show();
+        }
     }
 }
