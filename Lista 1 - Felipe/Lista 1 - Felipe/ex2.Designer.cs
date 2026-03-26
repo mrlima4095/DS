@@ -57,7 +57,7 @@
             // 
             this.ex_Descriptor.AutoSize = true;
             this.ex_Descriptor.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex_Descriptor.Location = new System.Drawing.Point(367, 85);
+            this.ex_Descriptor.Location = new System.Drawing.Point(371, 84);
             this.ex_Descriptor.Name = "ex_Descriptor";
             this.ex_Descriptor.Size = new System.Drawing.Size(224, 22);
             this.ex_Descriptor.TabIndex = 48;
@@ -158,7 +158,7 @@
             this.fireBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.fireBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fireBtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fireBtn.Image = global::Lista_1___Felipe.Properties.Resources.calculation_count_finance_calculator_calc_math_icon_256453__1_;
+            this.fireBtn.Image = global::Lista_1___Felipe.Properties.Resources.plus_icon_icons_com_70890;
             this.fireBtn.Location = new System.Drawing.Point(28, 457);
             this.fireBtn.Name = "fireBtn";
             this.fireBtn.Size = new System.Drawing.Size(935, 66);

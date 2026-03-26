@@ -39,6 +39,12 @@ namespace Lista_1___Felipe
             Exercicio2.Show();
         }
 
+        private void ex21_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex21 Exercicio21 = new ex21();
+            Exercicio21.Show();
+        }
+
         private void ex3_choiceBtn_Click(object sender, EventArgs e)
         {
             ex3 Exercicio3 = new ex3();
@@ -68,5 +74,6 @@ namespace Lista_1___Felipe
             //ex7 Exercicio7 = new ex7();
             //Exercicio7.Show();
         }
+
     }
 }

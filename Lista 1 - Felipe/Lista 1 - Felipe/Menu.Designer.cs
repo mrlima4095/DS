@@ -333,6 +333,7 @@
             this.ex21_choiceBtn.TabIndex = 43;
             this.ex21_choiceBtn.Text = "21. Concatenador de Nome";
             this.ex21_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex21_choiceBtn.Click += new System.EventHandler(this.ex21_choiceBtn_Click);
             // 
             // exitBtn
             // 
