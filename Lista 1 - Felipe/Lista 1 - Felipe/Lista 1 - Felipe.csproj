@@ -52,6 +52,12 @@
     <Compile Include="ex1.Designer.cs">
       <DependentUpon>ex1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ex5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex5.Designer.cs">
+      <DependentUpon>ex5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,8 +78,23 @@
     <Compile Include="ex3.Designer.cs">
       <DependentUpon>ex3.cs</DependentUpon>
     </Compile>
+    <Compile Include="exx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exx.Designer.cs">
+      <DependentUpon>exx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex6.Designer.cs">
+      <DependentUpon>ex6.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ex1.resx">
       <DependentUpon>ex1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex5.resx">
+      <DependentUpon>ex5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -102,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ex3.resx">
       <DependentUpon>ex3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exx.resx">
+      <DependentUpon>exx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex6.resx">
+      <DependentUpon>ex6.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

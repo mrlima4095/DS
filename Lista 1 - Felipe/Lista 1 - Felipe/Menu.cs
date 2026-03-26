@@ -50,5 +50,23 @@ namespace Lista_1___Felipe
             ex4 Exercicio4 = new ex4();
             Exercicio4.Show();
         }
+
+        private void ex5_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex5 Exercicio5 = new ex5();
+            Exercicio5.Show();
+        }
+
+        private void ex6_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex6 Exercicio6 = new ex6();
+            Exercicio6.Show();
+        }
+
+        private void ex7_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex7 Exercicio7 = new ex7();
+            Exercicio7.Show();
+        }
     }
 }

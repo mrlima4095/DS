@@ -1,6 +1,6 @@
 ﻿namespace Lista_1___Felipe
 {
-    partial class ex4
+    partial class ex5
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ex4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ex5));
             this.ex_Title = new System.Windows.Forms.Label();
             this.ex_Descriptor = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.result_textBox = new System.Windows.Forms.TextBox();
-            this.exitBtn = new System.Windows.Forms.Button();
-            this.clearBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.fireBtn = new System.Windows.Forms.Button();
+            this.clearBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ex_Title
@@ -47,11 +45,11 @@
             this.ex_Title.AutoSize = true;
             this.ex_Title.BackColor = System.Drawing.Color.Transparent;
             this.ex_Title.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex_Title.Location = new System.Drawing.Point(322, 26);
+            this.ex_Title.Location = new System.Drawing.Point(282, 27);
             this.ex_Title.Name = "ex_Title";
-            this.ex_Title.Size = new System.Drawing.Size(325, 40);
+            this.ex_Title.Size = new System.Drawing.Size(424, 40);
             this.ex_Title.TabIndex = 47;
-            this.ex_Title.Text = "Calculadora de Raio";
+            this.ex_Title.Text = "Conversor de Temperatura";
             this.ex_Title.Click += new System.EventHandler(this.ex_Title_Click);
             // 
             // ex_Descriptor
@@ -60,9 +58,9 @@
             this.ex_Descriptor.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex_Descriptor.Location = new System.Drawing.Point(326, 80);
             this.ex_Descriptor.Name = "ex_Descriptor";
-            this.ex_Descriptor.Size = new System.Drawing.Size(321, 22);
+            this.ex_Descriptor.Size = new System.Drawing.Size(337, 22);
             this.ex_Descriptor.TabIndex = 48;
-            this.ex_Descriptor.Text = "Calcula a area de uma circunferencia!";
+            this.ex_Descriptor.Text = "Converte graus Fahrenheit para Celsius";
             // 
             // textBox1
             // 
@@ -70,19 +68,9 @@
             this.textBox1.Location = new System.Drawing.Point(28, 190);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(443, 75);
+            this.textBox1.Size = new System.Drawing.Size(935, 75);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(516, 190);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(447, 75);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // result_textBox
             // 
@@ -94,6 +82,26 @@
             this.result_textBox.Size = new System.Drawing.Size(935, 119);
             this.result_textBox.TabIndex = 10;
             this.result_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(389, 165);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(215, 22);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Digite a temperatura (ºF)";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(448, 291);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 22);
+            this.label3.TabIndex = 55;
+            this.label3.Text = "Resultado";
             // 
             // exitBtn
             // 
@@ -109,6 +117,20 @@
             this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
+            // fireBtn
+            // 
+            this.fireBtn.BackColor = System.Drawing.Color.Transparent;
+            this.fireBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.fireBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fireBtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fireBtn.Image = global::Lista_1___Felipe.Properties.Resources.calculation_count_finance_calculator_calc_math_icon_256453__1_;
+            this.fireBtn.Location = new System.Drawing.Point(28, 457);
+            this.fireBtn.Name = "fireBtn";
+            this.fireBtn.Size = new System.Drawing.Size(935, 66);
+            this.fireBtn.TabIndex = 2;
+            this.fireBtn.UseVisualStyleBackColor = false;
+            this.fireBtn.Click += new System.EventHandler(this.fireBtn_Click);
+            // 
             // clearBtn
             // 
             this.clearBtn.BackColor = System.Drawing.Color.Transparent;
@@ -123,50 +145,7 @@
             this.clearBtn.UseVisualStyleBackColor = false;
             this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(192, 165);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 22);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "Digite a área";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(701, 165);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 22);
-            this.label2.TabIndex = 54;
-            this.label2.Text = "Digite o raio";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(448, 291);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 22);
-            this.label3.TabIndex = 55;
-            this.label3.Text = "Resultado";
-            // 
-            // fireBtn
-            // 
-            this.fireBtn.BackColor = System.Drawing.Color.Transparent;
-            this.fireBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.fireBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fireBtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fireBtn.Image = global::Lista_1___Felipe.Properties.Resources.calculation_count_finance_calculator_calc_math_icon_256453__1_;
-            this.fireBtn.Location = new System.Drawing.Point(28, 457);
-            this.fireBtn.Name = "fireBtn";
-            this.fireBtn.Size = new System.Drawing.Size(935, 66);
-            this.fireBtn.TabIndex = 2;
-            this.fireBtn.UseVisualStyleBackColor = false;
-            // 
-            // ex1
+            // ex5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -175,10 +154,8 @@
             this.ClientSize = new System.Drawing.Size(986, 648);
             this.Controls.Add(this.fireBtn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.result_textBox);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ex_Descriptor);
             this.Controls.Add(this.ex_Title);
@@ -188,9 +165,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ex1";
+            this.Name = "ex5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "1. Calculadora de Raio";
+            this.Text = "5. Conversor de Temperatura";
             this.Load += new System.EventHandler(this.ex1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -204,10 +181,8 @@
         private System.Windows.Forms.Label ex_Title;
         private System.Windows.Forms.Label ex_Descriptor;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox result_textBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button fireBtn;
     }

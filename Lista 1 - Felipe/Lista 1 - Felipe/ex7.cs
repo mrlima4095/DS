@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lista_1___Felipe
 {
-    public partial class ex4 : Form
+    public partial class ex7 : Form
     {
-        public ex4()
+        public ex7()
         {
             InitializeComponent();
         }

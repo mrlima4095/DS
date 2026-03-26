@@ -137,6 +137,7 @@
             this.ex5_choiceBtn.TabIndex = 27;
             this.ex5_choiceBtn.Text = "5. Conversor de Temperatura";
             this.ex5_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex5_choiceBtn.Click += new System.EventHandler(this.ex5_choiceBtn_Click);
             // 
             // ex6_choiceBtn
             // 
@@ -149,6 +150,7 @@
             this.ex6_choiceBtn.TabIndex = 28;
             this.ex6_choiceBtn.Text = "6. Calculadora de Volume (Oleo)";
             this.ex6_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex6_choiceBtn.Click += new System.EventHandler(this.ex6_choiceBtn_Click);
             // 
             // ex7_choiceBtn
             // 
@@ -162,6 +164,7 @@
             this.ex7_choiceBtn.TabIndex = 29;
             this.ex7_choiceBtn.Text = "7. Calculadora de Combustivel";
             this.ex7_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex7_choiceBtn.Click += new System.EventHandler(this.ex7_choiceBtn_Click);
             // 
             // ex8_choiceBtn
             // 
