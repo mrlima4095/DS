@@ -1,6 +1,6 @@
 ﻿namespace Lista_1___Felipe
 {
-    partial class temp
+    partial class ex21
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(temp));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ex21));
             this.ex_Title = new System.Windows.Forms.Label();
             this.ex_Descriptor = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -52,6 +52,7 @@
             this.ex_Title.Size = new System.Drawing.Size(325, 40);
             this.ex_Title.TabIndex = 47;
             this.ex_Title.Text = "Calculadora de Raio";
+            this.ex_Title.Click += new System.EventHandler(this.ex_Title_Click);
             // 
             // ex_Descriptor
             // 
@@ -165,7 +166,7 @@
             this.fireBtn.TabIndex = 2;
             this.fireBtn.UseVisualStyleBackColor = false;
             // 
-            // temp
+            // ex1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,9 +188,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "temp";
+            this.Name = "ex1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "1. Calculadora de Raio";
+            this.Load += new System.EventHandler(this.ex1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
