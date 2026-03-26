@@ -75,5 +75,10 @@ namespace Lista_1___Felipe
             //Exercicio7.Show();
         }
 
+        private void ex10_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex10 Exercicio10 = new ex10();
+            Exercicio10.Show();
+        }
     }
 }

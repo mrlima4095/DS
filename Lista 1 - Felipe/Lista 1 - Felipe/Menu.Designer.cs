@@ -201,6 +201,7 @@
             this.ex10_choiceBtn.TabIndex = 32;
             this.ex10_choiceBtn.Text = "10. Calculadora de Volume";
             this.ex10_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex10_choiceBtn.Click += new System.EventHandler(this.ex10_choiceBtn_Click);
             // 
             // ex11_choiceBtn
             // 

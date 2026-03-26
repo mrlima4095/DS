@@ -16,3 +16,4 @@ D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex4.resources
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex5.resources
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex6.resources
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex21.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex10.resources

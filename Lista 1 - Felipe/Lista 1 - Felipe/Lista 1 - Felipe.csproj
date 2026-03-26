@@ -105,6 +105,9 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ex10.resx">
+      <DependentUpon>ex10.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\temp.resx">
       <DependentUpon>temp.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +116,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\ex10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\ex10.Designer.cs">
+      <DependentUpon>ex10.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\temp.cs">
       <SubType>Form</SubType>
     </Compile>
