@@ -214,6 +214,7 @@
             this.ex11_choiceBtn.TabIndex = 33;
             this.ex11_choiceBtn.Text = "11. Calculadora de Potencias";
             this.ex11_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex11_choiceBtn.Click += new System.EventHandler(this.ex11_choiceBtn_Click);
             // 
             // ex12_choiceBtn
             // 
@@ -226,6 +227,7 @@
             this.ex12_choiceBtn.TabIndex = 34;
             this.ex12_choiceBtn.Text = "12. Soma ao Quadrado";
             this.ex12_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex12_choiceBtn.Click += new System.EventHandler(this.ex12_choiceBtn_Click);
             // 
             // ex13_choiceBtn
             // 
@@ -238,6 +240,7 @@
             this.ex13_choiceBtn.TabIndex = 35;
             this.ex13_choiceBtn.Text = "13. Maquina de Somar";
             this.ex13_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex13_choiceBtn.Click += new System.EventHandler(this.ex13_choiceBtn_Click);
             // 
             // ex14_choiceBtn
             // 
@@ -250,6 +253,7 @@
             this.ex14_choiceBtn.TabIndex = 36;
             this.ex14_choiceBtn.Text = "14. Calculadora de Medias";
             this.ex14_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex14_choiceBtn.Click += new System.EventHandler(this.ex14_choiceBtn_Click);
             // 
             // ex15_choiceBtn
             // 

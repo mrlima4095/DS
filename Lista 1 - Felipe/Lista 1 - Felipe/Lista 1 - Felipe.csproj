@@ -52,6 +52,18 @@
     <Compile Include="ex1.Designer.cs">
       <DependentUpon>ex1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ex10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex10.Designer.cs">
+      <DependentUpon>ex10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex13.Designer.cs">
+      <DependentUpon>ex13.cs</DependentUpon>
+    </Compile>
     <Compile Include="ex5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +90,11 @@
     <Compile Include="ex3.Designer.cs">
       <DependentUpon>ex3.cs</DependentUpon>
     </Compile>
-    <Compile Include="exx.cs">
+    <Compile Include="ex4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="exx.Designer.cs">
-      <DependentUpon>exx.cs</DependentUpon>
+    <Compile Include="ex4.Designer.cs">
+      <DependentUpon>ex4.cs</DependentUpon>
     </Compile>
     <Compile Include="ex6.cs">
       <SubType>Form</SubType>
@@ -96,17 +108,44 @@
     <Compile Include="ex21.Designer.cs">
       <DependentUpon>ex21.cs</DependentUpon>
     </Compile>
+    <Compile Include="ex11_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex11_.Designer.cs">
+      <DependentUpon>ex11_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex12.Designer.cs">
+      <DependentUpon>ex12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex14.Designer.cs">
+      <DependentUpon>ex14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex15.Designer.cs">
+      <DependentUpon>ex15.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ex1.resx">
       <DependentUpon>ex1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex10.resx">
+      <DependentUpon>ex10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex13.resx">
+      <DependentUpon>ex13.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ex5.resx">
       <DependentUpon>ex5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\ex10.resx">
-      <DependentUpon>ex10.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\temp.resx">
       <DependentUpon>temp.cs</DependentUpon>
@@ -116,12 +155,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\ex10.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Properties\ex10.Designer.cs">
-      <DependentUpon>ex10.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\temp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,14 +172,26 @@
     <EmbeddedResource Include="ex3.resx">
       <DependentUpon>ex3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="exx.resx">
-      <DependentUpon>exx.cs</DependentUpon>
+    <EmbeddedResource Include="ex4.resx">
+      <DependentUpon>ex4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ex6.resx">
       <DependentUpon>ex6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ex21.resx">
       <DependentUpon>ex21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex11_.resx">
+      <DependentUpon>ex11_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex12.resx">
+      <DependentUpon>ex12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex14.resx">
+      <DependentUpon>ex14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex15.resx">
+      <DependentUpon>ex15.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

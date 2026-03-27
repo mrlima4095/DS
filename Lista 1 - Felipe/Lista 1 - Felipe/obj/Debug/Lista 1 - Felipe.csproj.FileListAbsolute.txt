@@ -17,3 +17,8 @@ D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex5.resources
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex6.resources
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex21.resources
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex10.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex11.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex12.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex13.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex14.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex15.resources

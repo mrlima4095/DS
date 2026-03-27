@@ -10,34 +10,29 @@ using System.Windows.Forms;
 
 namespace Lista_1___Felipe
 {
-    public partial class ex1 : Form
+    public partial class ex15 : Form
     {
-        public ex1()
+        public ex15()
         {
             InitializeComponent();
         }
 
-        private void ex1_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void clearBtn_Click(object sender, EventArgs e) {  textBox1.Text = ""; result_textBox.Text = ""; }
+        private void clearBtn_Click(object sender, EventArgs e) { textBox1.Text = ""; textBox2.Text = ""; result_textBox.Text = ""; }
         private void exitBtn_Click(object sender, EventArgs e) { this.Close(); }
-
-        private void ex_Title_Click(object sender, EventArgs e) { }
 
         private void fireBtn_Click(object sender, EventArgs e)
         {
-
-            if (String.IsNullOrEmpty(textBox1.Text))
+            if (String.IsNullOrEmpty(textBox1.Text) || String.IsNullOrEmpty(textBox2.Text))
             {
                 result_textBox.Text = "Preencha todos os campos deste formulario para realizar a operação!";
             }
 
-            double raio = Convert.ToDouble(textBox1.Text), resultado = System.Math.PI * System.Math.Pow(raio, 2);
+            double numA = Convert.ToDouble(textBox1.Text), numB = Convert.ToDouble(textBox2.Text), cache;
+            cache = numA;
+            numB = numA;
+            numA = cache;
 
-
-            result_textBox.Text = "A área da circunferencia é " + resultado.ToString("F2");
+            result_textBox.Text = "numA = " + numA + Environment.NewLine + "numB = " + numB;
         }
     }
 }

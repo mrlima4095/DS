@@ -10,34 +10,27 @@ using System.Windows.Forms;
 
 namespace Lista_1___Felipe
 {
-    public partial class ex1 : Form
+    public partial class ex14 : Form
     {
-        public ex1()
+        public ex14()
         {
             InitializeComponent();
         }
 
-        private void ex1_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void clearBtn_Click(object sender, EventArgs e) {  textBox1.Text = ""; result_textBox.Text = ""; }
+        private void clearBtn_Click(object sender, EventArgs e) { textBox1.Text = ""; textBox2.Text = ""; result_textBox.Text = ""; }
         private void exitBtn_Click(object sender, EventArgs e) { this.Close(); }
-
-        private void ex_Title_Click(object sender, EventArgs e) { }
 
         private void fireBtn_Click(object sender, EventArgs e)
         {
-
-            if (String.IsNullOrEmpty(textBox1.Text))
+            if (String.IsNullOrEmpty(textBox1.Text) || String.IsNullOrEmpty(textBox2.Text))
             {
                 result_textBox.Text = "Preencha todos os campos deste formulario para realizar a operação!";
             }
 
-            double raio = Convert.ToDouble(textBox1.Text), resultado = System.Math.PI * System.Math.Pow(raio, 2);
+            double val1 = Convert.ToDouble(textBox1.Text), val2 = Convert.ToDouble(textBox2.Text);
+            double media = (val1 + val2) / 2;
 
-
-            result_textBox.Text = "A área da circunferencia é " + resultado.ToString("F2");
+            result_textBox.Text = "A média entre " + val1 + " e " + val2 + " é " + media;
         }
     }
 }
