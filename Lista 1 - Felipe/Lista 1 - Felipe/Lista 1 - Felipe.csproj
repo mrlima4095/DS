@@ -132,6 +132,30 @@
     <Compile Include="ex15.Designer.cs">
       <DependentUpon>ex15.cs</DependentUpon>
     </Compile>
+    <Compile Include="ex16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex16.Designer.cs">
+      <DependentUpon>ex16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex17.Designer.cs">
+      <DependentUpon>ex17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex20.Designer.cs">
+      <DependentUpon>ex20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex19.Designer.cs">
+      <DependentUpon>ex19.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ex1.resx">
       <DependentUpon>ex1.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +216,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ex15.resx">
       <DependentUpon>ex15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex16.resx">
+      <DependentUpon>ex16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex17.resx">
+      <DependentUpon>ex17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex20.resx">
+      <DependentUpon>ex20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex19.resx">
+      <DependentUpon>ex19.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

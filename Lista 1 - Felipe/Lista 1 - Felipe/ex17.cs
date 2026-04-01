@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lista_1___Felipe
 {
-    public partial class ex15 : Form
+    public partial class ex17 : Form
     {
-        public ex15()
+        public ex17()
         {
             InitializeComponent();
         }
@@ -27,12 +27,16 @@ namespace Lista_1___Felipe
                 result_textBox.Text = "Preencha todos os campos deste formulario para realizar a operação!";
             }
 
-            double numA = Convert.ToDouble(textBox1.Text), numB = Convert.ToDouble(textBox2.Text), cache;
-            cache = numB;
-            numB = numA;
-            numA = cache;
+            int num1 = Convert.ToInt32(textBox1.Text), num2 = Convert.ToInt32(textBox2.Text);
+            int resto = num1 % num2;
 
-            result_textBox.Text = "numA = " + numA + Environment.NewLine + "numB = " + numB;
+            string result = num1 + " % " + num2 + " = " + (num1 / num2);
+            if (resto != 0)
+            {
+                result += " com resto: " + resto;
+            }
+
+            result_textBox.Text = result;
         }
     }
 }

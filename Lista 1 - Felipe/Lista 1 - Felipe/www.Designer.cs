@@ -1,6 +1,6 @@
 ﻿namespace Lista_1___Felipe
 {
-    partial class ex15
+    partial class www
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ex15));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(www));
             this.ex_Title = new System.Windows.Forms.Label();
             this.ex_Descriptor = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -47,21 +47,21 @@
             this.ex_Title.AutoSize = true;
             this.ex_Title.BackColor = System.Drawing.Color.Transparent;
             this.ex_Title.Font = new System.Drawing.Font("Times New Roman", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex_Title.Location = new System.Drawing.Point(351, 29);
+            this.ex_Title.Location = new System.Drawing.Point(322, 26);
             this.ex_Title.Name = "ex_Title";
-            this.ex_Title.Size = new System.Drawing.Size(274, 40);
+            this.ex_Title.Size = new System.Drawing.Size(325, 40);
             this.ex_Title.TabIndex = 47;
-            this.ex_Title.Text = "Valores Reversos";
+            this.ex_Title.Text = "Calculadora de Raio";
             // 
             // ex_Descriptor
             // 
             this.ex_Descriptor.AutoSize = true;
             this.ex_Descriptor.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex_Descriptor.Location = new System.Drawing.Point(375, 79);
+            this.ex_Descriptor.Location = new System.Drawing.Point(326, 80);
             this.ex_Descriptor.Name = "ex_Descriptor";
-            this.ex_Descriptor.Size = new System.Drawing.Size(234, 22);
+            this.ex_Descriptor.Size = new System.Drawing.Size(321, 22);
             this.ex_Descriptor.TabIndex = 48;
-            this.ex_Descriptor.Text = "Inverte os valores digitados";
+            this.ex_Descriptor.Text = "Calcula a area de uma circunferencia!";
             // 
             // textBox1
             // 
@@ -126,21 +126,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(163, 165);
+            this.label1.Location = new System.Drawing.Point(192, 165);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 22);
+            this.label1.Size = new System.Drawing.Size(116, 22);
             this.label1.TabIndex = 53;
-            this.label1.Text = "Digite um numero";
+            this.label1.Text = "Digite a área";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(672, 165);
+            this.label2.Location = new System.Drawing.Point(701, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 22);
+            this.label2.Size = new System.Drawing.Size(112, 22);
             this.label2.TabIndex = 54;
-            this.label2.Text = "Digite outro numero";
+            this.label2.Text = "Digite o raio";
             // 
             // label3
             // 
@@ -164,9 +164,8 @@
             this.fireBtn.Size = new System.Drawing.Size(935, 66);
             this.fireBtn.TabIndex = 2;
             this.fireBtn.UseVisualStyleBackColor = false;
-            this.fireBtn.Click += new System.EventHandler(this.fireBtn_Click);
             // 
-            // ex15
+            // temp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -188,9 +187,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ex15";
+            this.Name = "temp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "15. Valores Reversos";
+            this.Text = "1. Calculadora de Raio";
             this.ResumeLayout(false);
             this.PerformLayout();
 

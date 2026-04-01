@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -104,5 +106,43 @@ namespace Lista_1___Felipe
             ex14 Exercicio14 = new ex14();
             Exercicio14.Show();
         }
+
+        private void ex15_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex15 Exercicio15 = new ex15();
+            Exercicio15.Show();
+        }
+
+        private void ex16_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex16 Exercicio16 = new ex16();
+            Exercicio16.Show();
+        }
+
+        private void ex17_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex17 Exercicio17 = new ex17();
+            Exercicio17.Show();
+        }
+
+        private void ex18_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex18 Exercicio18 = new ex18();
+            Exercicio18.Show();
+        }
+        private void ex19_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex19 Exercicio19 = new ex19();
+            Exercicio19.Show();
+        }
+
+        private void ex20_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex20 Exercicio20 = new ex20();
+            Exercicio20.Show();
+        }
+
+
     }
 }
+

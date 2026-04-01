@@ -22,3 +22,31 @@ D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex12.resource
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex13.resources
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex14.resources
 D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex15.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\bin\Debug\Lista 1 - Felipe.exe.config
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\bin\Debug\Lista 1 - Felipe.exe
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\bin\Debug\Lista 1 - Felipe.pdb
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.csproj.AssemblyReference.cache
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex1.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex10.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex13.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex5.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.menu.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.temp.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.Properties.Resources.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex2.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex3.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex4.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex6.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex21.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex11.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex12.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex14.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex15.resources
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.csproj.GenerateResource.cache
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.csproj.CoreCompileInputs.cache
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.exe
+E:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista 1 - Felipe.pdb
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex16.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex17.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex20.resources
+D:\DS\Lista 1 - Felipe\Lista 1 - Felipe\obj\Debug\Lista_1___Felipe.ex19.resources

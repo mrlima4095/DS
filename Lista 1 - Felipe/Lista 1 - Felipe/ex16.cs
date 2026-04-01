@@ -7,32 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Lista_1___Felipe
 {
-    public partial class ex15 : Form
+    public partial class ex16 : Form
     {
-        public ex15()
+        public ex16()
         {
             InitializeComponent();
         }
 
-        private void clearBtn_Click(object sender, EventArgs e) { textBox1.Text = ""; textBox2.Text = ""; result_textBox.Text = ""; }
+        private void clearBtn_Click(object sender, EventArgs e) { textBox1.Text = ""; result_textBox.Text = ""; }
         private void exitBtn_Click(object sender, EventArgs e) { this.Close(); }
 
         private void fireBtn_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(textBox1.Text) || String.IsNullOrEmpty(textBox2.Text))
+            if (String.IsNullOrEmpty(textBox1.Text))
             {
                 result_textBox.Text = "Preencha todos os campos deste formulario para realizar a operação!";
             }
 
-            double numA = Convert.ToDouble(textBox1.Text), numB = Convert.ToDouble(textBox2.Text), cache;
-            cache = numB;
-            numB = numA;
-            numA = cache;
-
-            result_textBox.Text = "numA = " + numA + Environment.NewLine + "numB = " + numB;
+            double speed = Convert.ToDouble(textBox1.Text);
+            result_textBox.Text = speed + " km/h = " + (speed / 3.6).ToString("F2") + " m/s";
         }
     }
 }

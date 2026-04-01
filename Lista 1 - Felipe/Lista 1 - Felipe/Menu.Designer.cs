@@ -266,6 +266,7 @@
             this.ex15_choiceBtn.TabIndex = 37;
             this.ex15_choiceBtn.Text = "15. Valores Reversos";
             this.ex15_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex15_choiceBtn.Click += new System.EventHandler(this.ex15_choiceBtn_Click);
             // 
             // ex16_choiceBtn
             // 
@@ -278,6 +279,7 @@
             this.ex16_choiceBtn.TabIndex = 38;
             this.ex16_choiceBtn.Text = "16. Conversor de Velocidade";
             this.ex16_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex16_choiceBtn.Click += new System.EventHandler(this.ex16_choiceBtn_Click);
             // 
             // ex17_choiceBtn
             // 
@@ -290,6 +292,7 @@
             this.ex17_choiceBtn.TabIndex = 39;
             this.ex17_choiceBtn.Text = "17. Calculadora de resto";
             this.ex17_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex17_choiceBtn.Click += new System.EventHandler(this.ex17_choiceBtn_Click);
             // 
             // ex18_choiceBtn
             // 
@@ -302,6 +305,7 @@
             this.ex18_choiceBtn.TabIndex = 40;
             this.ex18_choiceBtn.Text = "18. Calculadora de Salarios";
             this.ex18_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex18_choiceBtn.Click += new System.EventHandler(this.ex18_choiceBtn_Click);
             // 
             // ex19_choiceBtn
             // 
@@ -314,6 +318,7 @@
             this.ex19_choiceBtn.TabIndex = 41;
             this.ex19_choiceBtn.Text = "19. Inversor de Datas";
             this.ex19_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex19_choiceBtn.Click += new System.EventHandler(this.ex19_choiceBtn_Click);
             // 
             // ex20_choiceBtn
             // 
@@ -326,6 +331,7 @@
             this.ex20_choiceBtn.TabIndex = 42;
             this.ex20_choiceBtn.Text = "20. Decodificador de Matricula";
             this.ex20_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex20_choiceBtn.Click += new System.EventHandler(this.ex20_choiceBtn_Click);
             // 
             // ex21_choiceBtn
             // 
