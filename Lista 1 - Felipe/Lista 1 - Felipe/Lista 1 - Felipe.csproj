@@ -156,6 +156,24 @@
     <Compile Include="ex19.Designer.cs">
       <DependentUpon>ex19.cs</DependentUpon>
     </Compile>
+    <Compile Include="ex18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex18.Designer.cs">
+      <DependentUpon>ex18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex7_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex7_.Designer.cs">
+      <DependentUpon>ex7_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ex8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex8.Designer.cs">
+      <DependentUpon>ex8.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ex1.resx">
       <DependentUpon>ex1.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +246,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ex19.resx">
       <DependentUpon>ex19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex18.resx">
+      <DependentUpon>ex18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex7_.resx">
+      <DependentUpon>ex7_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex8.resx">
+      <DependentUpon>ex8.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

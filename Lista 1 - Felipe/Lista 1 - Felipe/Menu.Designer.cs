@@ -177,6 +177,7 @@
             this.ex8_choiceBtn.TabIndex = 30;
             this.ex8_choiceBtn.Text = "8. Invertedor de Valores";
             this.ex8_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex8_choiceBtn.Click += new System.EventHandler(this.ex8_choiceBtn_Click);
             // 
             // ex9_choiceBtn
             // 

@@ -48,7 +48,7 @@ namespace Lista_1___Felipe
             double total_descount = (descount / 100) * brute_salary;
             double final_salary = brute_salary - total_descount;
 
-            clearBtn_Click(this, new EventArgs());
+            result_textBox.Text = "";
             result_textBox.AppendText("Horas Trabalhadas: " + worked_hours + " hora(s)\t");
             result_textBox.AppendText("Valor da hora: R$ " + hour_price);
             result_textBox.AppendText("\tPercentual de desconto: " + descount + "%" + Environment.NewLine);

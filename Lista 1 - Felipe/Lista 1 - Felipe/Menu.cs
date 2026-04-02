@@ -41,12 +41,6 @@ namespace Lista_1___Felipe
             Exercicio2.Show();
         }
 
-        private void ex21_choiceBtn_Click(object sender, EventArgs e)
-        {
-            ex21 Exercicio21 = new ex21();
-            Exercicio21.Show();
-        }
-
         private void ex3_choiceBtn_Click(object sender, EventArgs e)
         {
             ex3 Exercicio3 = new ex3();
@@ -73,8 +67,14 @@ namespace Lista_1___Felipe
 
         private void ex7_choiceBtn_Click(object sender, EventArgs e)
         {
-            //ex7 Exercicio7 = new ex7();
-            //Exercicio7.Show();
+            ex7 Exercicio7 = new ex7();
+            Exercicio7.Show();
+        }
+
+        private void ex8_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex8 Exercicio8 = new ex8();
+            Exercicio8.Show();
         }
 
         private void ex10_choiceBtn_Click(object sender, EventArgs e)
@@ -142,6 +142,11 @@ namespace Lista_1___Felipe
             Exercicio20.Show();
         }
 
+        private void ex21_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex21 Exercicio21 = new ex21();
+            Exercicio21.Show();
+        }
 
     }
 }
