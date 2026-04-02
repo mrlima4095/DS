@@ -174,6 +174,12 @@
     <Compile Include="ex8.Designer.cs">
       <DependentUpon>ex8.cs</DependentUpon>
     </Compile>
+    <Compile Include="ex9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ex9.Designer.cs">
+      <DependentUpon>ex9.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ex1.resx">
       <DependentUpon>ex1.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ex8.resx">
       <DependentUpon>ex8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ex9.resx">
+      <DependentUpon>ex9.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

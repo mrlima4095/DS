@@ -148,6 +148,7 @@
             this.fireBtn.Size = new System.Drawing.Size(935, 66);
             this.fireBtn.TabIndex = 2;
             this.fireBtn.UseVisualStyleBackColor = false;
+            this.fireBtn.Click += new System.EventHandler(this.fireBtn_Click);
             // 
             // label1
             // 
