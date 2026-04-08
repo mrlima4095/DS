@@ -28,14 +28,8 @@ namespace Lista_1___Felipe
             }
 
             double a = Convert.ToDouble(textBox1.Text), b = Convert.ToDouble(textBox2.Text), c = Convert.ToDouble(textBox3.Text), d = Convert.ToDouble(textBox4.Text);
-            // {letra} + {letra} + {operação: P - plus (adição) / M - multiply (multiplicação)}
-            double ABP = a + b, ABM = a * b;
-            double ACP = a + c, ACM = a * c;
-            double ADP = a + d, ADM = a * d;
-            double BCP = a + c, BCM = a * c;
-            double BDP = a + d, BDM = a * d;
-            double CDP = c + d, CDM = c * d;
-        }
+
+            result_textBox.Text = "Adições: A+B=" + (a + b) + ", A+C=" + (a + c) + ", A+D=" + (a + d) + ", B+C=" + (b + c) + ", B+D=" + (b + d) + ", C+D=" + (c + d) + Environment.NewLine + "Multiplicações: " + (a * b) + ", " + (a * c) + ", " + (a * d) + ", " + (b * c) + ", " + (b * d) + ", " + (c * d);        }
     }
 }
 /*

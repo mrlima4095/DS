@@ -190,6 +190,7 @@
             this.ex9_choiceBtn.TabIndex = 31;
             this.ex9_choiceBtn.Text = "9. Calculadora de 4 valores";
             this.ex9_choiceBtn.UseVisualStyleBackColor = false;
+            this.ex9_choiceBtn.Click += new System.EventHandler(this.ex9_choiceBtn_Click);
             // 
             // ex10_choiceBtn
             // 

@@ -11,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|solutionrelative:lista 1 - felipe\\ex9.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|D:\\DS\\Lista 1 - Felipe\\lista 1 - felipe\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|solutionrelative:lista 1 - felipe\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|d:\\ds\\lista 1 - felipe\\lista 1 - felipe\\ex19.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|solutionrelative:lista 1 - felipe\\ex19.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|d:\\ds\\lista 1 - felipe\\lista 1 - felipe\\ex19.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|solutionrelative:lista 1 - felipe\\ex19.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|D:\\DS\\Lista 1 - Felipe\\lista 1 - felipe\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|solutionrelative:lista 1 - felipe\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|D:\\DS\\Lista 1 - Felipe\\lista 1 - felipe\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CDBC618D-2641-4D13-BEAE-08380E943C59}|Lista 1 - Felipe\\Lista 1 - Felipe.csproj|solutionrelative:lista 1 - felipe\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ex19.cs",
+              "DocumentMoniker": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\ex19.cs",
+              "RelativeDocumentMoniker": "Lista 1 - Felipe\\ex19.cs",
+              "ToolTip": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\ex19.cs",
+              "RelativeToolTip": "Lista 1 - Felipe\\ex19.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T16:17:35.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ex19.cs [Design]",
+              "DocumentMoniker": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\ex19.cs",
+              "RelativeDocumentMoniker": "Lista 1 - Felipe\\ex19.cs",
+              "ToolTip": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\ex19.cs [Design]",
+              "RelativeToolTip": "Lista 1 - Felipe\\ex19.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T16:17:21.228Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -48,33 +81,35 @@
               "RelativeDocumentMoniker": "Lista 1 - Felipe\\ex9.cs",
               "ToolTip": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\ex9.cs",
               "RelativeToolTip": "Lista 1 - Felipe\\ex9.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIAxwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwB8AAAAvAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T14:53:35.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Menu.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\Menu.cs",
               "RelativeDocumentMoniker": "Lista 1 - Felipe\\Menu.cs",
               "ToolTip": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\Menu.cs [Design]",
               "RelativeToolTip": "Lista 1 - Felipe\\Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T14:18:07.081Z"
+              "WhenOpened": "2026-03-19T14:18:07.081Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\Menu.cs",
               "RelativeDocumentMoniker": "Lista 1 - Felipe\\Menu.cs",
               "ToolTip": "D:\\DS\\Lista 1 - Felipe\\Lista 1 - Felipe\\Menu.cs",
               "RelativeToolTip": "Lista 1 - Felipe\\Menu.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAADgv0cAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAASwJkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T14:19:14.938Z"
+              "WhenOpened": "2026-03-19T14:19:14.938Z",
+              "EditorCaption": ""
             }
           ]
         }

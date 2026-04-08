@@ -148,6 +148,11 @@ namespace Lista_1___Felipe
             Exercicio21.Show();
         }
 
+        private void ex9_choiceBtn_Click(object sender, EventArgs e)
+        {
+            ex9 Exercicio9 = new ex9();
+            Exercicio9.Show();
+        }
     }
 }
 
