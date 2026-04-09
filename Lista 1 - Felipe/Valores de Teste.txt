@@ -1,0 +1,137 @@
+### 1. Área da circunferência
+- **Raio = 5** → Área esperada: `3,14159 * 25 = 78,53975`
+- **Raio = 2,5** → Área: `19,6349375`
+
+---
+
+### 2. Adição de dois inteiros
+- **Int1 = 15, Int2 = 27** → Soma = `42`
+- **Int1 = -10, Int2 = 8** → Soma = `-2`
+
+---
+
+### 3. Salário líquido
+- **HT = 160, VH = 25, PD = 10**  
+  SB = 4000, TD = 400, SL = 3600
+- **HT = 200, VH = 30, PD = 15**  
+  SB = 6000, TD = 900, SL = 5100
+
+---
+
+### 4. Celsius → Fahrenheit
+- **C = 0** → F = `(0 + 160)/5 = 32`
+- **C = 100** → F = `(900 + 160)/5 = 212`
+- **C = 25** → F = `(225 + 160)/5 = 77`
+
+---
+
+### 5. Fahrenheit → Celsius
+- **F = 32** → C = `(32 - 32) * 5/9 = 0`
+- **F = 212** → C = `180 * 5/9 = 100`
+- **F = 77** → C = `45 * 5/9 = 25`
+
+---
+
+### 6. Volume da lata de óleo
+- **Raio = 3, Altura = 5**  
+  Volume = `3,14159 * 9 * 5 = 141,37155`
+- **Raio = 4, Altura = 10** → Volume = `3,14159 * 16 * 10 = 502,6544`
+
+---
+
+### 7. Litros de combustível
+- **Tempo = 2h, Velocidade = 90 km/h**  
+  Distância = 180 km, Litros = 15
+- **Tempo = 1,5h, Velocidade = 100 km/h**  
+  Distância = 150 km, Litros = 12,5
+
+---
+
+### 8. Troca de valores
+- **A = 10, B = 20** → depois da troca: A = 20, B = 10
+- **A = -5, B = 7** → A = 7, B = -5
+
+---
+
+### 9. Propriedade distributiva (adição e multiplicação)
+- **A=2, B=3, C=4, D=5**  
+  Adições: A+B=5, A+C=6, A+D=7, B+C=7, B+D=8, C+D=9  
+  Multiplicações: 6, 8, 10, 12, 15, 20
+
+---
+
+### 10. Volume da caixa retangular
+- **Comp=10, Larg=5, Alt=2** → Volume = 100
+- **Comp=4, Larg=3, Alt=2,5** → Volume = 30
+
+---
+
+### 11. Quadrado e cubo de um inteiro
+- **Valor = 4** → Quadrado = 16, Cubo = 64
+- **Valor = -3** → Quadrado = 9, Cubo = -27
+
+---
+
+### 12. Quadrado da soma
+- **A=3, B=4** → Soma = 7, Quadrado = 49
+- **A=5, B=-2** → Soma = 3, Quadrado = 9
+
+---
+
+### 13. Soma do quadrado de cada valor
+- **A=3, B=4** → 9 + 16 = 25
+- **A=5, B=-2** → 25 + 4 = 29
+
+---
+
+### 14. Média de dois números
+- **Val1=8, Val2=10** → Média = 9
+- **Val1=7,5, Val2=8,5** → Média = 8
+
+---
+
+### 15. Impressão em ordem inversa
+- **NumA=5, NumB=9** → imprime 9 e 5
+- **NumA=-3, NumB=0** → 0 e -3
+
+---
+
+### 16. Velocidade km/h → m/s (dividir por 3,6)
+- **km/h = 90** → m/s = 25
+- **km/h = 108** → m/s = 30
+
+---
+
+### 17. Quociente e resto da divisão inteira
+- **Int1=17, Int2=5** → Quociente = 3, Resto = 2
+- **Int1=20, Int2=4** → Quociente = 5, Resto = 0
+
+---
+
+### 18. Dois descontos consecutivos (10% depois 5% sobre o restante)
+- **Salário bruto = 2000**  
+  Após 10% = 1800, após 5% = 1710 → líquido = 1710
+- **Salário bruto = 5000** → líquido = `5000 * 0,9 * 0,95 = 4275`
+
+---
+
+### 19. Data DDMMAA → AAMMDD
+- **Entrada = 150324** → Saída = 241503
+- **Entrada = 010199** → Saída = 990101
+
+---
+
+### 20. Código de matrícula AASDDD
+- **Matrícula = 231123**  
+  Ano = 23, Semestre = 1 (1º semestre)
+- **Matrícula = 242056** → Ano = 24, Semestre = 2
+
+---
+
+### 21. Nome completo
+- **Nome = João, Sobrenome = Silva** → completo = João Silva
+- **Nome = Maria, Sobrenome = Santos** → Maria Santos
+
+---
+
+Se quiser, posso simular a execução de algum desses testes passo a passo ou verificar se a saída do seu programa está correta. Basta me enviar o código ou os resultados obtidos.
