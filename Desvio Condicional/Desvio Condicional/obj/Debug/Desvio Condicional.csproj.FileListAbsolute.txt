@@ -1,0 +1,13 @@
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio Condicional.csproj.AssemblyReference.cache
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio_Condicional.Form1.resources
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio_Condicional.Form2.resources
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio_Condicional.Form3.resources
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio_Condicional.Form4.resources
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio_Condicional.Properties.Resources.resources
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio Condicional.csproj.GenerateResource.cache
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio Condicional.csproj.CoreCompileInputs.cache
+D:\DS\Desvio Condicional\Desvio Condicional\bin\Debug\Desvio Condicional.exe.config
+D:\DS\Desvio Condicional\Desvio Condicional\bin\Debug\Desvio Condicional.exe
+D:\DS\Desvio Condicional\Desvio Condicional\bin\Debug\Desvio Condicional.pdb
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio Condicional.exe
+D:\DS\Desvio Condicional\Desvio Condicional\obj\Debug\Desvio Condicional.pdb
