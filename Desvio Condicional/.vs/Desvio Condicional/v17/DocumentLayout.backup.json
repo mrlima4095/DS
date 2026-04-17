@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\DS\\Desvio Condicional\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,26 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|d:\\ds\\desvio condicional\\desvio condicional\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E88028D1-3DE3-45D2-A6DF-0AA0B0EAA6D5}|Desvio Condicional\\Desvio Condicional.csproj|solutionrelative:desvio condicional\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Form4.cs",
               "DocumentMoniker": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form4.cs",
               "RelativeDocumentMoniker": "Desvio Condicional\\Form4.cs",
@@ -63,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Form3.cs",
               "DocumentMoniker": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form3.cs",
               "RelativeDocumentMoniker": "Desvio Condicional\\Form3.cs",
@@ -80,8 +80,8 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form1.cs",
               "RelativeDocumentMoniker": "Desvio Condicional\\Form1.cs",
-              "ToolTip": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form1.cs",
-              "RelativeToolTip": "Desvio Condicional\\Form1.cs",
+              "ToolTip": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form1.cs*",
+              "RelativeToolTip": "Desvio Condicional\\Form1.cs*",
               "ViewState": "AgIAAAwAAAAAAAAAAAArwBgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T12:42:53.579Z",
@@ -89,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Form2.cs",
               "DocumentMoniker": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form2.cs",
               "RelativeDocumentMoniker": "Desvio Condicional\\Form2.cs",
@@ -102,19 +102,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form1.cs",
               "RelativeDocumentMoniker": "Desvio Condicional\\Form1.cs",
-              "ToolTip": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form1.cs [Design]",
-              "RelativeToolTip": "Desvio Condicional\\Form1.cs [Design]",
+              "ToolTip": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form1.cs [Design]*",
+              "RelativeToolTip": "Desvio Condicional\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T12:36:09.046Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form2.cs",
               "RelativeDocumentMoniker": "Desvio Condicional\\Form2.cs",
@@ -126,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form3.cs",
               "RelativeDocumentMoniker": "Desvio Condicional\\Form3.cs",
@@ -138,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Form4.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Desvio Condicional\\Desvio Condicional\\Form4.cs",
               "RelativeDocumentMoniker": "Desvio Condicional\\Form4.cs",
