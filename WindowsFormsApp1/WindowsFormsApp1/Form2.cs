@@ -24,11 +24,11 @@ namespace WindowsFormsApp1
 
             if ((idade >= 15) && (idade <= 25) && (altura >= 1.60))
             {
-                textBox3.Text = "Sim" + Environment.NewLine + ""; 
+                textBox3.Text = "Sim" + Environment.NewLine + "Pode entrar para a equipe de natação!"; 
             }
             else
             {
-                textBox3.Text = "Não pode entrar na equipe de natação";
+                textBox3.Text = "Não pode entrar na equipe de natação!";
             }
         }
 
