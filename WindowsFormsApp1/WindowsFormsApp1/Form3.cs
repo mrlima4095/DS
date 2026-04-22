@@ -10,24 +10,31 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 and = new Form2();
-            and.Show();
+            try
+            {
+                string curso = textBox1.Text.ToUpper();
+                if (curso == "DS" || curso == "ADM")
+                {
+                    textBox2.AppendText("Curso escholhido!\r\n");
+                }
+            } catch
+            {
+                MessageBox.Show("Tente Novamente!");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 or = new Form3();
-            or.Show();
-
+            this.Close();
         }
     }
 }
