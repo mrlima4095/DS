@@ -66,11 +66,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(289, 32);
+            this.label1.Location = new System.Drawing.Point(318, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 13);
+            this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "TESTE PARA EQUIPE DE NATAÇÃO";
+            this.label1.Text = "Switch da String BB";
             // 
             // label2
             // 

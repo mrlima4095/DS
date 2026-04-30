@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.SymbolStore;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,16 +20,32 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int idade = Int32.Parse(textBox1.Text);
-            double altura = Convert.ToDouble(textBox2.Text);
+            string mes = textBox1.Text.ToString();
+            switch (mes)
+            {
+                case "janeiro":
+                case "março":
+                case "maio":
+                case "julho":
+                case "agosto":
+                case "outubro":
+                case "dezembro":
+                    label1.Text = "Este mês tem 31 dias";
+                    break;
 
-            if ((idade >= 15) && (idade <= 25) && (altura >= 1.60))
-            {
-                textBox3.AppendText("Sim" + Environment.NewLine + "Pode entrar para a equipe de natação!"); 
-            }
-            else
-            {
-                textBox3.AppendText("Não pode entrar na equipe de natação!");
+                case "fevereiro":
+                    label1.Text = "Este mês tem 28/29 dias";
+                    break;
+
+                case "abril":
+                case "junho":
+                case "setembro":
+                case "novembro":
+                    label1.Text = "Este mês tem 30 dias";
+                    break;
+                default:
+                    label1.Text = "Este mês não existe.... LMAO!";
+                    break;
             }
         }
 
