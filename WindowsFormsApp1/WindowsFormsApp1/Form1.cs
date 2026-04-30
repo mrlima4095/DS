@@ -29,5 +29,11 @@ namespace WindowsFormsApp1
             or.Show();
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 and_or = new Form4();
+            and_or.Show();
+        }
     }
 }

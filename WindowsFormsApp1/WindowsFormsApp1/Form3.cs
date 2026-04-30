@@ -21,6 +21,9 @@ namespace WindowsFormsApp1
         {
             try
             {
+                if (String.IsNullOrEmpty(textBox1.Text)) {
+                    MessageBox.Show("Por favor, insira o nome do curso!");
+                }
                 string curso = textBox1.Text.ToUpper();
                 if (curso == "DS" || curso == "ADM")
                 {
