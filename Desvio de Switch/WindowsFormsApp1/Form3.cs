@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
@@ -21,13 +22,34 @@ namespace WindowsFormsApp1
         {
             try
             {
-                if (String.IsNullOrEmpty(textBox1.Text)) {
-                    MessageBox.Show("Por favor, insira o nome do curso!");
-                }
-                string curso = textBox1.Text.ToUpper();
-                if (curso == "DS" || curso == "ADM")
+                int day = Convert.ToInt32(textBox1.Text);
+                switch (day)
                 {
-                    textBox2.AppendText("Curso escholhido!\r\n");
+                    case 1:
+                        textBox2.Text = "Monday";
+                        break;
+                    case 2:
+                        textBox2.Text = "Tuesday";
+                        break;
+                    case 3:
+                        textBox2.Text = "";
+                        break;
+                    case 4:
+                        textBox2.Text = "";
+                        break;
+                    case 5:
+                        textBox2.Text = "";
+                        break;
+                    case 6:
+                        textBox2.Text = "";
+                        break;
+                    case 7:
+                        textBox2.Text = "";
+                        break;
+
+                    default:
+                        textBox2.Text = "Este mês não existe.... LMAO!";
+                        break;
                 }
             } catch
             {

@@ -39,11 +39,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(301, 18);
+            this.label1.Location = new System.Drawing.Point(301, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 13);
+            this.label1.Size = new System.Drawing.Size(146, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CURSOS ETEC JARDIM ÂNGELA";
+            this.label1.Text = "Switasso dos dias da semana";
             // 
             // textBox1
             // 
