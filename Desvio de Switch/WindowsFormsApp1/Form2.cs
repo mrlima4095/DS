@@ -30,21 +30,21 @@ namespace WindowsFormsApp1
                 case "agosto":
                 case "outubro":
                 case "dezembro":
-                    label1.Text = "Este mês tem 31 dias";
+                    textBox3.Text = "Este mês tem 31 dias";
                     break;
 
                 case "fevereiro":
-                    label1.Text = "Este mês tem 28/29 dias";
+                    textBox3.Text = "Este mês tem 28/29 dias";
                     break;
 
                 case "abril":
                 case "junho":
                 case "setembro":
                 case "novembro":
-                    label1.Text = "Este mês tem 30 dias";
+                    textBox3.Text = "Este mês tem 30 dias";
                     break;
                 default:
-                    label1.Text = "Este mês não existe.... LMAO!";
+                    textBox3.Text = "Este mês não existe.... LMAO!";
                     break;
             }
         }
