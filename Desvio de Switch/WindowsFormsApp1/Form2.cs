@@ -20,38 +20,51 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string mes = textBox1.Text.ToString();
-            switch (mes)
+            try
             {
-                case "janeiro":
-                case "março":
-                case "maio":
-                case "julho":
-                case "agosto":
-                case "outubro":
-                case "dezembro":
-                    textBox3.Text = "Este mês tem 31 dias";
-                    break;
+                string mes = textBox1.Text.ToString();
+                switch (mes)
+                {
+                    case "janeiro":
+                    case "março":
+                    case "maio":
+                    case "julho":
+                    case "agosto":
+                    case "outubro":
+                    case "dezembro":
+                        textBox2.Text = "Este mês tem 31 dias";
+                        break;
 
-                case "fevereiro":
-                    textBox3.Text = "Este mês tem 28/29 dias";
-                    break;
+                    case "fevereiro":
+                        textBox2.Text = "Este mês tem 28/29 dias";
+                        break;
 
-                case "abril":
-                case "junho":
-                case "setembro":
-                case "novembro":
-                    textBox3.Text = "Este mês tem 30 dias";
-                    break;
-                default:
-                    textBox3.Text = "Este mês não existe.... LMAO!";
-                    break;
+                    case "abril":
+                    case "junho":
+                    case "setembro":
+                    case "novembro":
+                        textBox2.Text = "Este mês tem 30 dias";
+                        break;
+                    default:
+                        textBox2.Text = "Este mês não existe.... LMAO!";
+                        break;
+                }
             }
+            catch
+            {
+                textBox2.Text = "Erro!!!";
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -32,19 +32,19 @@ namespace WindowsFormsApp1
                         textBox2.Text = "Tuesday";
                         break;
                     case 3:
-                        textBox2.Text = "";
+                        textBox2.Text = "Wednesday";
                         break;
                     case 4:
-                        textBox2.Text = "";
+                        textBox2.Text = "Thursday";
                         break;
                     case 5:
-                        textBox2.Text = "";
+                        textBox2.Text = "Friday";
                         break;
                     case 6:
-                        textBox2.Text = "";
+                        textBox2.Text = "Saturday";
                         break;
                     case 7:
-                        textBox2.Text = "";
+                        textBox2.Text = "Sunday";
                         break;
 
                     default:
@@ -60,6 +60,16 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

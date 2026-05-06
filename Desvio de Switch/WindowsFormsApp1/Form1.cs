@@ -32,8 +32,20 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form4 and_or = new Form4();
-            and_or.Show();
+            try
+            {
+                DialogResult question = MessageBox.Show("Tem certeza?", "Atenção", MessageBoxButtons.YesNo);
+                if (question == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+
+            }
+            catch
+            {
+                Application.Exit();
+            }
+            
         }
     }
 }
