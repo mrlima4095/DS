@@ -62,6 +62,7 @@
             this.toolStripButton1.Size = new System.Drawing.Size(110, 147);
             this.toolStripButton1.Text = "RadioButton";
             this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 

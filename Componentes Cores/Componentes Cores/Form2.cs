@@ -16,5 +16,30 @@ namespace Componentes_Cores
         {
             InitializeComponent();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Red;
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Blue;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Purple;
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Green;
+        }
     }
 }

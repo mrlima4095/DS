@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\DS\\Componentes Cores\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|D:\\DS\\Componentes Cores\\componentes cores\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|D:\\DS\\Componentes Cores\\componentes cores\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|d:\\ds\\componentes cores\\componentes cores\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|d:\\ds\\componentes cores\\componentes cores\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|D:\\DS\\Componentes Cores\\componentes cores\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|d:\\ds\\componentes cores\\componentes cores\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|d:\\ds\\componentes cores\\componentes cores\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,32 +34,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form2.cs",
               "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Form2.cs",
               "RelativeDocumentMoniker": "Componentes Cores\\Form2.cs",
-              "ToolTip": "D:\\DS\\Componentes Cores\\Componentes Cores\\Form2.cs",
-              "RelativeToolTip": "Componentes Cores\\Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIAwwBIAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\DS\\Componentes Cores\\Componentes Cores\\Form2.cs*",
+              "RelativeToolTip": "Componentes Cores\\Form2.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAASwCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T12:47:15.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Form2.cs",
               "RelativeDocumentMoniker": "Componentes Cores\\Form2.cs",
-              "ToolTip": "D:\\DS\\Componentes Cores\\Componentes Cores\\Form2.cs [Design]",
-              "RelativeToolTip": "Componentes Cores\\Form2.cs [Design]",
+              "ToolTip": "D:\\DS\\Componentes Cores\\Componentes Cores\\Form2.cs [Design]*",
+              "RelativeToolTip": "Componentes Cores\\Form2.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-08T12:46:56.768Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Menu.cs",
               "RelativeDocumentMoniker": "Componentes Cores\\Menu.cs",
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Menu.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Menu.cs",
               "RelativeDocumentMoniker": "Componentes Cores\\Menu.cs",
