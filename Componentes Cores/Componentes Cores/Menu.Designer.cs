@@ -47,7 +47,7 @@
             this.toolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(405, 150);
+            this.toolStrip1.Size = new System.Drawing.Size(381, 150);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -101,12 +101,13 @@
             this.toolStripButton4.Size = new System.Drawing.Size(98, 147);
             this.toolStripButton4.Text = "ComboBox";
             this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(405, 144);
+            this.ClientSize = new System.Drawing.Size(381, 144);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
             this.Text = "Menu";
