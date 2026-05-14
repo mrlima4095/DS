@@ -75,6 +75,7 @@
             this.toolStripButton2.Size = new System.Drawing.Size(89, 147);
             this.toolStripButton2.Text = "CheckBox";
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
             // 
@@ -87,6 +88,7 @@
             this.toolStripButton3.Size = new System.Drawing.Size(69, 147);
             this.toolStripButton3.Text = "ListBox";
             this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton4
             // 

@@ -9,3 +9,5 @@ D:\DS\Componentes Cores\Componentes Cores\obj\Debug\Componentes Cores.csproj.Gen
 D:\DS\Componentes Cores\Componentes Cores\obj\Debug\Componentes Cores.csproj.CoreCompileInputs.cache
 D:\DS\Componentes Cores\Componentes Cores\obj\Debug\Componentes Cores.exe
 D:\DS\Componentes Cores\Componentes Cores\obj\Debug\Componentes Cores.pdb
+D:\DS\Componentes Cores\Componentes Cores\obj\Debug\Componentes_Cores.Form3.resources
+D:\DS\Componentes Cores\Componentes Cores\obj\Debug\Componentes_Cores.Form4.resources
