@@ -1,0 +1,12 @@
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.csproj.AssemblyReference.cache
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.Form1.resources
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.Form2.resources
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.Properties.Resources.resources
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.csproj.GenerateResource.cache
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.csproj.CoreCompileInputs.cache
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\bin\Debug\Componentes_PICTUREBOX.exe.config
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\bin\Debug\Componentes_PICTUREBOX.exe
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\bin\Debug\Componentes_PICTUREBOX.pdb
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.exe
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.pdb
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.Form3.resources
