@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "D:\\DS\\Componentes Cores\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|D:\\DS\\Componentes Cores\\componentes cores\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|d:\\ds\\componentes cores\\componentes cores\\resources\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\resources\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|d:\\ds\\componentes cores\\componentes cores\\resources\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\resources\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|d:\\ds\\componentes cores\\componentes cores\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|d:\\ds\\componentes cores\\componentes cores\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{02221077-2B67-488E-931A-5D75D42C8DC5}|Componentes Cores\\Componentes Cores.csproj|solutionrelative:componentes cores\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +38,43 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Resources\\Form3.cs",
+              "RelativeDocumentMoniker": "Componentes Cores\\Resources\\Form3.cs",
+              "ToolTip": "D:\\DS\\Componentes Cores\\Componentes Cores\\Resources\\Form3.cs [Design]",
+              "RelativeToolTip": "Componentes Cores\\Resources\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T14:22:19.235Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Resources\\Form4.cs",
+              "RelativeDocumentMoniker": "Componentes Cores\\Resources\\Form4.cs",
+              "ToolTip": "D:\\DS\\Componentes Cores\\Componentes Cores\\Resources\\Form4.cs [Design]",
+              "RelativeToolTip": "Componentes Cores\\Resources\\Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T14:22:18.177Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Form4.cs",
+              "RelativeDocumentMoniker": "Componentes Cores\\Form4.cs",
+              "ToolTip": "D:\\DS\\Componentes Cores\\Componentes Cores\\Form4.cs [Design]",
+              "RelativeToolTip": "Componentes Cores\\Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T14:22:15.819Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Menu.cs",
               "RelativeDocumentMoniker": "Componentes Cores\\Menu.cs",
@@ -39,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Menu.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Componentes Cores\\Componentes Cores\\Menu.cs",
               "RelativeDocumentMoniker": "Componentes Cores\\Menu.cs",

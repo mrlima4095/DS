@@ -69,12 +69,14 @@
             this.listBoxToolStripMenuItem.Name = "listBoxToolStripMenuItem";
             this.listBoxToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.listBoxToolStripMenuItem.Text = "ListBox";
+            this.listBoxToolStripMenuItem.Click += new System.EventHandler(this.listBoxToolStripMenuItem_Click);
             // 
             // comboBoxToolStripMenuItem
             // 
             this.comboBoxToolStripMenuItem.Name = "comboBoxToolStripMenuItem";
             this.comboBoxToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.comboBoxToolStripMenuItem.Text = "ComboBox";
+            this.comboBoxToolStripMenuItem.Click += new System.EventHandler(this.comboBoxToolStripMenuItem_Click);
             // 
             // button1
             // 
@@ -90,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(381, 340);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);

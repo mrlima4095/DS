@@ -10,3 +10,5 @@ D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\bin\Debug\Componentes_PICTUR
 D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.exe
 D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.pdb
 D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.Form3.resources
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.Properties.Form1.resources
+D:\DS\Componentes_PICTUREBOX\Componentes_PICTUREBOX\obj\Debug\Componentes_PICTUREBOX.Form4.resources

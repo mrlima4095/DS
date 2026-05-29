@@ -33,5 +33,17 @@ namespace Componentes_PICTUREBOX
             Form3 form3 = new Form3();
             form3.Show();
         }
+
+        private void listBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Form1 form1 = new Properties.Form1();
+            form1.Show();
+        }
+
+        private void comboBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+        }
     }
 }
