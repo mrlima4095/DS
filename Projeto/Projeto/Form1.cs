@@ -17,13 +17,35 @@ namespace Projeto
             InitializeComponent();
         }
 
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void hide(int level)
         {
-            comboBox1.Items.Clear();
-            radioButton1.Visible = false;
-            radioButton2.Visible = false;
-            radioButton3.Visible = false;
-
+            if (level <= 2)
+            {
+                checkBox1.Visible = false;
+                checkBox1.Checked = false;
+                checkBox2.Visible = false;
+                checkBox2.Checked = false;
+                checkBox3.Visible = false;
+                checkBox3.Checked = false;
+                if (level <= 1)
+                {
+                    radioButton1.Visible = false;
+                    radioButton1.Checked = false;
+                    radioButton2.Visible = false;
+                    radioButton2.Checked = false;
+                    radioButton3.Visible = false;
+                    radioButton3.Checked = false;
+                    if (level == 0)
+                    {
+                        comboBox1.Items.Clear();
+                    }
+                }
+            }
 
         }
 
@@ -70,6 +92,7 @@ namespace Projeto
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            hide(1);
             if (listBox1.SelectedIndex == 0)
             {
                 if (comboBox1.SelectedIndex == 0)
@@ -148,6 +171,134 @@ namespace Projeto
                     radioButton3.Text = "Ordem Cabalistica";
                 }
             }
+            else if (listBox1.SelectedIndex == 2)
+            {
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    radioButton1.Visible = true;
+                    radioButton1.Text = "Representação";
+                    radioButton2.Visible = true;
+                    radioButton2.Text = "Cores";
+                    radioButton3.Visible = true;
+                    radioButton3.Text = "Medindo Aura";
+                }
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    radioButton1.Visible = true;
+                    radioButton1.Text = "Tarot";
+                    radioButton2.Visible = true;
+                    radioButton2.Text = "Baralho Cigano";
+                    radioButton3.Visible = true;
+                    radioButton3.Text = "Bola de Cristal";
+                }
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    radioButton1.Visible = true;
+                    radioButton1.Text = "Ars Goetia";
+                    radioButton2.Visible = true;
+                    radioButton2.Text = "Encantamentos";
+                    radioButton3.Visible = true;
+                    radioButton3.Text = "Itens";
+                }
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    radioButton1.Visible = true;
+                    radioButton1.Text = "Idade Media";
+                    radioButton2.Visible = true;
+                    radioButton2.Text = "Rituais";
+                    radioButton3.Visible = true;
+                    radioButton3.Text = "Exemplos";
+                }
+            }
+            else if (listBox1.SelectedIndex == 3)
+            {
+                radioButton1.Visible = true;
+                radioButton1.Text = "Representações";
+                radioButton2.Visible = true;
+                radioButton2.Text = "Lendas";
+                radioButton3.Visible = true;
+                radioButton3.Text = "Fontes";
+            }
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == 0)
+            {
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Fotos";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Mapas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Relevo";
+                }
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Pinturas";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Representações";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Teorias";
+                }
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == 0)
+            {
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    if (radioButton2.Checked == true)
+                    {
+                        checkBox1.Visible = true;
+                        checkBox1.Text = "Pintura";
+                        checkBox2.Visible = true;
+                        checkBox2.Text = "Representações";
+                        checkBox3.Visible = true;
+                        checkBox3.Text = "Canoeiro";
+                    }
+                    else if (radioButton2.Checked == true)
+                    {
+                        checkBox1.Visible = true;
+                        checkBox1.Text = "Pintura";
+                        checkBox2.Visible = true;
+                        checkBox2.Text = "Representações";
+                        checkBox3.Visible = true;
+                        checkBox3.Text = "Canoeiro";
+                    }
+                }
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Pinturas";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Irkalla";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Lendas";
+                }
+            }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == 0)
+            {
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "3 Sois";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Astros";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Eclipse";
+                }
+
+            }
+        }
+
     }
 }
