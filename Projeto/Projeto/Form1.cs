@@ -46,7 +46,6 @@ namespace Projeto
                     }
                 }
             }
-
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -59,7 +58,7 @@ namespace Projeto
                 comboBox1.Items.Add("Cosmologia Sumeria");
                 comboBox1.Items.Add("Cosmologia Egipicia");
                 comboBox1.SelectedIndex = 0;
-            } 
+            }
             else if (listBox1.SelectedIndex == 1)
             {
                 hide(0);
@@ -68,8 +67,7 @@ namespace Projeto
                 comboBox1.Items.Add("Skull and Bones");
                 comboBox1.Items.Add("Rosa Cruz");
                 comboBox1.SelectedIndex = 0;
-
-            } 
+            }
             else if (listBox1.SelectedIndex == 2)
             {
                 hide(0);
@@ -78,7 +76,7 @@ namespace Projeto
                 comboBox1.Items.Add("Magia Cerimonial");
                 comboBox1.Items.Add("Necromancia");
                 comboBox1.SelectedIndex = 0;
-            } 
+            }
             else if (listBox1.SelectedIndex == 3)
             {
                 hide(0);
@@ -86,6 +84,14 @@ namespace Projeto
                 comboBox1.Items.Add("Santo Graal");
                 comboBox1.Items.Add("Arca da Aliança");
                 comboBox1.Items.Add("Anel de Salomão");
+                comboBox1.SelectedIndex = 0;
+            }
+            else if (listBox1.SelectedIndex == 4)
+            {
+                hide(0);
+                comboBox1.Items.Add("Baal");
+                comboBox1.Items.Add("Moloque");
+                comboBox1.Items.Add("Baphomet");
                 comboBox1.SelectedIndex = 0;
             }
         }
@@ -219,12 +225,28 @@ namespace Projeto
                 radioButton3.Visible = true;
                 radioButton3.Text = "Fontes";
             }
+            else if (listBox1.SelectedIndex == 4)
+            {
+                radioButton1.Visible = true;
+                radioButton1.Text = "Origem";
+                radioButton2.Visible = true;
+                radioButton2.Text = "Formas";
+                radioButton3.Visible = true;
+                radioButton3.Text = "Culto";
+            }
         }
 
+        // ================================================================
+        //  RADIO 1
+        // ================================================================
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            if (!radioButton1.Checked) return;
+
+            // ============ LISTA 0: TERRA PLANA ============
             if (listBox1.SelectedIndex == 0)
             {
+                // Terra Plana > Cosmologia Biblica > Superficie
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -234,6 +256,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Relevo";
                 }
+                // Terra Plana > Cosmologia Babilonica > Mundo Superior
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -243,34 +266,216 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Teorias";
                 }
+                // Terra Plana > Cosmologia Sumeria > Ki (Mundo Superior)
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Anunnaki";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Mitos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Representações";
+                }
+                // Terra Plana > Cosmologia Egipicia > Terra
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Mapas";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Representações";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Mitos";
+                }
+            }
+            // ============ LISTA 1: SOCIEDADES SECRETAS ============
+            else if (listBox1.SelectedIndex == 1)
+            {
+                // Sociedades Secretas > Maçonaria > Loja Maçonica
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Estrutura";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Graus";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Rituais";
+                }
+                // Sociedades Secretas > Illuminatis > Simbolo
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Piramide";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Olho";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Historia";
+                }
+                // Sociedades Secretas > Skull and Bones > Logo
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Caveira";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Ossos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Historia";
+                }
+                // Sociedades Secretas > Rosa Cruz > Logo
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Cruz";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Rosa";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Historia";
+                }
+            }
+            // ============ LISTA 2: AURA & MAGIA ============
+            else if (listBox1.SelectedIndex == 2)
+            {
+                // Aura & Magia > Auras > Representação
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Fotos";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Desenhos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Cores";
+                }
+                // Aura & Magia > Oraculos > Tarot
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Arcanos Maiores";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Arcanos Menores";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Leitura";
+                }
+                // Aura & Magia > Magia Cerimonial > Ars Goetia
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Demonios";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Selos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Evocação";
+                }
+                // Aura & Magia > Necromancia > Idade Media
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Historia";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Crenças";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Práticas";
+                }
+            }
+            // ============ LISTA 3: OBJETOS LENDARIOS ============
+            else if (listBox1.SelectedIndex == 3)
+            {
+                // Objetos Lendarios > Lança do Destino > Representações
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Fotos";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Pinturas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Réplicas";
+                }
+                // Objetos Lendarios > Santo Graal > Representações
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Fotos";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Pinturas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Réplicas";
+                }
+                // Objetos Lendarios > Arca da Aliança > Representações
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Fotos";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Pinturas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Réplicas";
+                }
+                // Objetos Lendarios > Anel de Salomão > Representações
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Fotos";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Pinturas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Réplicas";
+                }
+            }
+            // ============ LISTA 4: FALSOS DEUSES ============
+            else if (listBox1.SelectedIndex == 4)
+            {
+                // Falsos Deuses > Baal > Origem
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Canaã";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Mitologia";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "História";
+                }
+                // Falsos Deuses > Moloque > Origem
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Amomitas";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Mitologia";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "História";
+                }
+                // Falsos Deuses > Baphomet > Origem
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Templários";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "História";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Acusações";
+                }
             }
         }
 
+        // ================================================================
+        //  RADIO 2
+        // ================================================================
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            if (!radioButton2.Checked) return;
+
+            // ============ LISTA 0: TERRA PLANA ============
             if (listBox1.SelectedIndex == 0)
             {
+                // Terra Plana > Cosmologia Biblica > Sheol (Inferno)
                 if (comboBox1.SelectedIndex == 0)
                 {
-                    if (radioButton2.Checked == true)
-                    {
-                        checkBox1.Visible = true;
-                        checkBox1.Text = "Pintura";
-                        checkBox2.Visible = true;
-                        checkBox2.Text = "Representações";
-                        checkBox3.Visible = true;
-                        checkBox3.Text = "Canoeiro";
-                    }
-                    else if (radioButton2.Checked == true)
-                    {
-                        checkBox1.Visible = true;
-                        checkBox1.Text = "Pintura";
-                        checkBox2.Visible = true;
-                        checkBox2.Text = "Representações";
-                        checkBox3.Visible = true;
-                        checkBox3.Text = "Canoeiro";
-                    }
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Pintura";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Representações";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Canoeiro";
                 }
+                // Terra Plana > Cosmologia Babilonica > Mundo Inferior
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -280,13 +485,206 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Lendas";
                 }
+                // Terra Plana > Cosmologia Sumeria > Apsu (Submundo)
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Ereshkigal";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Portões";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Lendas";
+                }
+                // Terra Plana > Cosmologia Egipicia > Mundo Inferior
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Duat";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Rituais";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Deuses";
+                }
+            }
+            // ============ LISTA 1: SOCIEDADES SECRETAS ============
+            else if (listBox1.SelectedIndex == 1)
+            {
+                // Sociedades Secretas > Maçonaria > Roupas
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Avental";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Colar";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Chapéu";
+                }
+                // Sociedades Secretas > Illuminatis > Nota de dólar
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Piramide";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Olho";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Simbologia";
+                }
+                // Sociedades Secretas > Skull and Bones > Templo
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Estrutura";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Historia";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Rituais";
+                }
+                // Sociedades Secretas > Rosa Cruz > Templo
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Estrutura";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Historia";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Simbolos";
+                }
+            }
+            // ============ LISTA 2: AURA & MAGIA ============
+            else if (listBox1.SelectedIndex == 2)
+            {
+                // Aura & Magia > Auras > Cores
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Vermelho";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Azul";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Verde";
+                }
+                // Aura & Magia > Oraculos > Baralho Cigano
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Cartas";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Leitura";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Simbolos";
+                }
+                // Aura & Magia > Magia Cerimonial > Encantamentos
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Feitiços";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Rituais";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Palavras";
+                }
+                // Aura & Magia > Necromancia > Rituais
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Círculos";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Ofertas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Cerimônias";
+                }
+            }
+            // ============ LISTA 3: OBJETOS LENDARIOS ============
+            else if (listBox1.SelectedIndex == 3)
+            {
+                // Objetos Lendarios > Lança do Destino > Lendas
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Historia";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Lendas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Mitologia";
+                }
+                // Objetos Lendarios > Santo Graal > Lendas
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Arturiana";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Busca";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Mitologia";
+                }
+                // Objetos Lendarios > Arca da Aliança > Lendas
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Historia";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Poderes";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Mitologia";
+                }
+                // Objetos Lendarios > Anel de Salomão > Lendas
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Historia";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Poderes";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Mitologia";
+                }
+            }
+            // ============ LISTA 4: FALSOS DEUSES ============
+            else if (listBox1.SelectedIndex == 4)
+            {
+                // Falsos Deuses > Baal > Formas
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Touro";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Representações";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Estátuas";
+                }
+                // Falsos Deuses > Moloque > Formas
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Estátua";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Fornalha";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Touro de Bronze";
+                }
+                // Falsos Deuses > Baphomet > Formas
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Cabeça de Bode";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Representações";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Simbolos";
+                }
             }
         }
 
+        // ================================================================
+        //  RADIO 3
+        // ================================================================
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
+            if (!radioButton3.Checked) return;
+
+            // ============ LISTA 0: TERRA PLANA ============
             if (listBox1.SelectedIndex == 0)
             {
+                // Terra Plana > Cosmologia Biblica > Céus e Astros
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -296,9 +694,739 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Eclipse";
                 }
-
+                // Terra Plana > Cosmologia Babilonica > Os Céus
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Planetas";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Estrelas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Eclipses";
+                }
+                // Terra Plana > Cosmologia Sumeria > Os Céus
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Planetas";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Estrelas";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Astros";
+                }
+                // Terra Plana > Cosmologia Egipicia > Céus e Astros
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Nut";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Astros";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Eclipse";
+                }
+            }
+            // ============ LISTA 1: SOCIEDADES SECRETAS ============
+            else if (listBox1.SelectedIndex == 1)
+            {
+                // Sociedades Secretas > Maçonaria > Jachin e Boaz
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Colunas";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Significado";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "História";
+                }
+                // Sociedades Secretas > Illuminatis > Olho que tudo vê
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Origem";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Significado";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Uso";
+                }
+                // Sociedades Secretas > Skull and Bones > Membros
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Presidentes";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Líderes";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Alunos";
+                }
+                // Sociedades Secretas > Rosa Cruz > Ordem Cabalistica
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Cabala";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Graus";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Rituais";
+                }
+            }
+            // ============ LISTA 2: AURA & MAGIA ============
+            else if (listBox1.SelectedIndex == 2)
+            {
+                // Aura & Magia > Auras > Medindo Aura
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Kirlian";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Fotografia";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Leitura";
+                }
+                // Aura & Magia > Oraculos > Bola de Cristal
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Historia";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Leitura";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Uso";
+                }
+                // Aura & Magia > Magia Cerimonial > Itens
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Varinha";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Círculo";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Incenso";
+                }
+                // Aura & Magia > Necromancia > Exemplos
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Casos";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Famosos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Lendas";
+                }
+            }
+            // ============ LISTA 3: OBJETOS LENDARIOS ============
+            else if (listBox1.SelectedIndex == 3)
+            {
+                // Objetos Lendarios > Lança do Destino > Fontes
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Livros";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Documentos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Referencias";
+                }
+                // Objetos Lendarios > Santo Graal > Fontes
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Livros";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Documentos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Referencias";
+                }
+                // Objetos Lendarios > Arca da Aliança > Fontes
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Livros";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Documentos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Referencias";
+                }
+                // Objetos Lendarios > Anel de Salomão > Fontes
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Livros";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Documentos";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Referencias";
+                }
+            }
+            // ============ LISTA 4: FALSOS DEUSES ============
+            else if (listBox1.SelectedIndex == 4)
+            {
+                // Falsos Deuses > Baal > Culto
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Rituais";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Sacrifícios";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Templos";
+                }
+                // Falsos Deuses > Moloque > Culto
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Sacrifícios";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Fogo";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Rituais";
+                }
+                // Falsos Deuses > Baphomet > Culto
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    checkBox1.Visible = true;
+                    checkBox1.Text = "Rituais";
+                    checkBox2.Visible = true;
+                    checkBox2.Text = "Satanismo";
+                    checkBox3.Visible = true;
+                    checkBox3.Text = "Templos";
+                }
             }
         }
 
+        // ================================================================
+        //  CHECKBOX 1
+        // ================================================================
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                ImplementCheckBox(1);
+            }
+        }
+
+        // ================================================================
+        //  CHECKBOX 2
+        // ================================================================
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                ImplementCheckBox(2);
+            }
+        }
+
+        // ================================================================
+        //  CHECKBOX 3
+        // ================================================================
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                ImplementCheckBox(3);
+            }
+        }
+
+        // ================================================================
+        //  IMPLEMENTE AQUI O CONTEUDO DE CADA CHECKBOX.
+        //
+        //  O parametro checkBoxNumber (1, 2 ou 3) diz QUAL checkbox foi
+        //  marcada. Os comentarios mostram o caminho completo da selecao
+        //  (Lista > ComboBox > RadioButton) e qual item pertence a cada
+        //  checkbox, ex.:
+        //
+        //      Terra Plana > Cosmologia Biblica > Superficie
+        //      checkBox1 = Fotos | checkBox2 = Mapas | checkBox3 = Relevo
+        //
+        //  Bastar procurar o bloco do caminho desejado e implementar.
+        // ================================================================
+        private void ImplementCheckBox(int checkBoxNumber)
+        {
+            // ==========================================
+            //  LISTA 0: TERRA PLANA
+            // ==========================================
+            if (listBox1.SelectedIndex == 0)
+            {
+                // ==============================
+                //  TERRA PLANA > COSMOLOGIA BIBLICA
+                // ==============================
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    if (radioButton1.Checked) // Superficie
+                    {
+                        // Terra Plana > Cosmologia Biblica > Superficie
+                        // checkBox1 = Fotos | checkBox2 = Mapas | checkBox3 = Relevo
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Sheol (Inferno)
+                    {
+                        // Terra Plana > Cosmologia Biblica > Sheol (Inferno)
+                        // checkBox1 = Pintura | checkBox2 = Representações | checkBox3 = Canoeiro
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Céus e Astros
+                    {
+                        // Terra Plana > Cosmologia Biblica > Céus e Astros
+                        // checkBox1 = 3 Sois | checkBox2 = Astros | checkBox3 = Eclipse
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  TERRA PLANA > COSMOLOGIA BABILONICA
+                // ==============================
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    if (radioButton1.Checked) // Mundo Superior
+                    {
+                        // Terra Plana > Cosmologia Babilonica > Mundo Superior
+                        // checkBox1 = Pinturas | checkBox2 = Representações | checkBox3 = Teorias
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Mundo Inferior
+                    {
+                        // Terra Plana > Cosmologia Babilonica > Mundo Inferior
+                        // checkBox1 = Pinturas | checkBox2 = Irkalla | checkBox3 = Lendas
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Os Céus
+                    {
+                        // Terra Plana > Cosmologia Babilonica > Os Céus
+                        // checkBox1 = Planetas | checkBox2 = Estrelas | checkBox3 = Eclipses
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  TERRA PLANA > COSMOLOGIA SUMERIA
+                // ==============================
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    if (radioButton1.Checked) // Ki (Mundo Superior)
+                    {
+                        // Terra Plana > Cosmologia Sumeria > Ki (Mundo Superior)
+                        // checkBox1 = Anunnaki | checkBox2 = Mitos | checkBox3 = Representações
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Apsu (Submundo)
+                    {
+                        // Terra Plana > Cosmologia Sumeria > Apsu (Submundo)
+                        // checkBox1 = Ereshkigal | checkBox2 = Portões | checkBox3 = Lendas
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Os Céus
+                    {
+                        // Terra Plana > Cosmologia Sumeria > Os Céus
+                        // checkBox1 = Planetas | checkBox2 = Estrelas | checkBox3 = Astros
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  TERRA PLANA > COSMOLOGIA EGIPICIA
+                // ==============================
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    if (radioButton1.Checked) // Terra
+                    {
+                        // Terra Plana > Cosmologia Egipicia > Terra
+                        // checkBox1 = Mapas | checkBox2 = Representações | checkBox3 = Mitos
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Mundo Inferior
+                    {
+                        // Terra Plana > Cosmologia Egipicia > Mundo Inferior
+                        // checkBox1 = Duat | checkBox2 = Rituais | checkBox3 = Deuses
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Céus e Astros
+                    {
+                        // Terra Plana > Cosmologia Egipicia > Céus e Astros
+                        // checkBox1 = Nut | checkBox2 = Astros | checkBox3 = Eclipse
+                        // >>> implementar aqui <<<
+                    }
+                }
+            }
+            // ==========================================
+            //  LISTA 1: SOCIEDADES SECRETAS
+            // ==========================================
+            else if (listBox1.SelectedIndex == 1)
+            {
+                // ==============================
+                //  SOCIEDADES SECRETAS > MAÇONARIA
+                // ==============================
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    if (radioButton1.Checked) // Loja Maçonica
+                    {
+                        // Sociedades Secretas > Maçonaria > Loja Maçonica
+                        // checkBox1 = Estrutura | checkBox2 = Graus | checkBox3 = Rituais
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Roupas
+                    {
+                        // Sociedades Secretas > Maçonaria > Roupas
+                        // checkBox1 = Avental | checkBox2 = Colar | checkBox3 = Chapéu
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Jachin e Boaz
+                    {
+                        // Sociedades Secretas > Maçonaria > Jachin e Boaz
+                        // checkBox1 = Colunas | checkBox2 = Significado | checkBox3 = História
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  SOCIEDADES SECRETAS > ILLUMINATIS
+                // ==============================
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    if (radioButton1.Checked) // Simbolo
+                    {
+                        // Sociedades Secretas > Illuminatis > Simbolo
+                        // checkBox1 = Piramide | checkBox2 = Olho | checkBox3 = Historia
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Nota de dólar
+                    {
+                        // Sociedades Secretas > Illuminatis > Nota de dólar
+                        // checkBox1 = Piramide | checkBox2 = Olho | checkBox3 = Simbologia
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Olho que tudo vê
+                    {
+                        // Sociedades Secretas > Illuminatis > Olho que tudo vê
+                        // checkBox1 = Origem | checkBox2 = Significado | checkBox3 = Uso
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  SOCIEDADES SECRETAS > SKULL AND BONES
+                // ==============================
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    if (radioButton1.Checked) // Logo
+                    {
+                        // Sociedades Secretas > Skull and Bones > Logo
+                        // checkBox1 = Caveira | checkBox2 = Ossos | checkBox3 = Historia
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Templo
+                    {
+                        // Sociedades Secretas > Skull and Bones > Templo
+                        // checkBox1 = Estrutura | checkBox2 = Historia | checkBox3 = Rituais
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Membros
+                    {
+                        // Sociedades Secretas > Skull and Bones > Membros
+                        // checkBox1 = Presidentes | checkBox2 = Líderes | checkBox3 = Alunos
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  SOCIEDADES SECRETAS > ROSA CRUZ
+                // ==============================
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    if (radioButton1.Checked) // Logo
+                    {
+                        // Sociedades Secretas > Rosa Cruz > Logo
+                        // checkBox1 = Cruz | checkBox2 = Rosa | checkBox3 = Historia
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Templo
+                    {
+                        // Sociedades Secretas > Rosa Cruz > Templo
+                        // checkBox1 = Estrutura | checkBox2 = Historia | checkBox3 = Simbolos
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Ordem Cabalistica
+                    {
+                        // Sociedades Secretas > Rosa Cruz > Ordem Cabalistica
+                        // checkBox1 = Cabala | checkBox2 = Graus | checkBox3 = Rituais
+                        // >>> implementar aqui <<<
+                    }
+                }
+            }
+            // ==========================================
+            //  LISTA 2: AURA & MAGIA
+            // ==========================================
+            else if (listBox1.SelectedIndex == 2)
+            {
+                // ==============================
+                //  AURA & MAGIA > AURAS
+                // ==============================
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    if (radioButton1.Checked) // Representação
+                    {
+                        // Aura & Magia > Auras > Representação
+                        // checkBox1 = Fotos | checkBox2 = Desenhos | checkBox3 = Cores
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Cores
+                    {
+                        // Aura & Magia > Auras > Cores
+                        // checkBox1 = Vermelho | checkBox2 = Azul | checkBox3 = Verde
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Medindo Aura
+                    {
+                        // Aura & Magia > Auras > Medindo Aura
+                        // checkBox1 = Kirlian | checkBox2 = Fotografia | checkBox3 = Leitura
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  AURA & MAGIA > ORACULOS
+                // ==============================
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    if (radioButton1.Checked) // Tarot
+                    {
+                        // Aura & Magia > Oraculos > Tarot
+                        // checkBox1 = Arcanos Maiores | checkBox2 = Arcanos Menores | checkBox3 = Leitura
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Baralho Cigano
+                    {
+                        // Aura & Magia > Oraculos > Baralho Cigano
+                        // checkBox1 = Cartas | checkBox2 = Leitura | checkBox3 = Simbolos
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Bola de Cristal
+                    {
+                        // Aura & Magia > Oraculos > Bola de Cristal
+                        // checkBox1 = Historia | checkBox2 = Leitura | checkBox3 = Uso
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  AURA & MAGIA > MAGIA CERIMONIAL
+                // ==============================
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    if (radioButton1.Checked) // Ars Goetia
+                    {
+                        // Aura & Magia > Magia Cerimonial > Ars Goetia
+                        // checkBox1 = Demonios | checkBox2 = Selos | checkBox3 = Evocação
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Encantamentos
+                    {
+                        // Aura & Magia > Magia Cerimonial > Encantamentos
+                        // checkBox1 = Feitiços | checkBox2 = Rituais | checkBox3 = Palavras
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Itens
+                    {
+                        // Aura & Magia > Magia Cerimonial > Itens
+                        // checkBox1 = Varinha | checkBox2 = Círculo | checkBox3 = Incenso
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  AURA & MAGIA > NECROMANCIA
+                // ==============================
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    if (radioButton1.Checked) // Idade Media
+                    {
+                        // Aura & Magia > Necromancia > Idade Media
+                        // checkBox1 = Historia | checkBox2 = Crenças | checkBox3 = Práticas
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Rituais
+                    {
+                        // Aura & Magia > Necromancia > Rituais
+                        // checkBox1 = Círculos | checkBox2 = Ofertas | checkBox3 = Cerimônias
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Exemplos
+                    {
+                        // Aura & Magia > Necromancia > Exemplos
+                        // checkBox1 = Casos | checkBox2 = Famosos | checkBox3 = Lendas
+                        // >>> implementar aqui <<<
+                    }
+                }
+            }
+            // ==========================================
+            //  LISTA 3: OBJETOS LENDARIOS
+            // ==========================================
+            else if (listBox1.SelectedIndex == 3)
+            {
+                // ==============================
+                //  OBJETOS LENDARIOS > LANÇA DO DESTINO
+                // ==============================
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    if (radioButton1.Checked) // Representações
+                    {
+                        // Objetos Lendarios > Lança do Destino > Representações
+                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Lendas
+                    {
+                        // Objetos Lendarios > Lança do Destino > Lendas
+                        // checkBox1 = Historia | checkBox2 = Lendas | checkBox3 = Mitologia
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Fontes
+                    {
+                        // Objetos Lendarios > Lança do Destino > Fontes
+                        // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  OBJETOS LENDARIOS > SANTO GRAAL
+                // ==============================
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    if (radioButton1.Checked) // Representações
+                    {
+                        // Objetos Lendarios > Santo Graal > Representações
+                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Lendas
+                    {
+                        // Objetos Lendarios > Santo Graal > Lendas
+                        // checkBox1 = Arturiana | checkBox2 = Busca | checkBox3 = Mitologia
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Fontes
+                    {
+                        // Objetos Lendarios > Santo Graal > Fontes
+                        // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  OBJETOS LENDARIOS > ARCA DA ALIANÇA
+                // ==============================
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    if (radioButton1.Checked) // Representações
+                    {
+                        // Objetos Lendarios > Arca da Aliança > Representações
+                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Lendas
+                    {
+                        // Objetos Lendarios > Arca da Aliança > Lendas
+                        // checkBox1 = Historia | checkBox2 = Poderes | checkBox3 = Mitologia
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Fontes
+                    {
+                        // Objetos Lendarios > Arca da Aliança > Fontes
+                        // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  OBJETOS LENDARIOS > ANEL DE SALOMÃO
+                // ==============================
+                else if (comboBox1.SelectedIndex == 3)
+                {
+                    if (radioButton1.Checked) // Representações
+                    {
+                        // Objetos Lendarios > Anel de Salomão > Representações
+                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Lendas
+                    {
+                        // Objetos Lendarios > Anel de Salomão > Lendas
+                        // checkBox1 = Historia | checkBox2 = Poderes | checkBox3 = Mitologia
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Fontes
+                    {
+                        // Objetos Lendarios > Anel de Salomão > Fontes
+                        // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
+                        // >>> implementar aqui <<<
+                    }
+                }
+            }
+            // ==========================================
+            //  LISTA 4: FALSOS DEUSES
+            // ==========================================
+            else if (listBox1.SelectedIndex == 4)
+            {
+                // ==============================
+                //  FALSOS DEUSES > BAAL
+                // ==============================
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    if (radioButton1.Checked) // Origem
+                    {
+                        // Falsos Deuses > Baal > Origem
+                        // checkBox1 = Canaã | checkBox2 = Mitologia | checkBox3 = História
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Formas
+                    {
+                        // Falsos Deuses > Baal > Formas
+                        // checkBox1 = Touro | checkBox2 = Representações | checkBox3 = Estátuas
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Culto
+                    {
+                        // Falsos Deuses > Baal > Culto
+                        // checkBox1 = Rituais | checkBox2 = Sacrifícios | checkBox3 = Templos
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  FALSOS DEUSES > MOLOQUE
+                // ==============================
+                else if (comboBox1.SelectedIndex == 1)
+                {
+                    if (radioButton1.Checked) // Origem
+                    {
+                        // Falsos Deuses > Moloque > Origem
+                        // checkBox1 = Amomitas | checkBox2 = Mitologia | checkBox3 = História
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Formas
+                    {
+                        // Falsos Deuses > Moloque > Formas
+                        // checkBox1 = Estátua | checkBox2 = Fornalha | checkBox3 = Touro de Bronze
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Culto
+                    {
+                        // Falsos Deuses > Moloque > Culto
+                        // checkBox1 = Sacrifícios | checkBox2 = Fogo | checkBox3 = Rituais
+                        // >>> implementar aqui <<<
+                    }
+                }
+                // ==============================
+                //  FALSOS DEUSES > BAPHOMET
+                // ==============================
+                else if (comboBox1.SelectedIndex == 2)
+                {
+                    if (radioButton1.Checked) // Origem
+                    {
+                        // Falsos Deuses > Baphomet > Origem
+                        // checkBox1 = Templários | checkBox2 = História | checkBox3 = Acusações
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton2.Checked) // Formas
+                    {
+                        // Falsos Deuses > Baphomet > Formas
+                        // checkBox1 = Cabeça de Bode | checkBox2 = Representações | checkBox3 = Simbolos
+                        // >>> implementar aqui <<<
+                    }
+                    else if (radioButton3.Checked) // Culto
+                    {
+                        // Falsos Deuses > Baphomet > Culto
+                        // checkBox1 = Rituais | checkBox2 = Satanismo | checkBox3 = Templos
+                        // >>> implementar aqui <<<
+                    }
+                }
+            }
+        }
     }
 }
