@@ -186,6 +186,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(20, 19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(224, 222);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -206,6 +207,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(529, 19);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(224, 222);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
             // 
@@ -214,15 +216,17 @@
             this.pictureBox2.Location = new System.Drawing.Point(271, 19);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(224, 222);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // exitButton
             // 
+            this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.exitButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(1014, 578);
+            this.exitButton.Location = new System.Drawing.Point(541, 284);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(165, 63);
+            this.exitButton.Size = new System.Drawing.Size(224, 63);
             this.exitButton.TabIndex = 6;
             this.exitButton.Text = "Sair";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -241,9 +245,9 @@
             // audioButton
             // 
             this.audioButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.audioButton.Location = new System.Drawing.Point(823, 578);
+            this.audioButton.Location = new System.Drawing.Point(541, 201);
             this.audioButton.Name = "audioButton";
-            this.audioButton.Size = new System.Drawing.Size(165, 63);
+            this.audioButton.Size = new System.Drawing.Size(224, 63);
             this.audioButton.TabIndex = 5;
             this.audioButton.Text = "Audio";
             this.audioButton.UseVisualStyleBackColor = true;
@@ -253,7 +257,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.exitButton;
-            this.ClientSize = new System.Drawing.Size(1191, 653);
+            this.ClientSize = new System.Drawing.Size(857, 653);
             this.Controls.Add(this.audioButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exitButton);
@@ -264,6 +268,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Verdades Ocultas";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

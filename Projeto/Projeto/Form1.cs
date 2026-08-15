@@ -1,4 +1,5 @@
-ï»¿using System;
+using Projeto.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,7 +63,7 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 1)
             {
                 hide(0);
-                comboBox1.Items.Add("MaÃ§onaria");
+                comboBox1.Items.Add("Maçonaria");
                 comboBox1.Items.Add("Illuminatis");
                 comboBox1.Items.Add("Skull and Bones");
                 comboBox1.Items.Add("Rosa Cruz");
@@ -80,10 +81,10 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 3)
             {
                 hide(0);
-                comboBox1.Items.Add("LanÃ§a do Destino");
+                comboBox1.Items.Add("Lança do Destino");
                 comboBox1.Items.Add("Santo Graal");
-                comboBox1.Items.Add("Arca da AlianÃ§a");
-                comboBox1.Items.Add("Anel de SalomÃ£o");
+                comboBox1.Items.Add("Arca da Aliança");
+                comboBox1.Items.Add("Anel de Salomão");
                 comboBox1.SelectedIndex = 0;
             }
             else if (listBox1.SelectedIndex == 4)
@@ -108,7 +109,7 @@ namespace Projeto
                     radioButton2.Visible = true;
                     radioButton2.Text = "Sheol (Inferno)";
                     radioButton3.Visible = true;
-                    radioButton3.Text = "CÃ©us e Astros";
+                    radioButton3.Text = "Céus e Astros";
                 }
                 if (comboBox1.SelectedIndex == 1)
                 {
@@ -117,7 +118,7 @@ namespace Projeto
                     radioButton2.Visible = true;
                     radioButton2.Text = "Mundo Inferior";
                     radioButton3.Visible = true;
-                    radioButton3.Text = "Os CÃ©us";
+                    radioButton3.Text = "Os Céus";
                 }
                 if (comboBox1.SelectedIndex == 2)
                 {
@@ -126,7 +127,7 @@ namespace Projeto
                     radioButton2.Visible = true;
                     radioButton2.Text = "Apsu (Submundo)";
                     radioButton3.Visible = true;
-                    radioButton3.Text = "Os CÃ©us";
+                    radioButton3.Text = "Os Céus";
                 }
                 if (comboBox1.SelectedIndex == 3)
                 {
@@ -135,7 +136,7 @@ namespace Projeto
                     radioButton2.Visible = true;
                     radioButton2.Text = "Mundo Inferior";
                     radioButton3.Visible = true;
-                    radioButton3.Text = "CÃ©us e Astros";
+                    radioButton3.Text = "Céus e Astros";
                 }
             }
             else if (listBox1.SelectedIndex == 1)
@@ -143,7 +144,7 @@ namespace Projeto
                 if (comboBox1.SelectedIndex == 0)
                 {
                     radioButton1.Visible = true;
-                    radioButton1.Text = "Loja MaÃ§onica";
+                    radioButton1.Text = "Loja Maçonica";
                     radioButton2.Visible = true;
                     radioButton2.Text = "Roupas";
                     radioButton3.Visible = true;
@@ -154,9 +155,9 @@ namespace Projeto
                     radioButton1.Visible = true;
                     radioButton1.Text = "Simbolo";
                     radioButton2.Visible = true;
-                    radioButton2.Text = "Nota de dÃ³lar";
+                    radioButton2.Text = "Nota de dólar";
                     radioButton3.Visible = true;
-                    radioButton3.Text = "Olho que tudo vÃª";
+                    radioButton3.Text = "Olho que tudo vê";
                 }
                 else if (comboBox1.SelectedIndex == 2)
                 {
@@ -182,7 +183,7 @@ namespace Projeto
                 if (comboBox1.SelectedIndex == 0)
                 {
                     radioButton1.Visible = true;
-                    radioButton1.Text = "RepresentaÃ§Ã£o";
+                    radioButton1.Text = "Representação";
                     radioButton2.Visible = true;
                     radioButton2.Text = "Cores";
                     radioButton3.Visible = true;
@@ -219,7 +220,7 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 3)
             {
                 radioButton1.Visible = true;
-                radioButton1.Text = "RepresentaÃ§Ãµes";
+                radioButton1.Text = "Representações";
                 radioButton2.Visible = true;
                 radioButton2.Text = "Lendas";
                 radioButton3.Visible = true;
@@ -262,7 +263,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Pinturas";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "RepresentaÃ§Ãµes";
+                    checkBox2.Text = "Representações";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Teorias";
                 }
@@ -274,7 +275,7 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Mitos";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "RepresentaÃ§Ãµes";
+                    checkBox3.Text = "Representações";
                 }
                 // Terra Plana > Cosmologia Egipicia > Terra
                 else if (comboBox1.SelectedIndex == 3)
@@ -282,7 +283,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Mapas";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "RepresentaÃ§Ãµes";
+                    checkBox2.Text = "Representações";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Mitos";
                 }
@@ -290,7 +291,7 @@ namespace Projeto
             // ============ LISTA 1: SOCIEDADES SECRETAS ============
             else if (listBox1.SelectedIndex == 1)
             {
-                // Sociedades Secretas > MaÃ§onaria > Loja MaÃ§onica
+                // Sociedades Secretas > Maçonaria > Loja Maçonica
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -334,7 +335,7 @@ namespace Projeto
             // ============ LISTA 2: AURA & MAGIA ============
             else if (listBox1.SelectedIndex == 2)
             {
-                // Aura & Magia > Auras > RepresentaÃ§Ã£o
+                // Aura & Magia > Auras > Representação
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -362,7 +363,7 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Selos";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "EvocaÃ§Ã£o";
+                    checkBox3.Text = "Evocação";
                 }
                 // Aura & Magia > Necromancia > Idade Media
                 else if (comboBox1.SelectedIndex == 3)
@@ -370,15 +371,15 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Historia";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "CrenÃ§as";
+                    checkBox2.Text = "Crenças";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "PrÃ¡ticas";
+                    checkBox3.Text = "Práticas";
                 }
             }
             // ============ LISTA 3: OBJETOS LENDARIOS ============
             else if (listBox1.SelectedIndex == 3)
             {
-                // Objetos Lendarios > LanÃ§a do Destino > RepresentaÃ§Ãµes
+                // Objetos Lendarios > Lança do Destino > Representações
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -386,9 +387,9 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Pinturas";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "RÃ©plicas";
+                    checkBox3.Text = "Réplicas";
                 }
-                // Objetos Lendarios > Santo Graal > RepresentaÃ§Ãµes
+                // Objetos Lendarios > Santo Graal > Representações
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -396,9 +397,9 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Pinturas";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "RÃ©plicas";
+                    checkBox3.Text = "Réplicas";
                 }
-                // Objetos Lendarios > Arca da AlianÃ§a > RepresentaÃ§Ãµes
+                // Objetos Lendarios > Arca da Aliança > Representações
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
@@ -406,9 +407,9 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Pinturas";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "RÃ©plicas";
+                    checkBox3.Text = "Réplicas";
                 }
-                // Objetos Lendarios > Anel de SalomÃ£o > RepresentaÃ§Ãµes
+                // Objetos Lendarios > Anel de Salomão > Representações
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     checkBox1.Visible = true;
@@ -416,7 +417,7 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Pinturas";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "RÃ©plicas";
+                    checkBox3.Text = "Réplicas";
                 }
             }
             // ============ LISTA 4: FALSOS DEUSES ============
@@ -426,11 +427,11 @@ namespace Projeto
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
-                    checkBox1.Text = "CanaÃ£";
+                    checkBox1.Text = "Canaã";
                     checkBox2.Visible = true;
                     checkBox2.Text = "Mitologia";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "HistÃ³ria";
+                    checkBox3.Text = "História";
                 }
                 // Falsos Deuses > Moloque > Origem
                 else if (comboBox1.SelectedIndex == 1)
@@ -440,17 +441,17 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Mitologia";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "HistÃ³ria";
+                    checkBox3.Text = "História";
                 }
                 // Falsos Deuses > Baphomet > Origem
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
-                    checkBox1.Text = "TemplÃ¡rios";
+                    checkBox1.Text = "Templários";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "HistÃ³ria";
+                    checkBox2.Text = "História";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "AcusaÃ§Ãµes";
+                    checkBox3.Text = "Acusações";
                 }
             }
         }
@@ -471,7 +472,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Pintura";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "RepresentaÃ§Ãµes";
+                    checkBox2.Text = "Representações";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Canoeiro";
                 }
@@ -491,7 +492,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Ereshkigal";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "PortÃµes";
+                    checkBox2.Text = "Portões";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Lendas";
                 }
@@ -509,7 +510,7 @@ namespace Projeto
             // ============ LISTA 1: SOCIEDADES SECRETAS ============
             else if (listBox1.SelectedIndex == 1)
             {
-                // Sociedades Secretas > MaÃ§onaria > Roupas
+                // Sociedades Secretas > Maçonaria > Roupas
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -517,9 +518,9 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Colar";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "ChapÃ©u";
+                    checkBox3.Text = "Chapéu";
                 }
-                // Sociedades Secretas > Illuminatis > Nota de dÃ³lar
+                // Sociedades Secretas > Illuminatis > Nota de dólar
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -577,7 +578,7 @@ namespace Projeto
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
-                    checkBox1.Text = "FeitiÃ§os";
+                    checkBox1.Text = "Feitiços";
                     checkBox2.Visible = true;
                     checkBox2.Text = "Rituais";
                     checkBox3.Visible = true;
@@ -587,17 +588,17 @@ namespace Projeto
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     checkBox1.Visible = true;
-                    checkBox1.Text = "CÃ­rculos";
+                    checkBox1.Text = "Círculos";
                     checkBox2.Visible = true;
                     checkBox2.Text = "Ofertas";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "CerimÃ´nias";
+                    checkBox3.Text = "Cerimônias";
                 }
             }
             // ============ LISTA 3: OBJETOS LENDARIOS ============
             else if (listBox1.SelectedIndex == 3)
             {
-                // Objetos Lendarios > LanÃ§a do Destino > Lendas
+                // Objetos Lendarios > Lança do Destino > Lendas
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -617,7 +618,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Mitologia";
                 }
-                // Objetos Lendarios > Arca da AlianÃ§a > Lendas
+                // Objetos Lendarios > Arca da Aliança > Lendas
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
@@ -627,7 +628,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Mitologia";
                 }
-                // Objetos Lendarios > Anel de SalomÃ£o > Lendas
+                // Objetos Lendarios > Anel de Salomão > Lendas
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     checkBox1.Visible = true;
@@ -647,15 +648,15 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Touro";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "RepresentaÃ§Ãµes";
+                    checkBox2.Text = "Representações";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "EstÃ¡tuas";
+                    checkBox3.Text = "Estátuas";
                 }
                 // Falsos Deuses > Moloque > Formas
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
-                    checkBox1.Text = "EstÃ¡tua";
+                    checkBox1.Text = "Estátua";
                     checkBox2.Visible = true;
                     checkBox2.Text = "Fornalha";
                     checkBox3.Visible = true;
@@ -665,9 +666,9 @@ namespace Projeto
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
-                    checkBox1.Text = "CabeÃ§a de Bode";
+                    checkBox1.Text = "Cabeça de Bode";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "RepresentaÃ§Ãµes";
+                    checkBox2.Text = "Representações";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Simbolos";
                 }
@@ -684,7 +685,7 @@ namespace Projeto
             // ============ LISTA 0: TERRA PLANA ============
             if (listBox1.SelectedIndex == 0)
             {
-                // Terra Plana > Cosmologia Biblica > CÃ©us e Astros
+                // Terra Plana > Cosmologia Biblica > Céus e Astros
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -694,7 +695,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Eclipse";
                 }
-                // Terra Plana > Cosmologia Babilonica > Os CÃ©us
+                // Terra Plana > Cosmologia Babilonica > Os Céus
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -704,7 +705,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Eclipses";
                 }
-                // Terra Plana > Cosmologia Sumeria > Os CÃ©us
+                // Terra Plana > Cosmologia Sumeria > Os Céus
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
@@ -714,7 +715,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Astros";
                 }
-                // Terra Plana > Cosmologia Egipicia > CÃ©us e Astros
+                // Terra Plana > Cosmologia Egipicia > Céus e Astros
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     checkBox1.Visible = true;
@@ -728,7 +729,7 @@ namespace Projeto
             // ============ LISTA 1: SOCIEDADES SECRETAS ============
             else if (listBox1.SelectedIndex == 1)
             {
-                // Sociedades Secretas > MaÃ§onaria > Jachin e Boaz
+                // Sociedades Secretas > Maçonaria > Jachin e Boaz
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -736,9 +737,9 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Significado";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "HistÃ³ria";
+                    checkBox3.Text = "História";
                 }
-                // Sociedades Secretas > Illuminatis > Olho que tudo vÃª
+                // Sociedades Secretas > Illuminatis > Olho que tudo vê
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -754,7 +755,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Presidentes";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "LÃ­deres";
+                    checkBox2.Text = "Líderes";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Alunos";
                 }
@@ -798,7 +799,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Varinha";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "CÃ­rculo";
+                    checkBox2.Text = "Círculo";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Incenso";
                 }
@@ -816,7 +817,7 @@ namespace Projeto
             // ============ LISTA 3: OBJETOS LENDARIOS ============
             else if (listBox1.SelectedIndex == 3)
             {
-                // Objetos Lendarios > LanÃ§a do Destino > Fontes
+                // Objetos Lendarios > Lança do Destino > Fontes
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -836,7 +837,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Referencias";
                 }
-                // Objetos Lendarios > Arca da AlianÃ§a > Fontes
+                // Objetos Lendarios > Arca da Aliança > Fontes
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
@@ -846,7 +847,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Referencias";
                 }
-                // Objetos Lendarios > Anel de SalomÃ£o > Fontes
+                // Objetos Lendarios > Anel de Salomão > Fontes
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     checkBox1.Visible = true;
@@ -866,7 +867,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Rituais";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "SacrifÃ­cios";
+                    checkBox2.Text = "Sacrifícios";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Templos";
                 }
@@ -874,7 +875,7 @@ namespace Projeto
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
-                    checkBox1.Text = "SacrifÃ­cios";
+                    checkBox1.Text = "Sacrifícios";
                     checkBox2.Visible = true;
                     checkBox2.Text = "Fogo";
                     checkBox3.Visible = true;
@@ -898,10 +899,7 @@ namespace Projeto
         // ================================================================
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                ImplementCheckBox(1);
-            }
+            ImplementCheckBox(1);
         }
 
         // ================================================================
@@ -909,10 +907,7 @@ namespace Projeto
         // ================================================================
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked)
-            {
-                ImplementCheckBox(2);
-            }
+            ImplementCheckBox(2);
         }
 
         // ================================================================
@@ -920,10 +915,7 @@ namespace Projeto
         // ================================================================
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox3.Checked)
-            {
-                ImplementCheckBox(3);
-            }
+            ImplementCheckBox(3);
         }
 
         // ================================================================
@@ -941,6 +933,10 @@ namespace Projeto
         // ================================================================
         private void ImplementCheckBox(int checkBoxNumber)
         {
+            // sempre limpa as imagens antes de redesenhar com base nos checkboxes
+            pictureBox1.Image = null;
+            pictureBox2.Image = null;
+            pictureBox3.Image = null;
             // ==========================================
             //  LISTA 0: TERRA PLANA
             // ==========================================
@@ -955,19 +951,52 @@ namespace Projeto
                     {
                         // Terra Plana > Cosmologia Biblica > Superficie
                         // checkBox1 = Fotos | checkBox2 = Mapas | checkBox3 = Relevo
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Sheol (Inferno)
                     {
                         // Terra Plana > Cosmologia Biblica > Sheol (Inferno)
-                        // checkBox1 = Pintura | checkBox2 = RepresentaÃ§Ãµes | checkBox3 = Canoeiro
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Pintura | checkBox2 = Representações | checkBox3 = Canoeiro
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Sheol_Pintura;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa; // ****
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Sheol_Canoeiro;
+                        }
                     }
-                    else if (radioButton3.Checked) // CÃ©us e Astros
+                    else if (radioButton3.Checked) // Céus e Astros
                     {
-                        // Terra Plana > Cosmologia Biblica > CÃ©us e Astros
+                        // Terra Plana > Cosmologia Biblica > Céus e Astros
                         // checkBox1 = 3 Sois | checkBox2 = Astros | checkBox3 = Eclipse
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Cosmologia_Biblica___3_Sois;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Cosmologia_Biblica___Astros;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Cosmologia_Biblica___Eclipses;
+                        }
                     }
                 }
                 // ==============================
@@ -978,20 +1007,53 @@ namespace Projeto
                     if (radioButton1.Checked) // Mundo Superior
                     {
                         // Terra Plana > Cosmologia Babilonica > Mundo Superior
-                        // checkBox1 = Pinturas | checkBox2 = RepresentaÃ§Ãµes | checkBox3 = Teorias
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Pinturas | checkBox2 = Representações | checkBox3 = Teorias
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Mundo Inferior
                     {
                         // Terra Plana > Cosmologia Babilonica > Mundo Inferior
                         // checkBox1 = Pinturas | checkBox2 = Irkalla | checkBox3 = Lendas
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
-                    else if (radioButton3.Checked) // Os CÃ©us
+                    else if (radioButton3.Checked) // Os Céus
                     {
-                        // Terra Plana > Cosmologia Babilonica > Os CÃ©us
+                        // Terra Plana > Cosmologia Babilonica > Os Céus
                         // checkBox1 = Planetas | checkBox2 = Estrelas | checkBox3 = Eclipses
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
                 // ==============================
@@ -1002,20 +1064,54 @@ namespace Projeto
                     if (radioButton1.Checked) // Ki (Mundo Superior)
                     {
                         // Terra Plana > Cosmologia Sumeria > Ki (Mundo Superior)
-                        // checkBox1 = Anunnaki | checkBox2 = Mitos | checkBox3 = RepresentaÃ§Ãµes
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Anunnaki | checkBox2 = Mitos | checkBox3 = Representações
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Apsu (Submundo)
                     {
                         // Terra Plana > Cosmologia Sumeria > Apsu (Submundo)
-                        // checkBox1 = Ereshkigal | checkBox2 = PortÃµes | checkBox3 = Lendas
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Ereshkigal | checkBox2 = Portões | checkBox3 = Lendas
+                        // >>> implementar aqui 
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
-                    else if (radioButton3.Checked) // Os CÃ©us
+                    else if (radioButton3.Checked) // Os Céus
                     {
-                        // Terra Plana > Cosmologia Sumeria > Os CÃ©us
+                        // Terra Plana > Cosmologia Sumeria > Os Céus
                         // checkBox1 = Planetas | checkBox2 = Estrelas | checkBox3 = Astros
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
                 // ==============================
@@ -1026,20 +1122,53 @@ namespace Projeto
                     if (radioButton1.Checked) // Terra
                     {
                         // Terra Plana > Cosmologia Egipicia > Terra
-                        // checkBox1 = Mapas | checkBox2 = RepresentaÃ§Ãµes | checkBox3 = Mitos
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Mapas | checkBox2 = Representações | checkBox3 = Mitos
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Mundo Inferior
                     {
                         // Terra Plana > Cosmologia Egipicia > Mundo Inferior
                         // checkBox1 = Duat | checkBox2 = Rituais | checkBox3 = Deuses
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
-                    else if (radioButton3.Checked) // CÃ©us e Astros
+                    else if (radioButton3.Checked) // Céus e Astros
                     {
-                        // Terra Plana > Cosmologia Egipicia > CÃ©us e Astros
+                        // Terra Plana > Cosmologia Egipicia > Céus e Astros
                         // checkBox1 = Nut | checkBox2 = Astros | checkBox3 = Eclipse
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
             }
@@ -1049,27 +1178,60 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 1)
             {
                 // ==============================
-                //  SOCIEDADES SECRETAS > MAÃ‡ONARIA
+                //  SOCIEDADES SECRETAS > MAÇONARIA
                 // ==============================
                 if (comboBox1.SelectedIndex == 0)
                 {
-                    if (radioButton1.Checked) // Loja MaÃ§onica
+                    if (radioButton1.Checked) // Loja Maçonica
                     {
-                        // Sociedades Secretas > MaÃ§onaria > Loja MaÃ§onica
+                        // Sociedades Secretas > Maçonaria > Loja Maçonica
                         // checkBox1 = Estrutura | checkBox2 = Graus | checkBox3 = Rituais
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.maconica_extrutura;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.graus;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.ritual_maconico;
+                        }
                     }
                     else if (radioButton2.Checked) // Roupas
                     {
-                        // Sociedades Secretas > MaÃ§onaria > Roupas
-                        // checkBox1 = Avental | checkBox2 = Colar | checkBox3 = ChapÃ©u
-                        // >>> implementar aqui <<<
+                        // Sociedades Secretas > Maçonaria > Roupas
+                        // checkBox1 = Avental | checkBox2 = Colar | checkBox3 = Chapéu
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.roupa_maconica;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.colar_macom;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.cartola_maconica;
+                        }
                     }
                     else if (radioButton3.Checked) // Jachin e Boaz
                     {
-                        // Sociedades Secretas > MaÃ§onaria > Jachin e Boaz
-                        // checkBox1 = Colunas | checkBox2 = Significado | checkBox3 = HistÃ³ria
-                        // >>> implementar aqui <<<
+                        // Sociedades Secretas > Maçonaria > Jachin e Boaz
+                        // checkBox1 = Colunas | checkBox2 = Significado | checkBox3 = História
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.jachin_e_boaz;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.jachin_boaz_significado;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.solomon_temple;
+                        }
                     }
                 }
                 // ==============================
@@ -1081,19 +1243,52 @@ namespace Projeto
                     {
                         // Sociedades Secretas > Illuminatis > Simbolo
                         // checkBox1 = Piramide | checkBox2 = Olho | checkBox3 = Historia
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
-                    else if (radioButton2.Checked) // Nota de dÃ³lar
+                    else if (radioButton2.Checked) // Nota de dólar
                     {
-                        // Sociedades Secretas > Illuminatis > Nota de dÃ³lar
+                        // Sociedades Secretas > Illuminatis > Nota de dólar
                         // checkBox1 = Piramide | checkBox2 = Olho | checkBox3 = Simbologia
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
-                    else if (radioButton3.Checked) // Olho que tudo vÃª
+                    else if (radioButton3.Checked) // Olho que tudo vê
                     {
-                        // Sociedades Secretas > Illuminatis > Olho que tudo vÃª
+                        // Sociedades Secretas > Illuminatis > Olho que tudo vê
                         // checkBox1 = Origem | checkBox2 = Significado | checkBox3 = Uso
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
                 // ==============================
@@ -1105,19 +1300,52 @@ namespace Projeto
                     {
                         // Sociedades Secretas > Skull and Bones > Logo
                         // checkBox1 = Caveira | checkBox2 = Ossos | checkBox3 = Historia
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Templo
                     {
                         // Sociedades Secretas > Skull and Bones > Templo
                         // checkBox1 = Estrutura | checkBox2 = Historia | checkBox3 = Rituais
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton3.Checked) // Membros
                     {
                         // Sociedades Secretas > Skull and Bones > Membros
-                        // checkBox1 = Presidentes | checkBox2 = LÃ­deres | checkBox3 = Alunos
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Presidentes | checkBox2 = Líderes | checkBox3 = Alunos
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
                 // ==============================
@@ -1129,19 +1357,52 @@ namespace Projeto
                     {
                         // Sociedades Secretas > Rosa Cruz > Logo
                         // checkBox1 = Cruz | checkBox2 = Rosa | checkBox3 = Historia
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Templo
                     {
                         // Sociedades Secretas > Rosa Cruz > Templo
                         // checkBox1 = Estrutura | checkBox2 = Historia | checkBox3 = Simbolos
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton3.Checked) // Ordem Cabalistica
                     {
                         // Sociedades Secretas > Rosa Cruz > Ordem Cabalistica
                         // checkBox1 = Cabala | checkBox2 = Graus | checkBox3 = Rituais
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
             }
@@ -1153,25 +1414,99 @@ namespace Projeto
                 // ==============================
                 //  AURA & MAGIA > AURAS
                 // ==============================
-                if (comboBox1.SelectedIndex == 0)
-                {
-                    if (radioButton1.Checked) // RepresentaÃ§Ã£o
+
+                    if (radioButton1.Checked) // Representação
                     {
-                        // Aura & Magia > Auras > RepresentaÃ§Ã£o
+                        // Aura & Magia > Auras > Representação
                         // checkBox1 = Fotos | checkBox2 = Desenhos | checkBox3 = Cores
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.aura;
+                        }
+                        else
+                        {
+                            pictureBox1.Image = null;
+                        }
+
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.desenho;
+                        }
+                        else
+                        {
+                            pictureBox2.Image = null;
+                        }
+
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.aura_cores;
+                        }
+                        else
+                        {
+                            pictureBox3.Image = null;
+                        }
                     }
                     else if (radioButton2.Checked) // Cores
                     {
                         // Aura & Magia > Auras > Cores
                         // checkBox1 = Vermelho | checkBox2 = Azul | checkBox3 = Verde
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.aura_vermelha;
+                        }
+                        else
+                        {
+                            pictureBox1.Image = null;
+                        }
+
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.aura_azul;
+                        }
+                        else
+                        {
+                            pictureBox2.Image = null;
+                        }
+
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.aura_verde;
+                        }
+                        else
+                        {
+                            pictureBox3.Image = null;
+                        }
                     }
                     else if (radioButton3.Checked) // Medindo Aura
                     {
                         // Aura & Magia > Auras > Medindo Aura
                         // checkBox1 = Kirlian | checkBox2 = Fotografia | checkBox3 = Leitura
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.kirlian;
+                        }
+                        else
+                        {
+                            pictureBox1.Image = null;
+                        }
+
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        else
+                        {
+                            pictureBox2.Image = null;
+                        }
+
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
+                        else
+                        {
+                            pictureBox3.Image = null;
+                        }
                     }
                 }
                 // ==============================
@@ -1183,19 +1518,52 @@ namespace Projeto
                     {
                         // Aura & Magia > Oraculos > Tarot
                         // checkBox1 = Arcanos Maiores | checkBox2 = Arcanos Menores | checkBox3 = Leitura
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.arcanos_maiores;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.arcanos_menores;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.lendo_tarot;
+                        }
                     }
                     else if (radioButton2.Checked) // Baralho Cigano
                     {
                         // Aura & Magia > Oraculos > Baralho Cigano
                         // checkBox1 = Cartas | checkBox2 = Leitura | checkBox3 = Simbolos
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.baralho_cigano;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.lendo_baralho_cigano;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.baralho_cigano_simbolos;
+                        }
                     }
                     else if (radioButton3.Checked) // Bola de Cristal
                     {
                         // Aura & Magia > Oraculos > Bola de Cristal
                         // checkBox1 = Historia | checkBox2 = Leitura | checkBox3 = Uso
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.bola_de_cristal;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.lendo_bola_de_cristal;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.bola_de_cristal_2;
+                        }
                     }
                 }
                 // ==============================
@@ -1206,20 +1574,53 @@ namespace Projeto
                     if (radioButton1.Checked) // Ars Goetia
                     {
                         // Aura & Magia > Magia Cerimonial > Ars Goetia
-                        // checkBox1 = Demonios | checkBox2 = Selos | checkBox3 = EvocaÃ§Ã£o
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Demonios | checkBox2 = Selos | checkBox3 = Evocação
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.stolas;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.selos_goetia;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.ritual_goetia;
+                        }
                     }
                     else if (radioButton2.Checked) // Encantamentos
                     {
                         // Aura & Magia > Magia Cerimonial > Encantamentos
-                        // checkBox1 = FeitiÃ§os | checkBox2 = Rituais | checkBox3 = Palavras
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Feitiços | checkBox2 = Rituais | checkBox3 = Palavras
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.feiticos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.magia_negra;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.abacadabra;
+                        }
                     }
                     else if (radioButton3.Checked) // Itens
                     {
                         // Aura & Magia > Magia Cerimonial > Itens
-                        // checkBox1 = Varinha | checkBox2 = CÃ­rculo | checkBox3 = Incenso
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Varinha | checkBox2 = Círculo | checkBox3 = Incenso
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.varinha;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.circulo_magico;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.incenso;
+                        }
                     }
                 }
                 // ==============================
@@ -1230,20 +1631,53 @@ namespace Projeto
                     if (radioButton1.Checked) // Idade Media
                     {
                         // Aura & Magia > Necromancia > Idade Media
-                        // checkBox1 = Historia | checkBox2 = CrenÃ§as | checkBox3 = PrÃ¡ticas
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Historia | checkBox2 = Crenças | checkBox3 = Práticas
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.necromancia;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.circulo_necromante;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.ritual;
+                        }
                     }
                     else if (radioButton2.Checked) // Rituais
                     {
                         // Aura & Magia > Necromancia > Rituais
-                        // checkBox1 = CÃ­rculos | checkBox2 = Ofertas | checkBox3 = CerimÃ´nias
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Círculos | checkBox2 = Ofertas | checkBox3 = Cerimônias
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.circulo_necromante;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.ofertas_necromancia;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.cerimonia_necromante;
+                        }
                     }
                     else if (radioButton3.Checked) // Exemplos
                     {
                         // Aura & Magia > Necromancia > Exemplos
                         // checkBox1 = Casos | checkBox2 = Famosos | checkBox3 = Lendas
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.casos_necromante;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.necromancia_saul;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.odisseu_necromante;
+                        }
                     }
                 }
             }
@@ -1253,27 +1687,60 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 3)
             {
                 // ==============================
-                //  OBJETOS LENDARIOS > LANÃ‡A DO DESTINO
+                //  OBJETOS LENDARIOS > LANÇA DO DESTINO
                 // ==============================
                 if (comboBox1.SelectedIndex == 0)
                 {
-                    if (radioButton1.Checked) // RepresentaÃ§Ãµes
+                    if (radioButton1.Checked) // Representações
                     {
-                        // Objetos Lendarios > LanÃ§a do Destino > RepresentaÃ§Ãµes
-                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = RÃ©plicas
-                        // >>> implementar aqui <<<
+                        // Objetos Lendarios > Lança do Destino > Representações
+                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.lanca_destino;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.lanca_pintura;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.lança_do_destino;
+                        }
                     }
                     else if (radioButton2.Checked) // Lendas
                     {
-                        // Objetos Lendarios > LanÃ§a do Destino > Lendas
+                        // Objetos Lendarios > Lança do Destino > Lendas
                         // checkBox1 = Historia | checkBox2 = Lendas | checkBox3 = Mitologia
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.lanca_historia;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.lenda_lanca_do_destino_god_of_war;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.lanca_mitologia;
+                        }
                     }
                     else if (radioButton3.Checked) // Fontes
                     {
-                        // Objetos Lendarios > LanÃ§a do Destino > Fontes
+                        // Objetos Lendarios > Lança do Destino > Fontes
                         // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.lanca_livros;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.lanca_documento;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.lanca_indiana_jones;
+                        }
                     }
                 }
                 // ==============================
@@ -1281,71 +1748,170 @@ namespace Projeto
                 // ==============================
                 else if (comboBox1.SelectedIndex == 1)
                 {
-                    if (radioButton1.Checked) // RepresentaÃ§Ãµes
+                    if (radioButton1.Checked) // Representações
                     {
-                        // Objetos Lendarios > Santo Graal > RepresentaÃ§Ãµes
-                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = RÃ©plicas
-                        // >>> implementar aqui <<<
+                        // Objetos Lendarios > Santo Graal > Representações
+                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.santo_graal;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.santo_graal_pintura;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.santo_graal_replicas;
+                        }
                     }
                     else if (radioButton2.Checked) // Lendas
                     {
                         // Objetos Lendarios > Santo Graal > Lendas
                         // checkBox1 = Arturiana | checkBox2 = Busca | checkBox3 = Mitologia
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.santo_graal_rei_arthur;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.santo_graal_busca;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.salto_graal_mitologia2;
+                        }
                     }
                     else if (radioButton3.Checked) // Fontes
                     {
                         // Objetos Lendarios > Santo Graal > Fontes
                         // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.santo_graal_livros;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.santo_graal_documentos;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.santo_graal_filme_ultima_cruzada;
+                        }
                     }
                 }
                 // ==============================
-                //  OBJETOS LENDARIOS > ARCA DA ALIANÃ‡A
+                //  OBJETOS LENDARIOS > ARCA DA ALIANÇA
                 // ==============================
                 else if (comboBox1.SelectedIndex == 2)
                 {
-                    if (radioButton1.Checked) // RepresentaÃ§Ãµes
+                    if (radioButton1.Checked) // Representações
                     {
-                        // Objetos Lendarios > Arca da AlianÃ§a > RepresentaÃ§Ãµes
-                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = RÃ©plicas
-                        // >>> implementar aqui <<<
+                        // Objetos Lendarios > Arca da Aliança > Representações
+                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.arca_fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Cosmologia_Biblica___Astros;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Lendas
                     {
-                        // Objetos Lendarios > Arca da AlianÃ§a > Lendas
+                        // Objetos Lendarios > Arca da Aliança > Lendas
                         // checkBox1 = Historia | checkBox2 = Poderes | checkBox3 = Mitologia
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton3.Checked) // Fontes
                     {
-                        // Objetos Lendarios > Arca da AlianÃ§a > Fontes
+                        // Objetos Lendarios > Arca da Aliança > Fontes
                         // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
                 // ==============================
-                //  OBJETOS LENDARIOS > ANEL DE SALOMÃƒO
+                //  OBJETOS LENDARIOS > ANEL DE SALOMÃO
                 // ==============================
                 else if (comboBox1.SelectedIndex == 3)
                 {
-                    if (radioButton1.Checked) // RepresentaÃ§Ãµes
+                    if (radioButton1.Checked) // Representações
                     {
-                        // Objetos Lendarios > Anel de SalomÃ£o > RepresentaÃ§Ãµes
-                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = RÃ©plicas
-                        // >>> implementar aqui <<<
+                        // Objetos Lendarios > Anel de Salomão > Representações
+                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Lendas
                     {
-                        // Objetos Lendarios > Anel de SalomÃ£o > Lendas
+                        // Objetos Lendarios > Anel de Salomão > Lendas
                         // checkBox1 = Historia | checkBox2 = Poderes | checkBox3 = Mitologia
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton3.Checked) // Fontes
                     {
-                        // Objetos Lendarios > Anel de SalomÃ£o > Fontes
+                        // Objetos Lendarios > Anel de Salomão > Fontes
                         // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
             }
@@ -1362,20 +1928,53 @@ namespace Projeto
                     if (radioButton1.Checked) // Origem
                     {
                         // Falsos Deuses > Baal > Origem
-                        // checkBox1 = CanaÃ£ | checkBox2 = Mitologia | checkBox3 = HistÃ³ria
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Canaã | checkBox2 = Mitologia | checkBox3 = História
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Formas
                     {
                         // Falsos Deuses > Baal > Formas
-                        // checkBox1 = Touro | checkBox2 = RepresentaÃ§Ãµes | checkBox3 = EstÃ¡tuas
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Touro | checkBox2 = Representações | checkBox3 = Estátuas
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton3.Checked) // Culto
                     {
                         // Falsos Deuses > Baal > Culto
-                        // checkBox1 = Rituais | checkBox2 = SacrifÃ­cios | checkBox3 = Templos
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Rituais | checkBox2 = Sacrifícios | checkBox3 = Templos
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
                 // ==============================
@@ -1386,20 +1985,53 @@ namespace Projeto
                     if (radioButton1.Checked) // Origem
                     {
                         // Falsos Deuses > Moloque > Origem
-                        // checkBox1 = Amomitas | checkBox2 = Mitologia | checkBox3 = HistÃ³ria
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Amomitas | checkBox2 = Mitologia | checkBox3 = História
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Formas
                     {
                         // Falsos Deuses > Moloque > Formas
-                        // checkBox1 = EstÃ¡tua | checkBox2 = Fornalha | checkBox3 = Touro de Bronze
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Estátua | checkBox2 = Fornalha | checkBox3 = Touro de Bronze
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton3.Checked) // Culto
                     {
                         // Falsos Deuses > Moloque > Culto
-                        // checkBox1 = SacrifÃ­cios | checkBox2 = Fogo | checkBox3 = Rituais
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Sacrifícios | checkBox2 = Fogo | checkBox3 = Rituais
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
                 // ==============================
@@ -1410,23 +2042,62 @@ namespace Projeto
                     if (radioButton1.Checked) // Origem
                     {
                         // Falsos Deuses > Baphomet > Origem
-                        // checkBox1 = TemplÃ¡rios | checkBox2 = HistÃ³ria | checkBox3 = AcusaÃ§Ãµes
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Templários | checkBox2 = História | checkBox3 = Acusações
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton2.Checked) // Formas
                     {
                         // Falsos Deuses > Baphomet > Formas
-                        // checkBox1 = CabeÃ§a de Bode | checkBox2 = RepresentaÃ§Ãµes | checkBox3 = Simbolos
-                        // >>> implementar aqui <<<
+                        // checkBox1 = Cabeça de Bode | checkBox2 = Representações | checkBox3 = Simbolos
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                     else if (radioButton3.Checked) // Culto
                     {
                         // Falsos Deuses > Baphomet > Culto
                         // checkBox1 = Rituais | checkBox2 = Satanismo | checkBox3 = Templos
-                        // >>> implementar aqui <<<
+                        if (checkBox1.Checked == true)
+                        {
+                            pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
+                        }
+                        if (checkBox2.Checked == true)
+                        {
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+                        }
+                        if (checkBox3.Checked == true)
+                        {
+                            pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
+                        }
                     }
                 }
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\DS\\Projeto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|d:\\ds\\projeto\\projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|solutionrelative:projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|d:\\ds\\projeto\\projeto\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|solutionrelative:projeto\\splashscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|D:\\DS\\Projeto\\projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|d:\\ds\\projeto\\projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|solutionrelative:projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|D:\\DS\\Projeto\\projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F283837D-5435-44BB-9A47-8FFDD991292A}|Projeto\\Projeto.csproj|solutionrelative:projeto\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,32 +25,46 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\DS\\Projeto\\Projeto\\Form1.cs",
-              "RelativeDocumentMoniker": "Projeto\\Form1.cs",
-              "ToolTip": "D:\\DS\\Projeto\\Projeto\\Form1.cs",
-              "RelativeToolTip": "Projeto\\Form1.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAowO0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T12:38:14.546Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\DS\\Projeto\\Projeto\\Form1.cs",
               "RelativeDocumentMoniker": "Projeto\\Form1.cs",
-              "ToolTip": "D:\\DS\\Projeto\\Projeto\\Form1.cs [Design]*",
-              "RelativeToolTip": "Projeto\\Form1.cs [Design]*",
+              "ToolTip": "D:\\DS\\Projeto\\Projeto\\Form1.cs [Design]",
+              "RelativeToolTip": "Projeto\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T12:34:56.274Z"
+              "WhenOpened": "2026-08-13T14:48:41.79Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Splashscreen.cs [Design]",
+              "DocumentMoniker": "D:\\DS\\Projeto\\Projeto\\Splashscreen.cs",
+              "RelativeDocumentMoniker": "Projeto\\Splashscreen.cs",
+              "ToolTip": "D:\\DS\\Projeto\\Projeto\\Splashscreen.cs [Design]",
+              "RelativeToolTip": "Projeto\\Splashscreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T13:13:22.568Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\DS\\Projeto\\Projeto\\Form1.cs",
+              "RelativeDocumentMoniker": "Projeto\\Form1.cs",
+              "ToolTip": "D:\\DS\\Projeto\\Projeto\\Form1.cs",
+              "RelativeToolTip": "Projeto\\Form1.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAApwDUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-12T12:38:14.546Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,280 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="salto graal mitologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salto graal mitologia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abacadabra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abacadabra.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="olho que tudo ve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\olho que tudo ve.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lança do destino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lança do destino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roupa maconica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roupa maconica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal busca1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal busca1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal rei arthur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal rei arthur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feiticos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feiticos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stolas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stolas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lendo bola de cristal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lendo bola de cristal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salto graal mitologia2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salto graal mitologia2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salto graal mitologia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salto graal mitologia1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="varinha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\varinha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lendo baralho cigano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lendo baralho cigano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skull and bones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skull and bones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="necromancia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\necromancia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal replicas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal replicas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal filme ultima cruzada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal filme ultima cruzada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="solomon temple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\solomon temple.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aura verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aura verde.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baralho cigano simbolos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baralho cigano simbolos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cosmologia Biblica - 3 Sois" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cosmologia Biblica - 3 Sois.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ritual goetia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ritual goetia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bola de cristal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bola de cristal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circulo_necromante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circulo_necromante.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lendo tarot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lendo tarot.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loja maconica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loja maconica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="incenso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\incenso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="necromancia saul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\necromancia saul.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magia negra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magia negra.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal busca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal busca.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="graus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\graus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aura azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aura azul.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lanca livros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanca livros.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal busca2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal busca2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheol Pintura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheol Pintura.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Terra Plana - Mapa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Terra Plana - Mapa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jachin_boaz_significado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jachin_boaz_significado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cosmologia Biblica - Eclipses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cosmologia Biblica - Eclipses.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="praticas necromante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\praticas necromante.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aura_cores1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aura_cores1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aura_cores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aura_cores.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal livros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal livros.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desenho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desenho.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casos necromante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casos necromante.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ofertas_necromancia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ofertas_necromancia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bola de cristal 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bola de cristal 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ritual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ritual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lanca documento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanca documento.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aura.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lanca historia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanca historia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cosmologia Biblica - Astros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cosmologia Biblica - Astros.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arcanos maiores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arcanos maiores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nota dolar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nota dolar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="odisseu necromante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\odisseu necromante.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="colar macom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\colar macom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sheol Canoeiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sheol Canoeiro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selos_goetia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selos_goetia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Terra Plana - Relevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Terra Plana - Relevo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baralho cigano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baralho cigano.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lanca mitologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanca mitologia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="81Ir01m43zL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\81Ir01m43zL.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circulo magico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\circulo magico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="illuminati" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\illuminati.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maconica extrutura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maconica extrutura.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Terra Plana - Fotos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Terra Plana - Fotos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lanca pintura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanca pintura.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal pintura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal pintura.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kirlian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kirlian.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arcanos menores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arcanos menores.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jachin e boaz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jachin e boaz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lanca indiana jones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanca indiana jones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lenda lanca do destino god of war" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lenda lanca do destino god of war.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cartola maconica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cartola maconica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="santo graal documentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\santo graal documentos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lanca destino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lanca destino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cerimonia_necromante" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerimonia_necromante.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ritual maconico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ritual maconico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aura vermelha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aura vermelha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca documentos cia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca documentos cia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca filme indiana jones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca filme indiana jones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca historia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca historia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca livros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca livros.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca mitologia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca mitologia.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca poderes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca poderes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca replicas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca replicas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca templo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca templo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arca da alianca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arca da alianca.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
