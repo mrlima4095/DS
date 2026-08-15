@@ -918,1177 +918,799 @@ namespace Projeto
             ImplementCheckBox(3);
         }
 
-        // ================================================================
-        //  IMPLEMENTE AQUI O CONTEUDO DE CADA CHECKBOX.
-        //
-        //  O parametro checkBoxNumber (1, 2 ou 3) diz QUAL checkbox foi
-        //  marcada. Os comentarios mostram o caminho completo da selecao
-        //  (Lista > ComboBox > RadioButton) e qual item pertence a cada
-        //  checkbox, ex.:
-        //
-        //      Terra Plana > Cosmologia Biblica > Superficie
-        //      checkBox1 = Fotos | checkBox2 = Mapas | checkBox3 = Relevo
-        //
-        //  Bastar procurar o bloco do caminho desejado e implementar.
-        // ================================================================
         private void ImplementCheckBox(int checkBoxNumber)
         {
-            // sempre limpa as imagens antes de redesenhar com base nos checkboxes
+            // Sempre limpa as imagens antes de redesenhar
             pictureBox1.Image = null;
             pictureBox2.Image = null;
             pictureBox3.Image = null;
+
             // ==========================================
-            //  LISTA 0: TERRA PLANA
+            // LISTA 0: TERRA PLANA
             // ==========================================
             if (listBox1.SelectedIndex == 0)
             {
-                // ==============================
-                //  TERRA PLANA > COSMOLOGIA BIBLICA
-                // ==============================
+                // ==========================================
+                // TERRA PLANA > COSMOLOGIA BIBLICA
+                // ==========================================
                 if (comboBox1.SelectedIndex == 0)
                 {
                     if (radioButton1.Checked) // Superficie
                     {
-                        // Terra Plana > Cosmologia Biblica > Superficie
-                        // checkBox1 = Fotos | checkBox2 = Mapas | checkBox3 = Relevo
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Sheol (Inferno)
                     {
-                        // Terra Plana > Cosmologia Biblica > Sheol (Inferno)
-                        // checkBox1 = Pintura | checkBox2 = Representações | checkBox3 = Canoeiro
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Sheol_Pintura;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
-                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa; // ****
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
+                            pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Sheol_Canoeiro;
-                        }
                     }
                     else if (radioButton3.Checked) // Céus e Astros
                     {
-                        // Terra Plana > Cosmologia Biblica > Céus e Astros
-                        // checkBox1 = 3 Sois | checkBox2 = Astros | checkBox3 = Eclipse
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Cosmologia_Biblica___3_Sois;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Cosmologia_Biblica___Astros;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Cosmologia_Biblica___Eclipses;
-                        }
                     }
                 }
-                // ==============================
-                //  TERRA PLANA > COSMOLOGIA BABILONICA
-                // ==============================
+
+                // ==========================================
+                // TERRA PLANA > COSMOLOGIA BABILONICA
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     if (radioButton1.Checked) // Mundo Superior
                     {
-                        // Terra Plana > Cosmologia Babilonica > Mundo Superior
-                        // checkBox1 = Pinturas | checkBox2 = Representações | checkBox3 = Teorias
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Mundo Inferior
                     {
-                        // Terra Plana > Cosmologia Babilonica > Mundo Inferior
-                        // checkBox1 = Pinturas | checkBox2 = Irkalla | checkBox3 = Lendas
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Os Céus
                     {
-                        // Terra Plana > Cosmologia Babilonica > Os Céus
-                        // checkBox1 = Planetas | checkBox2 = Estrelas | checkBox3 = Eclipses
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
-                // ==============================
-                //  TERRA PLANA > COSMOLOGIA SUMERIA
-                // ==============================
+
+                // ==========================================
+                // TERRA PLANA > COSMOLOGIA SUMERIA
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     if (radioButton1.Checked) // Ki (Mundo Superior)
                     {
-                        // Terra Plana > Cosmologia Sumeria > Ki (Mundo Superior)
-                        // checkBox1 = Anunnaki | checkBox2 = Mitos | checkBox3 = Representações
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Apsu (Submundo)
                     {
-                        // Terra Plana > Cosmologia Sumeria > Apsu (Submundo)
-                        // checkBox1 = Ereshkigal | checkBox2 = Portões | checkBox3 = Lendas
-                        // >>> implementar aqui 
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Os Céus
                     {
-                        // Terra Plana > Cosmologia Sumeria > Os Céus
-                        // checkBox1 = Planetas | checkBox2 = Estrelas | checkBox3 = Astros
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
-                // ==============================
-                //  TERRA PLANA > COSMOLOGIA EGIPICIA
-                // ==============================
+
+                // ==========================================
+                // TERRA PLANA > COSMOLOGIA EGIPICIA
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     if (radioButton1.Checked) // Terra
                     {
-                        // Terra Plana > Cosmologia Egipicia > Terra
-                        // checkBox1 = Mapas | checkBox2 = Representações | checkBox3 = Mitos
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Mundo Inferior
                     {
-                        // Terra Plana > Cosmologia Egipicia > Mundo Inferior
-                        // checkBox1 = Duat | checkBox2 = Rituais | checkBox3 = Deuses
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Céus e Astros
                     {
-                        // Terra Plana > Cosmologia Egipicia > Céus e Astros
-                        // checkBox1 = Nut | checkBox2 = Astros | checkBox3 = Eclipse
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
             }
+
             // ==========================================
-            //  LISTA 1: SOCIEDADES SECRETAS
+            // LISTA 1: SOCIEDADES SECRETAS
             // ==========================================
             else if (listBox1.SelectedIndex == 1)
             {
-                // ==============================
-                //  SOCIEDADES SECRETAS > MAÇONARIA
-                // ==============================
+                // ==========================================
+                // SOCIEDADES SECRETAS > MAÇONARIA
+                // ==========================================
                 if (comboBox1.SelectedIndex == 0)
                 {
                     if (radioButton1.Checked) // Loja Maçonica
                     {
-                        // Sociedades Secretas > Maçonaria > Loja Maçonica
-                        // checkBox1 = Estrutura | checkBox2 = Graus | checkBox3 = Rituais
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.maconica_extrutura;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.graus;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.ritual_maconico;
-                        }
                     }
                     else if (radioButton2.Checked) // Roupas
                     {
-                        // Sociedades Secretas > Maçonaria > Roupas
-                        // checkBox1 = Avental | checkBox2 = Colar | checkBox3 = Chapéu
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.roupa_maconica;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.colar_macom;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.cartola_maconica;
-                        }
                     }
                     else if (radioButton3.Checked) // Jachin e Boaz
                     {
-                        // Sociedades Secretas > Maçonaria > Jachin e Boaz
-                        // checkBox1 = Colunas | checkBox2 = Significado | checkBox3 = História
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.jachin_e_boaz;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.jachin_boaz_significado;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.solomon_temple;
-                        }
                     }
                 }
-                // ==============================
-                //  SOCIEDADES SECRETAS > ILLUMINATIS
-                // ==============================
+
+                // ==========================================
+                // SOCIEDADES SECRETAS > ILLUMINATIS
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     if (radioButton1.Checked) // Simbolo
                     {
-                        // Sociedades Secretas > Illuminatis > Simbolo
-                        // checkBox1 = Piramide | checkBox2 = Olho | checkBox3 = Historia
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Nota de dólar
                     {
-                        // Sociedades Secretas > Illuminatis > Nota de dólar
-                        // checkBox1 = Piramide | checkBox2 = Olho | checkBox3 = Simbologia
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Olho que tudo vê
                     {
-                        // Sociedades Secretas > Illuminatis > Olho que tudo vê
-                        // checkBox1 = Origem | checkBox2 = Significado | checkBox3 = Uso
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
-                // ==============================
-                //  SOCIEDADES SECRETAS > SKULL AND BONES
-                // ==============================
+
+                // ==========================================
+                // SOCIEDADES SECRETAS > SKULL AND BONES
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     if (radioButton1.Checked) // Logo
                     {
-                        // Sociedades Secretas > Skull and Bones > Logo
-                        // checkBox1 = Caveira | checkBox2 = Ossos | checkBox3 = Historia
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Templo
                     {
-                        // Sociedades Secretas > Skull and Bones > Templo
-                        // checkBox1 = Estrutura | checkBox2 = Historia | checkBox3 = Rituais
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Membros
                     {
-                        // Sociedades Secretas > Skull and Bones > Membros
-                        // checkBox1 = Presidentes | checkBox2 = Líderes | checkBox3 = Alunos
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
-                // ==============================
-                //  SOCIEDADES SECRETAS > ROSA CRUZ
-                // ==============================
+
+                // ==========================================
+                // SOCIEDADES SECRETAS > ROSA CRUZ
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     if (radioButton1.Checked) // Logo
                     {
-                        // Sociedades Secretas > Rosa Cruz > Logo
-                        // checkBox1 = Cruz | checkBox2 = Rosa | checkBox3 = Historia
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Templo
                     {
-                        // Sociedades Secretas > Rosa Cruz > Templo
-                        // checkBox1 = Estrutura | checkBox2 = Historia | checkBox3 = Simbolos
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Ordem Cabalistica
                     {
-                        // Sociedades Secretas > Rosa Cruz > Ordem Cabalistica
-                        // checkBox1 = Cabala | checkBox2 = Graus | checkBox3 = Rituais
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
             }
+
             // ==========================================
-            //  LISTA 2: AURA & MAGIA
+            // LISTA 2: AURA & MAGIA
             // ==========================================
             else if (listBox1.SelectedIndex == 2)
             {
-                // ==============================
-                //  AURA & MAGIA > AURAS
-                // ==============================
-
+                // ==========================================
+                // AURA & MAGIA > AURAS
+                // ==========================================
+                if (comboBox1.SelectedIndex == 0)
+                {
                     if (radioButton1.Checked) // Representação
                     {
-                        // Aura & Magia > Auras > Representação
-                        // checkBox1 = Fotos | checkBox2 = Desenhos | checkBox3 = Cores
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.aura;
-                        }
-                        else
-                        {
-                            pictureBox1.Image = null;
-                        }
 
-                        if (checkBox2.Checked == true)
-                        {
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.desenho;
-                        }
-                        else
-                        {
-                            pictureBox2.Image = null;
-                        }
 
-                        if (checkBox3.Checked == true)
-                        {
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.aura_cores;
-                        }
-                        else
-                        {
-                            pictureBox3.Image = null;
-                        }
                     }
                     else if (radioButton2.Checked) // Cores
                     {
-                        // Aura & Magia > Auras > Cores
-                        // checkBox1 = Vermelho | checkBox2 = Azul | checkBox3 = Verde
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.aura_vermelha;
-                        }
-                        else
-                        {
-                            pictureBox1.Image = null;
-                        }
 
-                        if (checkBox2.Checked == true)
-                        {
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.aura_azul;
-                        }
-                        else
-                        {
-                            pictureBox2.Image = null;
-                        }
 
-                        if (checkBox3.Checked == true)
-                        {
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.aura_verde;
-                        }
-                        else
-                        {
-                            pictureBox3.Image = null;
-                        }
                     }
                     else if (radioButton3.Checked) // Medindo Aura
                     {
-                        // Aura & Magia > Auras > Medindo Aura
-                        // checkBox1 = Kirlian | checkBox2 = Fotografia | checkBox3 = Leitura
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.kirlian;
-                        }
-                        else
-                        {
-                            pictureBox1.Image = null;
-                        }
 
-                        if (checkBox2.Checked == true)
-                        {
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        else
-                        {
-                            pictureBox2.Image = null;
-                        }
 
-                        if (checkBox3.Checked == true)
-                        {
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
-                        else
-                        {
-                            pictureBox3.Image = null;
-                        }
                     }
                 }
-                // ==============================
-                //  AURA & MAGIA > ORACULOS
-                // ==============================
+
+                // ==========================================
+                // AURA & MAGIA > ORACULOS
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     if (radioButton1.Checked) // Tarot
                     {
-                        // Aura & Magia > Oraculos > Tarot
-                        // checkBox1 = Arcanos Maiores | checkBox2 = Arcanos Menores | checkBox3 = Leitura
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.arcanos_maiores;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.arcanos_menores;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.lendo_tarot;
-                        }
                     }
                     else if (radioButton2.Checked) // Baralho Cigano
                     {
-                        // Aura & Magia > Oraculos > Baralho Cigano
-                        // checkBox1 = Cartas | checkBox2 = Leitura | checkBox3 = Simbolos
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.baralho_cigano;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.lendo_baralho_cigano;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.baralho_cigano_simbolos;
-                        }
                     }
                     else if (radioButton3.Checked) // Bola de Cristal
                     {
-                        // Aura & Magia > Oraculos > Bola de Cristal
-                        // checkBox1 = Historia | checkBox2 = Leitura | checkBox3 = Uso
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.bola_de_cristal;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.lendo_bola_de_cristal;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.bola_de_cristal_2;
-                        }
                     }
                 }
-                // ==============================
-                //  AURA & MAGIA > MAGIA CERIMONIAL
-                // ==============================
+
+                // ==========================================
+                // AURA & MAGIA > MAGIA CERIMONIAL
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     if (radioButton1.Checked) // Ars Goetia
                     {
-                        // Aura & Magia > Magia Cerimonial > Ars Goetia
-                        // checkBox1 = Demonios | checkBox2 = Selos | checkBox3 = Evocação
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.stolas;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.selos_goetia;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.ritual_goetia;
-                        }
                     }
                     else if (radioButton2.Checked) // Encantamentos
                     {
-                        // Aura & Magia > Magia Cerimonial > Encantamentos
-                        // checkBox1 = Feitiços | checkBox2 = Rituais | checkBox3 = Palavras
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.feiticos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.magia_negra;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.abacadabra;
-                        }
                     }
                     else if (radioButton3.Checked) // Itens
                     {
-                        // Aura & Magia > Magia Cerimonial > Itens
-                        // checkBox1 = Varinha | checkBox2 = Círculo | checkBox3 = Incenso
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.varinha;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.circulo_magico;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.incenso;
-                        }
                     }
                 }
-                // ==============================
-                //  AURA & MAGIA > NECROMANCIA
-                // ==============================
+
+                // ==========================================
+                // AURA & MAGIA > NECROMANCIA
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     if (radioButton1.Checked) // Idade Media
                     {
-                        // Aura & Magia > Necromancia > Idade Media
-                        // checkBox1 = Historia | checkBox2 = Crenças | checkBox3 = Práticas
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.necromancia;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.circulo_necromante;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.ritual;
-                        }
                     }
                     else if (radioButton2.Checked) // Rituais
                     {
-                        // Aura & Magia > Necromancia > Rituais
-                        // checkBox1 = Círculos | checkBox2 = Ofertas | checkBox3 = Cerimônias
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.circulo_necromante;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.ofertas_necromancia;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.cerimonia_necromante;
-                        }
                     }
                     else if (radioButton3.Checked) // Exemplos
                     {
-                        // Aura & Magia > Necromancia > Exemplos
-                        // checkBox1 = Casos | checkBox2 = Famosos | checkBox3 = Lendas
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.casos_necromante;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.necromancia_saul;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.odisseu_necromante;
-                        }
                     }
                 }
             }
+
             // ==========================================
-            //  LISTA 3: OBJETOS LENDARIOS
+            // LISTA 3: OBJETOS LENDARIOS
             // ==========================================
             else if (listBox1.SelectedIndex == 3)
             {
-                // ==============================
-                //  OBJETOS LENDARIOS > LANÇA DO DESTINO
-                // ==============================
+                // ==========================================
+                // OBJETOS LENDARIOS > LANÇA DO DESTINO
+                // ==========================================
                 if (comboBox1.SelectedIndex == 0)
                 {
                     if (radioButton1.Checked) // Representações
                     {
-                        // Objetos Lendarios > Lança do Destino > Representações
-                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.lanca_destino;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.lanca_pintura;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.lança_do_destino;
-                        }
                     }
                     else if (radioButton2.Checked) // Lendas
                     {
-                        // Objetos Lendarios > Lança do Destino > Lendas
-                        // checkBox1 = Historia | checkBox2 = Lendas | checkBox3 = Mitologia
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.lanca_historia;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.lenda_lanca_do_destino_god_of_war;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.lanca_mitologia;
-                        }
                     }
                     else if (radioButton3.Checked) // Fontes
                     {
-                        // Objetos Lendarios > Lança do Destino > Fontes
-                        // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.lanca_livros;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.lanca_documento;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.lanca_indiana_jones;
-                        }
                     }
                 }
-                // ==============================
-                //  OBJETOS LENDARIOS > SANTO GRAAL
-                // ==============================
+
+                // ==========================================
+                // OBJETOS LENDARIOS > SANTO GRAAL
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     if (radioButton1.Checked) // Representações
                     {
-                        // Objetos Lendarios > Santo Graal > Representações
-                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.santo_graal;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.santo_graal_pintura;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.santo_graal_replicas;
-                        }
                     }
                     else if (radioButton2.Checked) // Lendas
                     {
-                        // Objetos Lendarios > Santo Graal > Lendas
-                        // checkBox1 = Arturiana | checkBox2 = Busca | checkBox3 = Mitologia
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.santo_graal_rei_arthur;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.santo_graal_busca;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.salto_graal_mitologia2;
-                        }
                     }
                     else if (radioButton3.Checked) // Fontes
                     {
-                        // Objetos Lendarios > Santo Graal > Fontes
-                        // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.santo_graal_livros;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.santo_graal_documentos;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.santo_graal_filme_ultima_cruzada;
-                        }
                     }
                 }
-                // ==============================
-                //  OBJETOS LENDARIOS > ARCA DA ALIANÇA
-                // ==============================
+
+                // ==========================================
+                // OBJETOS LENDARIOS > ARCA DA ALIANÇA
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     if (radioButton1.Checked) // Representações
                     {
-                        // Objetos Lendarios > Arca da Aliança > Representações
-                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.arca_fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Cosmologia_Biblica___Astros;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Lendas
                     {
-                        // Objetos Lendarios > Arca da Aliança > Lendas
-                        // checkBox1 = Historia | checkBox2 = Poderes | checkBox3 = Mitologia
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Fontes
                     {
-                        // Objetos Lendarios > Arca da Aliança > Fontes
-                        // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
-                // ==============================
-                //  OBJETOS LENDARIOS > ANEL DE SALOMÃO
-                // ==============================
+
+                // ==========================================
+                // OBJETOS LENDARIOS > ANEL DE SALOMÃO
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 3)
                 {
                     if (radioButton1.Checked) // Representações
                     {
-                        // Objetos Lendarios > Anel de Salomão > Representações
-                        // checkBox1 = Fotos | checkBox2 = Pinturas | checkBox3 = Réplicas
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Lendas
                     {
-                        // Objetos Lendarios > Anel de Salomão > Lendas
-                        // checkBox1 = Historia | checkBox2 = Poderes | checkBox3 = Mitologia
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Fontes
                     {
-                        // Objetos Lendarios > Anel de Salomão > Fontes
-                        // checkBox1 = Livros | checkBox2 = Documentos | checkBox3 = Referencias
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
             }
+
             // ==========================================
-            //  LISTA 4: FALSOS DEUSES
+            // LISTA 4: FALSOS DEUSES
             // ==========================================
             else if (listBox1.SelectedIndex == 4)
             {
-                // ==============================
-                //  FALSOS DEUSES > BAAL
-                // ==============================
+                // ==========================================
+                // FALSOS DEUSES > BAAL
+                // ==========================================
                 if (comboBox1.SelectedIndex == 0)
                 {
                     if (radioButton1.Checked) // Origem
                     {
-                        // Falsos Deuses > Baal > Origem
-                        // checkBox1 = Canaã | checkBox2 = Mitologia | checkBox3 = História
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Formas
                     {
-                        // Falsos Deuses > Baal > Formas
-                        // checkBox1 = Touro | checkBox2 = Representações | checkBox3 = Estátuas
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Culto
                     {
-                        // Falsos Deuses > Baal > Culto
-                        // checkBox1 = Rituais | checkBox2 = Sacrifícios | checkBox3 = Templos
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
-                // ==============================
-                //  FALSOS DEUSES > MOLOQUE
-                // ==============================
+
+                // ==========================================
+                // FALSOS DEUSES > MOLOQUE
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     if (radioButton1.Checked) // Origem
                     {
-                        // Falsos Deuses > Moloque > Origem
-                        // checkBox1 = Amomitas | checkBox2 = Mitologia | checkBox3 = História
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Formas
                     {
-                        // Falsos Deuses > Moloque > Formas
-                        // checkBox1 = Estátua | checkBox2 = Fornalha | checkBox3 = Touro de Bronze
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Culto
                     {
-                        // Falsos Deuses > Moloque > Culto
-                        // checkBox1 = Sacrifícios | checkBox2 = Fogo | checkBox3 = Rituais
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
-                // ==============================
-                //  FALSOS DEUSES > BAPHOMET
-                // ==============================
+
+                // ==========================================
+                // FALSOS DEUSES > BAPHOMET
+                // ==========================================
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     if (radioButton1.Checked) // Origem
                     {
-                        // Falsos Deuses > Baphomet > Origem
-                        // checkBox1 = Templários | checkBox2 = História | checkBox3 = Acusações
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton2.Checked) // Formas
                     {
-                        // Falsos Deuses > Baphomet > Formas
-                        // checkBox1 = Cabeça de Bode | checkBox2 = Representações | checkBox3 = Simbolos
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                     else if (radioButton3.Checked) // Culto
                     {
-                        // Falsos Deuses > Baphomet > Culto
-                        // checkBox1 = Rituais | checkBox2 = Satanismo | checkBox3 = Templos
-                        if (checkBox1.Checked == true)
-                        {
+                        if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
-                        }
-                        if (checkBox2.Checked == true)
-                        {
+
+                        if (checkBox2.Checked)
                             pictureBox2.Image = Properties.Resources.Terra_Plana___Mapa;
-                        }
-                        if (checkBox3.Checked == true)
-                        {
+
+                        if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
-                        }
                     }
                 }
             }
