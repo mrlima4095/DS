@@ -55,9 +55,7 @@ namespace Projeto
             {
                 hide(0);
                 comboBox1.Items.Add("Cosmologia Biblica");
-                comboBox1.Items.Add("Cosmologia Babilonica");
                 comboBox1.Items.Add("Cosmologia Sumeria");
-                comboBox1.Items.Add("Cosmologia Egipicia");
                 comboBox1.SelectedIndex = 0;
             }
             else if (listBox1.SelectedIndex == 1)
@@ -65,8 +63,6 @@ namespace Projeto
                 hide(0);
                 comboBox1.Items.Add("Maçonaria");
                 comboBox1.Items.Add("Illuminatis");
-                comboBox1.Items.Add("Skull and Bones");
-                comboBox1.Items.Add("Rosa Cruz");
                 comboBox1.SelectedIndex = 0;
             }
             else if (listBox1.SelectedIndex == 2)
@@ -75,7 +71,6 @@ namespace Projeto
                 comboBox1.Items.Add("Auras");
                 comboBox1.Items.Add("Oraculos");
                 comboBox1.Items.Add("Magia Cerimonial");
-                comboBox1.Items.Add("Necromancia");
                 comboBox1.SelectedIndex = 0;
             }
             else if (listBox1.SelectedIndex == 3)
@@ -84,7 +79,6 @@ namespace Projeto
                 comboBox1.Items.Add("Lança do Destino");
                 comboBox1.Items.Add("Santo Graal");
                 comboBox1.Items.Add("Arca da Aliança");
-                comboBox1.Items.Add("Anel de Salomão");
                 comboBox1.SelectedIndex = 0;
             }
             else if (listBox1.SelectedIndex == 4)
@@ -114,22 +108,13 @@ namespace Projeto
                 if (comboBox1.SelectedIndex == 1)
                 {
                     radioButton1.Visible = true;
-                    radioButton1.Text = "Mundo Superior";
-                    radioButton2.Visible = true;
-                    radioButton2.Text = "Mundo Inferior";
-                    radioButton3.Visible = true;
-                    radioButton3.Text = "Os Céus";
-                }
-                if (comboBox1.SelectedIndex == 2)
-                {
-                    radioButton1.Visible = true;
                     radioButton1.Text = "Ki (Mundo Superior)";
                     radioButton2.Visible = true;
                     radioButton2.Text = "Apsu (Submundo)";
                     radioButton3.Visible = true;
                     radioButton3.Text = "Os Céus";
                 }
-                if (comboBox1.SelectedIndex == 3)
+                if (comboBox1.SelectedIndex == 2)
                 {
                     radioButton1.Visible = true;
                     radioButton1.Text = "Terra";
@@ -158,24 +143,6 @@ namespace Projeto
                     radioButton2.Text = "Nota de dólar";
                     radioButton3.Visible = true;
                     radioButton3.Text = "Olho que tudo vê";
-                }
-                else if (comboBox1.SelectedIndex == 2)
-                {
-                    radioButton1.Visible = true;
-                    radioButton1.Text = "Logo";
-                    radioButton2.Visible = true;
-                    radioButton2.Text = "Templo";
-                    radioButton3.Visible = true;
-                    radioButton3.Text = "Membros";
-                }
-                else if (comboBox1.SelectedIndex == 3)
-                {
-                    radioButton1.Visible = true;
-                    radioButton1.Text = "Logo";
-                    radioButton2.Visible = true;
-                    radioButton2.Text = "Templo";
-                    radioButton3.Visible = true;
-                    radioButton3.Text = "Ordem Cabalistica";
                 }
             }
             else if (listBox1.SelectedIndex == 2)
@@ -206,15 +173,6 @@ namespace Projeto
                     radioButton2.Text = "Encantamentos";
                     radioButton3.Visible = true;
                     radioButton3.Text = "Itens";
-                }
-                else if (comboBox1.SelectedIndex == 3)
-                {
-                    radioButton1.Visible = true;
-                    radioButton1.Text = "Idade Media";
-                    radioButton2.Visible = true;
-                    radioButton2.Text = "Rituais";
-                    radioButton3.Visible = true;
-                    radioButton3.Text = "Exemplos";
                 }
             }
             else if (listBox1.SelectedIndex == 3)
@@ -311,26 +269,6 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Historia";
                 }
-                // Sociedades Secretas > Skull and Bones > Logo
-                else if (comboBox1.SelectedIndex == 2)
-                {
-                    checkBox1.Visible = true;
-                    checkBox1.Text = "Caveira";
-                    checkBox2.Visible = true;
-                    checkBox2.Text = "Ossos";
-                    checkBox3.Visible = true;
-                    checkBox3.Text = "Historia";
-                }
-                // Sociedades Secretas > Rosa Cruz > Logo
-                else if (comboBox1.SelectedIndex == 3)
-                {
-                    checkBox1.Visible = true;
-                    checkBox1.Text = "Cruz";
-                    checkBox2.Visible = true;
-                    checkBox2.Text = "Rosa";
-                    checkBox3.Visible = true;
-                    checkBox3.Text = "Historia";
-                }
             }
             // ============ LISTA 2: AURA & MAGIA ============
             else if (listBox1.SelectedIndex == 2)
@@ -365,16 +303,6 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Evocação";
                 }
-                // Aura & Magia > Necromancia > Idade Media
-                else if (comboBox1.SelectedIndex == 3)
-                {
-                    checkBox1.Visible = true;
-                    checkBox1.Text = "Historia";
-                    checkBox2.Visible = true;
-                    checkBox2.Text = "Crenças";
-                    checkBox3.Visible = true;
-                    checkBox3.Text = "Práticas";
-                }
             }
             // ============ LISTA 3: OBJETOS LENDARIOS ============
             else if (listBox1.SelectedIndex == 3)
@@ -401,16 +329,6 @@ namespace Projeto
                 }
                 // Objetos Lendarios > Arca da Aliança > Representações
                 else if (comboBox1.SelectedIndex == 2)
-                {
-                    checkBox1.Visible = true;
-                    checkBox1.Text = "Fotos";
-                    checkBox2.Visible = true;
-                    checkBox2.Text = "Pinturas";
-                    checkBox3.Visible = true;
-                    checkBox3.Text = "Réplicas";
-                }
-                // Objetos Lendarios > Anel de Salomão > Representações
-                else if (comboBox1.SelectedIndex == 3)
                 {
                     checkBox1.Visible = true;
                     checkBox1.Text = "Fotos";

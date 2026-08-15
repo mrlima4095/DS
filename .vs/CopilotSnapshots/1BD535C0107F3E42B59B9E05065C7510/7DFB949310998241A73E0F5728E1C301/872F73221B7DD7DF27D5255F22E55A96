@@ -1,0 +1,48 @@
+﻿// Auto-generated helper partial class to expose resource properties
+using System;
+
+namespace Projeto.Properties
+{
+    internal partial class Resources
+    {
+        // The properties below map sanitized identifiers used in code
+        // to resource keys in Resources.resx via ResourceManager.GetObject.
+
+        internal static global::System.Drawing.Bitmap Terra_Plana___Fotos { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("Terra Plana - Fotos", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap Terra_Plana___Mapa { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("Terra Plana - Mapa", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap Terra_Plana___Relevo { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("Terra Plana - Relevo", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap Sheol_Pintura { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("Sheol Pintura", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap Sheol_Canoeiro { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("Sheol Canoeiro", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap Cosmologia_Biblica___3_Sois { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("Cosmologia Biblica - 3 Sois", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap Cosmologia_Biblica___Astros { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("Cosmologia Biblica - Astros", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap Cosmologia_Biblica___Eclipses { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("Cosmologia Biblica - Eclipses", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap maconica_extrutura { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("maconica extrutura", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap graus { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("graus", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap ritual_maconico { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("ritual maconico", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap roupa_maconica { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("roupa maconica", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap colar_macom { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("colar macom", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap cartola_maconica { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("cartola maconica", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap jachin_e_boaz { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("jachin e boaz", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap jachin_boaz_significado { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("jachin_boaz_significado", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap solomon_temple { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("solomon temple", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap olho_que_tudo_ve { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("olho que tudo ve", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap nota_dolar { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("nota dolar", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap illuminati { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("illuminati", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap maconica_extrutura1 { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("maconica extrutura", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap salto_graal_mitologia { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("salto graal mitologia", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap santo_graal_pintura { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("santo graal pintura", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap lança_do_destino { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("lança do destino", resourceCulture))); } }
+
+        // Explicit mappings for resource identifiers referenced in code but missing in designer
+        internal static global::System.Drawing.Bitmap santo_graal { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("santo graal", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap santo_graal_replicas { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("santo graal replicas", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap santo_graal_rei_arthur { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("santo graal rei arthur", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap santo_graal_busca { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("santo graal busca", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap salto_graal_mitologia2 { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("salto graal mitologia 2", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap santo_graal_livros { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("santo graal livros", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap santo_graal_documentos { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("santo graal documentos", resourceCulture))); } }
+        internal static global::System.Drawing.Bitmap santo_graal_filme_ultima_cruzada { get { return ((global::System.Drawing.Bitmap)(ResourceManager.GetObject("santo graal filme ultima cruzada", resourceCulture))); } }
+
+        // Add more mappings below if compiler reports missing resource properties.
+    }
+}

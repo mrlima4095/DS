@@ -257,7 +257,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.exitButton;
-            this.ClientSize = new System.Drawing.Size(857, 653);
+            this.ClientSize = new System.Drawing.Size(838, 653);
             this.Controls.Add(this.audioButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.exitButton);

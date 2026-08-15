@@ -66,8 +66,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Compile Include="Properties\Resources.Designer.cs" />
-    <Compile Include="Properties\Resources.Generated.cs" />
-    <Compile Include="Properties\Resources.Partial.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
