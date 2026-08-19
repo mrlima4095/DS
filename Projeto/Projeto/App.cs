@@ -64,7 +64,7 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 1)
             {
                 hide(0);
-                comboBox1.Items.Add("Ma�onaria");
+                comboBox1.Items.Add("Maçonaria");
                 comboBox1.Items.Add("Illuminatis");
                 comboBox1.SelectedIndex = 0;
             }
@@ -81,7 +81,7 @@ namespace Projeto
                 hide(0);
                 comboBox1.Items.Add("Lança do Destino");
                 comboBox1.Items.Add("Santo Graal");
-                comboBox1.Items.Add("Arca da Alian�a");
+                comboBox1.Items.Add("Arca da Aliança");
                 comboBox1.SelectedIndex = 0;
             }
             else if (listBox1.SelectedIndex == 4)
@@ -113,7 +113,7 @@ namespace Projeto
                 if (comboBox1.SelectedIndex == 0)
                 {
                     radioButton1.Visible = true;
-                    radioButton1.Text = "Loja Ma�onica";
+                    radioButton1.Text = "Loja Maçônica";
                     radioButton2.Visible = true;
                     radioButton2.Text = "Roupas";
                     radioButton3.Visible = true;
@@ -124,9 +124,9 @@ namespace Projeto
                     radioButton1.Visible = true;
                     radioButton1.Text = "Simbolo";
                     radioButton2.Visible = true;
-                    radioButton2.Text = "Nota de d�lar";
+                    radioButton2.Text = "Nota de dólar";
                     radioButton3.Visible = true;
-                    radioButton3.Text = "Olho que tudo v�";
+                    radioButton3.Text = "Olho que tudo vê";
                 }
             }
             else if (listBox1.SelectedIndex == 2)
@@ -134,7 +134,7 @@ namespace Projeto
                 if (comboBox1.SelectedIndex == 0)
                 {
                     radioButton1.Visible = true;
-                    radioButton1.Text = "Representa��o";
+                    radioButton1.Text = "Representação";
                     radioButton2.Visible = true;
                     radioButton2.Text = "Cores";
                     radioButton3.Visible = true;
@@ -162,7 +162,7 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 3)
             {
                 radioButton1.Visible = true;
-                radioButton1.Text = "Representa��es";
+                radioButton1.Text = "Representações";
                 radioButton2.Visible = true;
                 radioButton2.Text = "Lendas";
                 radioButton3.Visible = true;
@@ -207,7 +207,7 @@ namespace Projeto
             // ============ LISTA 1: SOCIEDADES SECRETAS ============
             else if (listBox1.SelectedIndex == 1)
             {
-                // Sociedades Secretas > Ma�onaria > Loja Ma�onica
+                // Sociedades Secretas > Maçonaria > Loja Maçônica
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -231,7 +231,7 @@ namespace Projeto
             // ============ LISTA 2: AURA & MAGIA ============
             else if (listBox1.SelectedIndex == 2)
             {
-                // Aura & Magia > Auras > Representa��o
+                // Aura & Magia > Auras > Representação
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -265,7 +265,7 @@ namespace Projeto
             // ============ LISTA 3: OBJETOS LENDARIOS ============
             else if (listBox1.SelectedIndex == 3)
             {
-                // Objetos Lendarios > Lan�a do Destino > Representa��es
+                // Objetos Lendarios > Lança do Destino > Representações
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -275,7 +275,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Réplicas";
                 }
-                // Objetos Lendarios > Santo Graal > Representa��es
+                // Objetos Lendarios > Santo Graal > Representações
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -285,7 +285,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Réplicas";
                 }
-                // Objetos Lendarios > Arca da Alian�a > Representa��es
+                // Objetos Lendarios > Arca da Aliança > Representações
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
@@ -293,7 +293,7 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Pinturas";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "R�plicas";
+                    checkBox3.Text = "Réplicas";
                 }
             }
             // ============ LISTA 4: FALSOS DEUSES ============
@@ -303,7 +303,7 @@ namespace Projeto
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
-                    checkBox1.Text = "Cana�";
+                    checkBox1.Text = "Canaã";
                     checkBox2.Visible = true;
                     checkBox2.Text = "Mitologia";
                     checkBox3.Visible = true;
@@ -350,7 +350,7 @@ namespace Projeto
             // ============ LISTA 1: SOCIEDADES SECRETAS ============
             else if (listBox1.SelectedIndex == 1)
             {
-                // Sociedades Secretas > Ma�onaria > Roupas
+                // Sociedades Secretas > Maçonaria > Roupas
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -358,9 +358,9 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Colar";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "Chap�u";
+                    checkBox3.Text = "Chapéu";
                 }
-                // Sociedades Secretas > Illuminatis > Nota de d�lar
+                // Sociedades Secretas > Illuminatis > Nota de dólar
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -412,13 +412,13 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Ofertas";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "Cerimonias";
+                    checkBox3.Text = "Cerimônias";
                 }
             }
             // ============ LISTA 3: OBJETOS LENDARIOS ============
             else if (listBox1.SelectedIndex == 3)
             {
-                // Objetos Lendarios > Lan�a do Destino > Lendas
+                // Objetos Lendarios > Lança do Destino > Lendas
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -438,7 +438,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Mitologia";
                 }
-                // Objetos Lendarios > Arca da Alian�a > Lendas
+                // Objetos Lendarios > Arca da Aliança > Lendas
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
@@ -460,7 +460,7 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Representações";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "Est�tuas";
+                    checkBox3.Text = "Estátuas";
                 }
                 // Falsos Deuses > Baphomet > Formas
                 else if (comboBox1.SelectedIndex == 1)
@@ -489,7 +489,7 @@ namespace Projeto
             // ============ LISTA 0: TERRA PLANA ============
             if (listBox1.SelectedIndex == 0)
             {
-                // Terra Plana > Cosmologia Biblica > C�us e Astros
+                // Terra Plana > Cosmologia Biblica > Céus e Astros
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -503,7 +503,7 @@ namespace Projeto
             // ============ LISTA 1: SOCIEDADES SECRETAS ============
             else if (listBox1.SelectedIndex == 1)
             {
-                // Sociedades Secretas > Ma�onaria > Jachin e Boaz
+                // Sociedades Secretas > Maçonaria > Jachin e Boaz
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -511,9 +511,9 @@ namespace Projeto
                     checkBox2.Visible = true;
                     checkBox2.Text = "Significado";
                     checkBox3.Visible = true;
-                    checkBox3.Text = "Hist�ria";
+                    checkBox3.Text = "História";
                 }
-                // Sociedades Secretas > Illuminatis > Olho que tudo v�
+                // Sociedades Secretas > Illuminatis > Olho que tudo vê
                 else if (comboBox1.SelectedIndex == 1)
                 {
                     checkBox1.Visible = true;
@@ -553,7 +553,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Varinha";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "C�rculo";
+                    checkBox2.Text = "Círculo";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Incenso";
                 }
@@ -571,7 +571,7 @@ namespace Projeto
             // ============ LISTA 3: OBJETOS LENDARIOS ============
             else if (listBox1.SelectedIndex == 3)
             {
-                // Objetos Lendarios > Lan�a do Destino > Fontes
+                // Objetos Lendarios > Lança do Destino > Fontes
                 if (comboBox1.SelectedIndex == 0)
                 {
                     checkBox1.Visible = true;
@@ -591,7 +591,7 @@ namespace Projeto
                     checkBox3.Visible = true;
                     checkBox3.Text = "Referencias";
                 }
-                // Objetos Lendarios > Arca da Alian�a > Fontes
+                // Objetos Lendarios > Arca da Aliança > Fontes
                 else if (comboBox1.SelectedIndex == 2)
                 {
                     checkBox1.Visible = true;
@@ -611,7 +611,7 @@ namespace Projeto
                     checkBox1.Visible = true;
                     checkBox1.Text = "Rituais";
                     checkBox2.Visible = true;
-                    checkBox2.Text = "Sacrificios";
+                    checkBox2.Text = "Sacrifícios";
                     checkBox3.Visible = true;
                     checkBox3.Text = "Templos";
                 }
@@ -690,7 +690,7 @@ namespace Projeto
                         if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Sheol_Canoeiro;
                     }
-                    else if (radioButton3.Checked) // C�us e Astros
+                    else if (radioButton3.Checked) // Céus e Astros
                     {
                         if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Cosmologia_Biblica___3_Sois;
@@ -710,11 +710,11 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 1)
             {
                 // ==========================================
-                // SOCIEDADES SECRETAS > MA�ONARIA
+                // SOCIEDADES SECRETAS > MAÇONARIA
                 // ==========================================
                 if (comboBox1.SelectedIndex == 0)
                 {
-                    if (radioButton1.Checked) // Loja Ma�onica
+                    if (radioButton1.Checked) // Loja Maçônica
                     {
                         if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.maconica_extrutura;
@@ -765,7 +765,7 @@ namespace Projeto
                         if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.olho_que_tudo_ve;
                     }
-                    else if (radioButton2.Checked) // Nota de d�lar
+                    else if (radioButton2.Checked) // Nota de dólar
                     {
                         if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.illuminati_nota_dolar;
@@ -776,7 +776,7 @@ namespace Projeto
                         if (checkBox3.Checked)
                             pictureBox3.Image = Properties.Resources.Terra_Plana___Relevo;
                     }
-                    else if (radioButton3.Checked) // Olho que tudo v�
+                    else if (radioButton3.Checked) // Olho que tudo vê
                     {
                         if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.Terra_Plana___Fotos;
@@ -800,7 +800,7 @@ namespace Projeto
                 // ==========================================
                 if (comboBox1.SelectedIndex == 0)
                 {
-                    if (radioButton1.Checked) // Representa��o
+                    if (radioButton1.Checked) // Representação
                     {
                         if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.aura;
@@ -962,11 +962,11 @@ namespace Projeto
             else if (listBox1.SelectedIndex == 3)
             {
                 // ==========================================
-                // OBJETOS LENDARIOS > LAN�A DO DESTINO
+                // OBJETOS LENDARIOS > LANÇA DO DESTINO
                 // ==========================================
                 if (comboBox1.SelectedIndex == 0)
                 {
-                    if (radioButton1.Checked) // Representa��es
+                    if (radioButton1.Checked) // Representações
                     {
                         if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.lanca_destino;
@@ -1006,7 +1006,7 @@ namespace Projeto
                 // ==========================================
                 else if (comboBox1.SelectedIndex == 1)
                 {
-                    if (radioButton1.Checked) // Representa��es
+                    if (radioButton1.Checked) // Representações
                     {
                         if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.santo_graal;
@@ -1042,11 +1042,11 @@ namespace Projeto
                 }
 
                 // ==========================================
-                // OBJETOS LENDARIOS > ARCA DA ALIAN�A
+                // OBJETOS LENDARIOS > ARCA DA ALIANÇA
                 // ==========================================
                 else if (comboBox1.SelectedIndex == 2)
                 {
-                    if (radioButton1.Checked) // Representa��es
+                    if (radioButton1.Checked) // Representações
                     {
                         if (checkBox1.Checked)
                             pictureBox1.Image = Properties.Resources.arca_da_alianca_pintura;
