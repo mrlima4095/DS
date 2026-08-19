@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F283837D-5435-44BB-9A47-8FFDD991292A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projeto</RootNamespace>
+    <AssemblyName>Projeto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App.Designer.cs">
+      <DependentUpon>App.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="splashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashScreen.Designer.cs">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="App.resx">
+      <DependentUpon>App.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashScreen.resx">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cosmologia Biblica - 3 Sois.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cosmologia Biblica - Astros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cosmologia Biblica - Eclipses.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sheol Canoeiro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terra Plana - Relevo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81Ir01m43zL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sheol Pintura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terra Plana - Fotos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terra Plana - Mapa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skull and bones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olho que tudo ve.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota dolar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kirlian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aura vermelha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aura verde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aura azul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desenho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solomon temple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ritual maconico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maconica extrutura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loja maconica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartola maconica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colar macom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roupa maconica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jachin e boaz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jachin_boaz_significado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aura_cores.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcanos maiores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcanos menores.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aura_cores1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baralho cigano simbolos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baralho cigano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bola de cristal 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bola de cristal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lendo baralho cigano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lendo bola de cristal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lendo tarot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo magico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feiticos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incenso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magia negra.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ritual goetia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selos_goetia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stolas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\varinha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abacadabra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casos necromante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerimonia_necromante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circulo_necromante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\necromancia saul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\necromancia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odisseu necromante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ofertas_necromancia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\praticas necromante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ritual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanca destino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lança do destino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanca documento.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanca historia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanca indiana jones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanca livros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanca mitologia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lanca pintura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lenda lanca do destino god of war.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal documentos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal filme ultima cruzada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal livros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal pintura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal rei arthur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal replicas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salto graal mitologia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal busca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salto graal mitologia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal busca1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salto graal mitologia2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santo graal busca2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca documentos cia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca filme indiana jones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca historia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca livros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca mitologia.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca poderes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca replicas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca templo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca documentos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca filme.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca foto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca historia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca livro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca mitologia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca pintura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca poderes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca replicas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal cananeu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal estatua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal historia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal mitologia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal representacoes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal sacrificios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal templo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal touro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal x elias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet cabeca de bode.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet historia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet representacao estatua.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet ritual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet satanismo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet simbolo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet templarios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet templo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabala hermetica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica ceus estrelas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica eclipses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo inferior lendas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo inferior pintura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo superior pinturas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo superior teorias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo superior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica planetas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolar olho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati historia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati nota dolar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati olho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati piramide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\irkalla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota dolar simbologia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olho que tudo ve origem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olho que tudo ve usos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz estrutura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz graus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz historia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz rituais.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz simbolos historia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz simbolos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz templo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sheol representacao.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca documentos1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca filme1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca foto1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca historia2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca livro1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca mitologia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca pintura1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca poderes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arca da alianca replicas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal cananeu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal estatua1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal historia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal mitologia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal representacoes1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal sacrificios1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal templo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal touro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baal x elias1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet cabeca de bode1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet historia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet representacao estatua1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet ritual1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet satanismo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet simbolo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet templarios1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baphomet templo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabala hermetica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica ceus estrelas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica eclipses1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo inferior lendas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo inferior pintura1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo superior pinturas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo superior teorias1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica mundo superior1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmologia babilonica planetas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolar olho1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati historia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati nota dolar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati olho1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illuminati piramide1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\irkalla1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota dolar simbologia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz estrutura1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz graus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz historia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz rituais1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz simbolos historia1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz simbolos1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa cruz templo1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

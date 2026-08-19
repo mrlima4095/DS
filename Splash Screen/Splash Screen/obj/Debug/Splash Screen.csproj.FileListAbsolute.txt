@@ -1,0 +1,20 @@
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\bin\Debug\Splash Screen.exe.config
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\bin\Debug\Splash Screen.exe
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\bin\Debug\Splash Screen.pdb
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\obj\Debug\Splash Screen.csproj.AssemblyReference.cache
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\obj\Debug\Splash_Screen.Properties.Resources.resources
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\obj\Debug\Splash Screen.csproj.GenerateResource.cache
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\obj\Debug\Splash Screen.csproj.CoreCompileInputs.cache
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\obj\Debug\Splash Screen.exe
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\obj\Debug\Splash Screen.pdb
+C:\Users\edina\source\repos\Splash Screen\Splash Screen\obj\Debug\Splash_Screen.splashScreen.resources
+D:\DS\Splash Screen\Splash Screen\bin\Debug\Splash Screen.exe.config
+D:\DS\Splash Screen\Splash Screen\bin\Debug\Splash Screen.exe
+D:\DS\Splash Screen\Splash Screen\bin\Debug\Splash Screen.pdb
+D:\DS\Splash Screen\Splash Screen\obj\Debug\Splash Screen.csproj.AssemblyReference.cache
+D:\DS\Splash Screen\Splash Screen\obj\Debug\Splash_Screen.splashScreen.resources
+D:\DS\Splash Screen\Splash Screen\obj\Debug\Splash_Screen.Properties.Resources.resources
+D:\DS\Splash Screen\Splash Screen\obj\Debug\Splash Screen.csproj.GenerateResource.cache
+D:\DS\Splash Screen\Splash Screen\obj\Debug\Splash Screen.csproj.CoreCompileInputs.cache
+D:\DS\Splash Screen\Splash Screen\obj\Debug\Splash Screen.exe
+D:\DS\Splash Screen\Splash Screen\obj\Debug\Splash Screen.pdb

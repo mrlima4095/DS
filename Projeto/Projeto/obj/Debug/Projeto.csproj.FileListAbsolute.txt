@@ -1,5 +1,4 @@
 D:\DS\Projeto\Projeto\obj\Debug\Projeto.csproj.AssemblyReference.cache
-D:\DS\Projeto\Projeto\obj\Debug\Projeto.Form1.resources
 D:\DS\Projeto\Projeto\obj\Debug\Projeto.Properties.Resources.resources
 D:\DS\Projeto\Projeto\obj\Debug\Projeto.csproj.GenerateResource.cache
 D:\DS\Projeto\Projeto\obj\Debug\Projeto.csproj.CoreCompileInputs.cache
@@ -18,3 +17,5 @@ K:\DS\Projeto\Projeto\obj\Debug\Projeto.csproj.GenerateResource.cache
 K:\DS\Projeto\Projeto\obj\Debug\Projeto.csproj.CoreCompileInputs.cache
 K:\DS\Projeto\Projeto\obj\Debug\Projeto.exe
 K:\DS\Projeto\Projeto\obj\Debug\Projeto.pdb
+D:\DS\Projeto\Projeto\obj\Debug\Splash_Screen.splashScreen.resources
+D:\DS\Projeto\Projeto\obj\Debug\Projeto.App.resources
