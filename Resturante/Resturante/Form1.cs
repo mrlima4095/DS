@@ -15,9 +15,17 @@ namespace Resturante
     {
         public int N_MESA = 1;
         public int N_PESSOAS = 1;
-        public string[] Acompanhamentos = { "Batata", "Salada" };
-        public string[] Bebidas = { "Agua", "Suco", "Sucada", "Asucada" };
-        public string[] pratos_principais = { "Prato 1", "Pratin 2" };
+        public string Prato_Principal = "";
+        public string[] Pedido_Acomp = new string[8];
+        public string[] Pedido_Bebidas = new string[8];
+
+
+        public string[] Acompanhamentos = { "Batata", "Salada", "A", "B", "C", "D", "E", "F" };
+        public double[] Acompanhamentos_preco = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+        public string[] Bebidas = { "Agua", "Suco", "Sucada", "Asucada", "A", "B", "C", "D" };
+        public double[] Bebidas_preco = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+        public string[] pratos_principais = { "Prato 1", "Pratin 2", "Prato 3", "Prato 4", "Prato 5", "Prato 6", "Prato 7", "Prato 8" };
+        public double[] pratos_principais_preco = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
         public CheckBox[] checkBoxes = new CheckBox[20];
         
         public Form1()
@@ -170,7 +178,7 @@ namespace Resturante
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            N_MESA = Convert.ToInt32(comboBox1.SelectedItem.ToString());
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -191,6 +199,26 @@ namespace Resturante
             }
             checkBox1.Text = Acompanhamentos[0];
             checkBox2.Text = Acompanhamentos[1];
+            checkBox3.Text = Acompanhamentos[2];
+            checkBox4.Text = Acompanhamentos[3];
+            checkBox5.Text = Acompanhamentos[4];
+            checkBox6.Text = Acompanhamentos[5];
+            checkBox7.Text = Acompanhamentos[6];
+            checkBox8.Text = Acompanhamentos[7];
+
+            checkBox9.Text = Bebidas[0];
+            checkBox10.Text = Bebidas[1];
+            checkBox11.Text = Bebidas[2];
+            checkBox12.Text = Bebidas[3];
+            checkBox13.Text = Bebidas[4];
+            checkBox14.Text = Bebidas[5];
+            checkBox15.Text = Bebidas[6];
+            checkBox16.Text = Bebidas[7];
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
