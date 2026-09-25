@@ -1,0 +1,11 @@
+D:\DS\Resturante\Resturante\bin\Debug\Resturante.exe.config
+D:\DS\Resturante\Resturante\bin\Debug\Resturante.exe
+D:\DS\Resturante\Resturante\bin\Debug\Resturante.pdb
+D:\DS\Resturante\Resturante\obj\Debug\Resturante.csproj.AssemblyReference.cache
+D:\DS\Resturante\Resturante\obj\Debug\Resturante.Form1.resources
+D:\DS\Resturante\Resturante\obj\Debug\Resturante.Properties.Resources.resources
+D:\DS\Resturante\Resturante\obj\Debug\Resturante.csproj.GenerateResource.cache
+D:\DS\Resturante\Resturante\obj\Debug\Resturante.csproj.CoreCompileInputs.cache
+D:\DS\Resturante\Resturante\obj\Debug\Resturante.exe
+D:\DS\Resturante\Resturante\obj\Debug\Resturante.pdb
+D:\DS\Resturante\Resturante\obj\Debug\Resturante.exe.config

@@ -1,0 +1,10 @@
+D:\DS\Lacos\Lacos\bin\Debug\Lacos.exe.config
+D:\DS\Lacos\Lacos\bin\Debug\Lacos.exe
+D:\DS\Lacos\Lacos\bin\Debug\Lacos.pdb
+D:\DS\Lacos\Lacos\obj\Debug\Lacos.csproj.AssemblyReference.cache
+D:\DS\Lacos\Lacos\obj\Debug\Lacos.Form1.resources
+D:\DS\Lacos\Lacos\obj\Debug\Lacos.Properties.Resources.resources
+D:\DS\Lacos\Lacos\obj\Debug\Lacos.csproj.GenerateResource.cache
+D:\DS\Lacos\Lacos\obj\Debug\Lacos.csproj.CoreCompileInputs.cache
+D:\DS\Lacos\Lacos\obj\Debug\Lacos.exe
+D:\DS\Lacos\Lacos\obj\Debug\Lacos.pdb
