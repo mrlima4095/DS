@@ -355,6 +355,7 @@ namespace Resturante
             }
 
             if (Forma_de_Pagamento.Equals("")) { }
+
         }
     }
 }
