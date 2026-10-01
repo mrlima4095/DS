@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,9 +14,10 @@ namespace Resturante
 {
     public partial class Form1 : Form
     {
-        public int N_MESA = 1;
-        public int N_PESSOAS = 1;
+        public int N_MESA = 0;
+        public int N_PESSOAS = 0;
         public string Prato_Principal = "";
+        public double Prato_Principal_Preco = 0.0;
         public string Forma_de_Pagamento = "";
         public string[] Pedido_Acomp = new string[8] { null, null, null, null, null, null, null, null };
         public int[] Pedido_Acomp_Qntd = new int[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -23,11 +25,11 @@ namespace Resturante
         public int[] Pedido_Bebidas_Qntd = new int[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
 
         public string[] Acompanhamentos = { "Batata", "Salada", "A", "B", "C", "D", "E", "F" };
-        public double[] Acompanhamentos_preco = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+        public double[] Acompanhamentos_preco = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
         public string[] Bebidas = { "Agua", "Suco", "Sucada", "Asucada", "A", "B", "C", "D" };
-        public double[] Bebidas_preco = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+        public double[] Bebidas_preco = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
         public string[] pratos_principais = { "Prato 1", "Arroz 2", "Prato 3", "Prato 4", "Prato 5", "Prato 6", "Prato 7", "Prato 8" };
-        public double[] pratos_principais_preco = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+        public double[] pratos_principais_preco = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
         public CheckBox[] checkBoxes = new CheckBox[20];
         
         public Form1()
@@ -83,6 +85,10 @@ namespace Resturante
             checkBox16.Checked = false;
         }
 
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) { N_MESA = comboBox1.SelectedIndex + 1; display(); }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e) { N_PESSOAS = comboBox2.SelectedIndex + 1; display(); }
+
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Acomp_Qntd[0] = comboBox3.SelectedIndex + 1; display(); }
         private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[1] = comboBox4.SelectedIndex + 1; display(); }
         private void comboBox5_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[2] = comboBox5.SelectedIndex + 1; display(); }
@@ -92,6 +98,14 @@ namespace Resturante
         private void comboBox9_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Acomp_Qntd[6] = comboBox9.SelectedIndex + 1; display(); }
         private void comboBox10_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[7] = comboBox10.SelectedIndex + 1; display(); }
 
+        private void comboBox11_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[0] = comboBox11.SelectedIndex + 1; display(); }
+        private void comboBox12_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[1] = comboBox12.SelectedIndex + 1; display(); }
+        private void comboBox13_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[2] = comboBox13.SelectedIndex + 1; display(); }
+        private void comboBox14_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[3] = comboBox14.SelectedIndex + 1; display(); }
+        private void comboBox15_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[4] = comboBox15.SelectedIndex + 1; display(); }
+        private void comboBox18_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[5] = comboBox15.SelectedIndex + 1; display(); }
+        private void comboBox17_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[6] = comboBox17.SelectedIndex + 1; display(); }
+        private void comboBox16_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[7] = comboBox16.SelectedIndex + 1; display(); }
 
 
 
@@ -102,48 +116,60 @@ namespace Resturante
 
         private void checkBox15_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox15.Checked) { Pedido_Bebidas[7] = Bebidas[7]; }
+            else { Pedido_Bebidas[7] = null; }
+            display();
         }
 
         private void checkBox16_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox16.Checked) { Pedido_Bebidas[6] = Bebidas[6]; }
+            else { Pedido_Bebidas[6] = null; }
+            display();
         }
 
         private void checkBox14_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox14.Checked) { Pedido_Bebidas[5] = Bebidas[5]; }
+            else { Pedido_Bebidas[5] = null; }
+            display();
         }
 
         private void checkBox13_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox13.Checked) { Pedido_Bebidas[4] = Bebidas[4]; }
+            else { Pedido_Bebidas[4] = null; }
+            display();
         }
 
         private void checkBox12_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox12.Checked) { Pedido_Bebidas[3] = Bebidas[3]; }
+            else { Pedido_Bebidas[3] = null; }
+            display();
         }
 
         private void checkBox11_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox11.Checked) { Pedido_Bebidas[2] = Bebidas[2]; }
+            else { Pedido_Bebidas[2] = null; }
+            display();
         }
 
         private void checkBox10_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox10.Checked) { Pedido_Bebidas[1] = Bebidas[1]; }
+            else { Pedido_Bebidas[1] = null; }
+            display();
         }
 
         private void checkBox9_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkBox9.Checked) { Pedido_Bebidas[0] = Bebidas[0]; }
+            else { Pedido_Bebidas[0] = null; }
+            display();
         }
 
-        private void comboBox10_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
 
 
@@ -207,17 +233,6 @@ namespace Resturante
             display();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            N_MESA = comboBox1.SelectedIndex + 1;
-            display();
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            N_PESSOAS = comboBox2.SelectedIndex + 1;
-            display();
-        }
 
         private void textBox1_TextChanged(object sender, EventArgs e) 
         {
@@ -256,8 +271,13 @@ namespace Resturante
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Prato_Principal = pratos_principais[listBox1.SelectedIndex];
-            display();
+            int index = listBox1.SelectedIndex;
+            if (index >= 0)
+            {
+                Prato_Principal = pratos_principais[index];
+                Prato_Principal_Preco = pratos_principais_preco[index];
+                display();
+            }
         }
 
 
@@ -271,9 +291,8 @@ namespace Resturante
             textBox1.Text += Environment.NewLine;
             textBox1.Text += "Número de Pessoas: " + N_PESSOAS;
             textBox1.Text += Environment.NewLine;
-            textBox1.Text += "-----";
             textBox1.Text += Environment.NewLine;
-            textBox1.Text += "Prato Principal: " + Prato_Principal;
+            textBox1.Text += "Prato Principal: " + Prato_Principal + " - R$ " + Prato_Principal_Preco;
             textBox1.Text += Environment.NewLine;
             textBox1.Text += "Acompanhamentos:";
             textBox1.Text += Environment.NewLine;
@@ -282,7 +301,8 @@ namespace Resturante
             {
                 if (acompanhamento != null)
                 {
-                    textBox1.Text += "    - " + acompanhamento + " (Qntd. " + Pedido_Acomp_Qntd[index] + ")" + Environment.NewLine;
+                    int qntd = Pedido_Acomp_Qntd[index];
+                    textBox1.Text += "    - " + acompanhamento + " (Qntd. " + qntd + ") - R$" + (qntd * Acompanhamentos_preco[index]) + Environment.NewLine;
                 }
                 index++;
             }  
@@ -294,7 +314,8 @@ namespace Resturante
             {
                 if (bebida != null)
                 {
-                    textBox1.Text += "    - " + bebida + " (Qntd. " + Pedido_Bebidas_Qntd[index] + ")" + Environment.NewLine;
+                    int qntd = Pedido_Bebidas_Qntd[index];
+                    textBox1.Text += "    - " + bebida + " (Qntd. " + qntd + ") - R$" + (qntd * Acompanhamentos_preco[index]) + Environment.NewLine;
                 }
                 index++;
             }
@@ -306,6 +327,34 @@ namespace Resturante
         private void radioButton2_CheckedChanged(object sender, EventArgs e) { Forma_de_Pagamento = "Cartão de Debito"; display(); }
         private void radioButton3_CheckedChanged(object sender, EventArgs e) { Forma_de_Pagamento = "Dinheiro"; display(); }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (N_MESA == 0) { }
+            if (N_PESSOAS == 0) { }
+            if (Prato_Principal.Equals("")) { }
 
+            int index = 0;
+            foreach (var acompanhamento in Pedido_Acomp)
+            {
+                if (acompanhamento != null)
+                {
+                    int qntd = Pedido_Acomp_Qntd[index];
+                    if (qntd == 0) {  }
+                }
+                index++;
+            }
+            index = 0;
+            foreach (var bebida in Pedido_Bebidas)
+            {
+                if (bebida != null)
+                {
+                    int qntd = Pedido_Bebidas_Qntd[index];
+                    if (qntd == 0) { }
+                }
+                index++;
+            }
+
+            if (Forma_de_Pagamento.Equals("")) { }
+        }
     }
 }
