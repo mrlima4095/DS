@@ -315,7 +315,7 @@ namespace Resturante
                 if (bebida != null)
                 {
                     int qntd = Pedido_Bebidas_Qntd[index];
-                    textBox1.Text += "    - " + bebida + " (Qntd. " + qntd + ") - R$" + (qntd * Acompanhamentos_preco[index]) + Environment.NewLine;
+                    textBox1.Text += "    - " + bebida + " (Qntd. " + qntd + ") - R$" + (qntd * Bebidas_preco[index]) + Environment.NewLine;
                 }
                 index++;
             }
