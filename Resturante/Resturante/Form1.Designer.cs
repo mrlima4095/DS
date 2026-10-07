@@ -530,6 +530,7 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Monte seu pedido:";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // comboBox18
             // 
@@ -845,7 +846,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Pedido";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

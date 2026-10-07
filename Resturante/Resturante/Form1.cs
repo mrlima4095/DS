@@ -26,8 +26,8 @@ namespace Resturante
 
         public string[] Acompanhamentos = { "Batata", "Salada", "A", "B", "C", "D", "E", "F" };
         public double[] Acompanhamentos_preco = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
-        public string[] Bebidas = { "Agua", "Suco", "Sucada", "Asucada", "A", "B", "C", "D" };
-        public double[] Bebidas_preco = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+        public string[] Bebidas = { "Agua", "Agua com Gas", "Suco de Manga", "Suco de Laranja", "Limonada", "Coca Cola", "Dolly Guarana", "Fanta Uva" };
+        public double[] Bebidas_preco = { 2.5, 3.75, 5.0, 4.5, 3.0, 8.0, 7.5, 7.0 };
         public string[] pratos_principais = { "Prato 1", "Arroz 2", "Prato 3", "Prato 4", "Prato 5", "Prato 6", "Prato 7", "Prato 8" };
         public double[] pratos_principais_preco = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
         public CheckBox[] checkBoxes = new CheckBox[20];
@@ -355,6 +355,11 @@ namespace Resturante
             }
 
             if (Forma_de_Pagamento.Equals("")) { }
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
     }
