@@ -14,8 +14,6 @@ namespace Resturante
 {
     public partial class Form1 : Form
     {
-        public int N_MESA = 0;
-        public int N_PESSOAS = 0;
         public string Prato_Principal = "";
         public double Prato_Principal_Preco = 0.0;
         public string Forma_de_Pagamento = "";
@@ -44,8 +42,6 @@ namespace Resturante
 
         private void button1_Click(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = -1;
-            comboBox2.SelectedIndex = -1;
             comboBox3.SelectedIndex = -1;
             comboBox4.SelectedIndex = -1;
             comboBox5.SelectedIndex = -1;
@@ -287,11 +283,6 @@ namespace Resturante
             textBox1.Text = "Pedido #1";
             textBox1.Text += Environment.NewLine;
             textBox1.Text += Environment.NewLine;
-            textBox1.Text += "Mesa Solicitada: " + N_MESA;
-            textBox1.Text += Environment.NewLine;
-            textBox1.Text += "Número de Pessoas: " + N_PESSOAS;
-            textBox1.Text += Environment.NewLine;
-            textBox1.Text += Environment.NewLine;
             textBox1.Text += "Prato Principal: " + Prato_Principal + " - R$ " + Prato_Principal_Preco;
             textBox1.Text += Environment.NewLine;
             textBox1.Text += "Acompanhamentos:";
@@ -329,8 +320,6 @@ namespace Resturante
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (N_MESA == 0) { }
-            if (N_PESSOAS == 0) { }
             if (Prato_Principal.Equals("")) { }
 
             int index = 0;
@@ -359,6 +348,11 @@ namespace Resturante
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }
