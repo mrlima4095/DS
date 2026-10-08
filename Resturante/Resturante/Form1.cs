@@ -19,7 +19,7 @@ namespace Resturante
         public string Forma_de_Pagamento = "";
         public string[] Adicionais = new string[4] { "Borda Recheada", "Recheio 4x", "", "" };
         public string[] Adicionais_Pedidos = new string[4] { null, null, null, null };
-        public double[] Adicionais_Preco = new double[4] { 9.99, 19.99, 0.0, 0.0 }
+        public double[] Adicionais_Preco = new double[4] { 9.99, 19.99, 0.0, 0.0 };
         public string[] Pedido_Acomp = new string[8] { null, null, null, null, null, null, null, null };
         public int[] Pedido_Acomp_Qntd = new int[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
         public string[] Pedido_Bebidas = new string[8] { null, null, null, null, null, null, null, null };
