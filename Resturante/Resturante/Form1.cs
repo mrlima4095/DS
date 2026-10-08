@@ -82,18 +82,6 @@ namespace Resturante
             checkBox16.Checked = false;
         }
 
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) { }
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e) {  }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Acomp_Qntd[0] = comboBox3.SelectedIndex + 1; display(); }
-        private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[1] = comboBox4.SelectedIndex + 1; display(); }
-        private void comboBox5_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[2] = comboBox5.SelectedIndex + 1; display(); }
-        private void comboBox6_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[3] = comboBox6.SelectedIndex + 1; display(); }
-        private void comboBox7_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[4] = comboBox7.SelectedIndex + 1; display(); }
-        private void comboBox8_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[5] = comboBox8.SelectedIndex + 1; display(); }
-        private void comboBox9_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Acomp_Qntd[6] = comboBox9.SelectedIndex + 1; display(); }
-
         private void comboBox11_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[0] = comboBox11.SelectedIndex + 1; display(); }
         private void comboBox12_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[1] = comboBox12.SelectedIndex + 1; display(); }
         private void comboBox13_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[2] = comboBox13.SelectedIndex + 1; display(); }
@@ -172,14 +160,14 @@ namespace Resturante
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked) { Pedido_Acomp[0] = Acompanhamentos[0]; }
-            else { Pedido_Acomp[0] = null; }
+            if (checkBox1.Checked) { Adicionais_Pedidos[0] = Adicionais[0]; }
+            else { Adicionais_Pedidos[0] = null; }
             display();
         }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox3.Checked) { Pedido_Acomp[2] = Acompanhamentos[2]; }
+            if (checkBox3.Checked) { Adicionais[2] = Adicio[2]; }
             else { Pedido_Acomp[2] = null; }
             display();
         }
@@ -224,19 +212,15 @@ namespace Resturante
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox2.Checked) { Pedido_Acomp[1] = Acompanhamentos[1]; }
-            else { Pedido_Acomp[1] = null; }
+            if (checkBox2.Checked) { Adicionais_Pedidos[1] = Adicionais[1]; }
+            else { Adicionais_Pedidos[1] = null; }
             display();
         }
 
 
-        private void textBox1_TextChanged(object sender, EventArgs e) 
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -353,6 +337,11 @@ namespace Resturante
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
 
         }
