@@ -14,9 +14,12 @@ namespace Resturante
 {
     public partial class Form1 : Form
     {
-        public string Prato_Principal = "";
-        public double Prato_Principal_Preco = 0.0;
+        public string Sabor_Pizza = "";
+        public double Sabor_Pizza_Preco = 0.0;
         public string Forma_de_Pagamento = "";
+        public string[] Adicionais = new string[4] { "Borda Recheada", "Recheio 4x", "", "" };
+        public string[] Adicionais_Pedidos = new string[4] { null, null, null, null };
+        public double[] Adicionais_Preco = new double[4] { 9.99, 19.99, 0.0, 0.0 }
         public string[] Pedido_Acomp = new string[8] { null, null, null, null, null, null, null, null };
         public int[] Pedido_Acomp_Qntd = new int[8] { 0, 0, 0, 0, 0, 0, 0, 0 };
         public string[] Pedido_Bebidas = new string[8] { null, null, null, null, null, null, null, null };
@@ -26,9 +29,8 @@ namespace Resturante
         public double[] Acompanhamentos_preco = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
         public string[] Bebidas = { "Agua", "Agua com Gas", "Suco de Manga", "Suco de Laranja", "Limonada", "Coca Cola", "Dolly Guarana", "Fanta Uva" };
         public double[] Bebidas_preco = { 2.5, 3.75, 5.0, 4.5, 3.0, 8.0, 7.5, 7.0 };
-        public string[] pratos_principais = { "Prato 1", "Arroz 2", "Prato 3", "Prato 4", "Prato 5", "Prato 6", "Prato 7", "Prato 8" };
-        public double[] pratos_principais_preco = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
-        public CheckBox[] checkBoxes = new CheckBox[20];
+        public string[] pratos_principais = { "Frango com Catupiry", "Calabresa", "3 Queijos", "Prato 4", "Chocolate", "Sorvete", "", "Prato 8" };
+        public double[] pratos_principais_preco = { 39.99, 42.5, 35.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
         
         public Form1()
         {
@@ -268,8 +270,8 @@ namespace Resturante
             int index = listBox1.SelectedIndex;
             if (index >= 0)
             {
-                Prato_Principal = pratos_principais[index];
-                Prato_Principal_Preco = pratos_principais_preco[index];
+                Sabor_Pizza = pratos_principais[index];
+                Sabor_Pizza_Preco = pratos_principais_preco[index];
                 display();
             }
         }
@@ -281,7 +283,7 @@ namespace Resturante
             textBox1.Text = "Pedido #1";
             textBox1.Text += Environment.NewLine;
             textBox1.Text += Environment.NewLine;
-            textBox1.Text += "Prato Principal: " + Prato_Principal + " - R$ " + Prato_Principal_Preco;
+            textBox1.Text += "Prato Principal: " + Sabor_Pizza + " - R$ " + Sabor_Pizza_Preco;
             textBox1.Text += Environment.NewLine;
             textBox1.Text += "Acompanhamentos:";
             textBox1.Text += Environment.NewLine;
@@ -318,7 +320,7 @@ namespace Resturante
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (Prato_Principal.Equals("")) { }
+            if (Sabor_Pizza.Equals("")) { }
 
             int index = 0;
             foreach (var acompanhamento in Pedido_Acomp)
