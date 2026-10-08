@@ -44,10 +44,6 @@ namespace Resturante
 
         private void button1_Click(object sender, EventArgs e)
         {
-            comboBox3.SelectedIndex = -1;
-            comboBox4.SelectedIndex = -1;
-            comboBox5.SelectedIndex = -1;
-            comboBox6.SelectedIndex = -1;
             comboBox7.SelectedIndex = -1;
             comboBox8.SelectedIndex = -1;
             comboBox9.SelectedIndex = -1;
@@ -167,7 +163,7 @@ namespace Resturante
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox3.Checked) { Adicionais[2] = Adicio[2]; }
+            if (checkBox3.Checked) { Adicionais_Pedidos[2] = Adicionais[2]; }
             else { Pedido_Acomp[2] = null; }
             display();
         }
