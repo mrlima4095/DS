@@ -49,7 +49,6 @@ namespace Resturante
             comboBox7.SelectedIndex = -1;
             comboBox8.SelectedIndex = -1;
             comboBox9.SelectedIndex = -1;
-            comboBox10.SelectedIndex = -1;
             comboBox11.SelectedIndex = -1;
             comboBox12.SelectedIndex = -1;    
             comboBox13.SelectedIndex = -1;
@@ -82,8 +81,8 @@ namespace Resturante
         }
 
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) { N_MESA = comboBox1.SelectedIndex + 1; display(); }
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e) { N_PESSOAS = comboBox2.SelectedIndex + 1; display(); }
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) { }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e) {  }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Acomp_Qntd[0] = comboBox3.SelectedIndex + 1; display(); }
         private void comboBox4_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[1] = comboBox4.SelectedIndex + 1; display(); }
@@ -92,7 +91,6 @@ namespace Resturante
         private void comboBox7_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[4] = comboBox7.SelectedIndex + 1; display(); }
         private void comboBox8_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[5] = comboBox8.SelectedIndex + 1; display(); }
         private void comboBox9_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Acomp_Qntd[6] = comboBox9.SelectedIndex + 1; display(); }
-        private void comboBox10_SelectedIndexChanged_1(object sender, EventArgs e) { Pedido_Acomp_Qntd[7] = comboBox10.SelectedIndex + 1; display(); }
 
         private void comboBox11_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[0] = comboBox11.SelectedIndex + 1; display(); }
         private void comboBox12_SelectedIndexChanged(object sender, EventArgs e) { Pedido_Bebidas_Qntd[1] = comboBox12.SelectedIndex + 1; display(); }
