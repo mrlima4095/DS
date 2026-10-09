@@ -33,6 +33,7 @@ namespace Resturante
         public string[] pratos_principais = { "Frango com Catupiry", "Calabresa", "3 Queijos", "Prato 4", "Chocolate", "Sorvete", "", "Prato 8" };
         public double[] pratos_principais_preco = { 39.99, 42.5, 35.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
 
+        public int qntd_Pizza = 0;
         
         
         public Form1()
@@ -210,27 +211,11 @@ namespace Resturante
         private void display()
         {
             textBox1.Clear();
-            textBox1.Text = "Pedido #1";
-            textBox1.Text += Environment.NewLine;
-            textBox1.Text += Environment.NewLine;
-            textBox1.Text += "Prato Principal: " + Sabor_Pizza + " - R$ " + Sabor_Pizza_Preco;
-            textBox1.Text += Environment.NewLine;
-            textBox1.Text += "Acompanhamentos:";
-            textBox1.Text += Environment.NewLine;
-            int index = 0;
-            foreach (var acompanhamento in Pedido_Acomp)
-            {
-                if (acompanhamento != null)
-                {
-                    int qntd = Pedido_Acomp_Qntd[index];
-                    textBox1.Text += "    - " + acompanhamento + " (Qntd. " + qntd + ") - R$" + (qntd * Acompanhamentos_preco[index]) + Environment.NewLine;
-                }
-                index++;
-            }
+            textBox1.Text = "Pizzas no Pedido: " + qntd_Pizza;
             textBox1.Text += Environment.NewLine;
             textBox1.Text += "Bebidas:";
             textBox1.Text += Environment.NewLine;
-            index = 0;
+            int index = 0;
             foreach (var bebida in Pedido_Bebidas)
             {
                 if (bebida != null)
@@ -240,6 +225,8 @@ namespace Resturante
                 }
                 index++;
             }
+            textBox1.Text += Environment.NewLine;
+            textBox1.Text += ":";
             textBox1.Text += Environment.NewLine;
             textBox1.Text += "Forma de Pagamento: " + Forma_de_Pagamento;
         }
@@ -284,12 +271,13 @@ namespace Resturante
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-
+            qntd_Pizza = comboBox1.SelectedIndex + 1;
+            display();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-
+            listBox2.Items.Add(Sabor_Pizza);
         }
 
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
