@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,8 @@ namespace Resturante
         public double[] Bebidas_preco = { 2.5, 3.75, 5.0, 4.5, 3.0, 8.0, 7.5, 7.0 };
         public string[] pratos_principais = { "Frango com Catupiry", "Calabresa", "3 Queijos", "Prato 4", "Chocolate", "Sorvete", "", "Prato 8" };
         public double[] pratos_principais_preco = { 39.99, 42.5, 35.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+
+        
         
         public Form1()
         {
@@ -154,64 +157,11 @@ namespace Resturante
 
 
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked) { Adicionais_Pedidos[0] = Adicionais[0]; }
-            else { Adicionais_Pedidos[0] = null; }
-            display();
-        }
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) { if (checkBox1.Checked) { Adicionais_Pedidos[0] = Adicionais[0]; } else { Adicionais_Pedidos[0] = null; } display(); }
+        private void checkBox2_CheckedChanged(object sender, EventArgs e) { if (checkBox2.Checked) { Adicionais_Pedidos[1] = Adicionais[1]; } else { Adicionais_Pedidos[1] = null; } display(); }
+        private void checkBox3_CheckedChanged(object sender, EventArgs e) { if (checkBox3.Checked) { Adicionais_Pedidos[2] = Adicionais[2]; } else { Adicionais_Pedidos[2] = null; } display(); }
+        private void checkBox4_CheckedChanged(object sender, EventArgs e) { if (checkBox4.Checked) { Adicionais_Pedidos[3] = Adicionais[3]; } else { Adicionais_Pedidos[3] = null; } display(); }
 
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox3.Checked) { Adicionais_Pedidos[2] = Adicionais[2]; }
-            else { Pedido_Acomp[2] = null; }
-            display();
-        }
-
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox4.Checked) { Pedido_Acomp[3] = Acompanhamentos[3]; }
-            else { Pedido_Acomp[3] = null; }
-            display();
-        }
-
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox5.Checked) { Pedido_Acomp[4] = Acompanhamentos[4]; }
-            else { Pedido_Acomp[4] = null; }
-            display();
-        }
-
-        private void checkBox6_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox6.Checked) { Pedido_Acomp[5] = Acompanhamentos[5]; }
-            else { Pedido_Acomp[5] = null; }
-            display();
-        }
-
-        private void checkBox7_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox7.Checked) { Pedido_Acomp[6] = Acompanhamentos[6]; }
-            else { Pedido_Acomp[6] = null; }
-            display();
-        }
-
-        private void checkBox8_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox8.Checked) { Pedido_Acomp[7] = Acompanhamentos[7]; }
-            else { Pedido_Acomp[7] = null; }
-            display();
-        }
-
-
-
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked) { Adicionais_Pedidos[1] = Adicionais[1]; }
-            else { Adicionais_Pedidos[1] = null; }
-            display();
-        }
 
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -276,7 +226,7 @@ namespace Resturante
                     textBox1.Text += "    - " + acompanhamento + " (Qntd. " + qntd + ") - R$" + (qntd * Acompanhamentos_preco[index]) + Environment.NewLine;
                 }
                 index++;
-            }  
+            }
             textBox1.Text += Environment.NewLine;
             textBox1.Text += "Bebidas:";
             textBox1.Text += Environment.NewLine;
@@ -338,6 +288,11 @@ namespace Resturante
         }
 
         private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
 
         }
