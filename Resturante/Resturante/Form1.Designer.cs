@@ -734,10 +734,12 @@
             // 
             // listBox2
             // 
+            this.listBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
             this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 22;
             this.listBox2.Location = new System.Drawing.Point(838, 69);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(401, 121);
+            this.listBox2.Size = new System.Drawing.Size(401, 114);
             this.listBox2.TabIndex = 53;
             // 
             // button4
