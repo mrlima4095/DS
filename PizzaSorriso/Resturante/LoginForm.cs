@@ -1,4 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Resturante
@@ -12,19 +19,15 @@ namespace Resturante
             InitializeComponent();
         }
 
-        private void btnEntrar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            string cpf = ContaStore.FormatarCpf(txtCpf.Text);
+            string cpf = ContaStore.SomenteDigitos(textBox1.Text);
 
             if (!ContaStore.CpfValido(cpf))
             {
-                MessageBox.Show(
-                    "Digite um CPF válido para entrar. Se ainda não tem conta, clique em \"Criar conta\".",
-                    "Pizzaria Sorriso",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-                txtCpf.Focus();
-                txtCpf.SelectAll();
+                MessageBox.Show("Digite um CPF válido para entrar.", "Pizzaria Sorriso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox1.Focus();
+                textBox1.SelectAll();
                 return;
             }
 
@@ -32,44 +35,53 @@ namespace Resturante
 
             if (conta == null)
             {
-                MessageBox.Show(
-                    "Esse CPF ainda não está cadastrado. Crie uma conta ou entre como convidado.",
-                    "Pizzaria Sorriso",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-                txtCpf.Focus();
-                txtCpf.SelectAll();
+                MessageBox.Show("Esse CPF não está cadastrado. Crie uma conta ou entre como convidado.", "Pizzaria Sorriso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBox1.Focus();
+                textBox1.SelectAll();
+                return;
+            }
+
+            if (conta.Senha != textBox2.Text)
+            {
+                MessageBox.Show("Senha incorreta.", "Pizzaria Sorriso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox2.Clear();
+                textBox2.Focus();
                 return;
             }
 
             Usuario = conta;
             DialogResult = DialogResult.OK;
-            Close();
+            this.Close();
         }
 
-        private void btnCriarConta_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            using (CadastroForm cadastro = new CadastroForm())
+            CadastroForm cadastro = new CadastroForm();
+
+            if (cadastro.ShowDialog(this) == DialogResult.OK)
             {
-                if (cadastro.ShowDialog(this) == DialogResult.OK)
-                {
-                    Usuario = cadastro.ContaCadastrada;
-                    DialogResult = DialogResult.OK;
-                    Close();
-                }
+                Usuario = cadastro.ContaCadastrada;
+                DialogResult = DialogResult.OK;
+                this.Close();
             }
         }
 
-        private void btnConvidado_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             Usuario = null;
             DialogResult = DialogResult.OK;
-            Close();
+            this.Close();
         }
 
-        private void txtCpf_Leave(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            txtCpf.Text = ContaStore.FormatarCpf(txtCpf.Text);
+            Application.Exit();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DescontosForm desc = new DescontosForm();
+            desc.Show();
         }
     }
 }

@@ -1,15 +1,17 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Resturante
 {
     public partial class RemoverPizzaForm : Form
     {
-        public RemoverPizzaForm()
-            : this(new List<PizzaPedido>())
-        {
-        }
 
         public RemoverPizzaForm(List<PizzaPedido> pizzas)
         {
@@ -17,35 +19,35 @@ namespace Resturante
 
             foreach (PizzaPedido pizza in pizzas)
             {
-                lstPizzas.Items.Add(pizza);
+                listBox1.Items.Add(pizza);
             }
 
-            if (lstPizzas.Items.Count > 0)
+            if (listBox1.Items.Count > 0)
             {
-                lstPizzas.SelectedIndex = 0;
+                listBox1.SelectedIndex = 0;
             }
         }
 
         public int IndiceSelecionado
         {
-            get { return lstPizzas.SelectedIndex; }
+            get { return listBox1.SelectedIndex; }
         }
 
-        private void btnRemover_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (lstPizzas.SelectedIndex < 0)
+            if (listBox1.SelectedIndex < 0)
             {
                 MessageBox.Show("Selecione a pizza que deseja remover.", "Remover pizza", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
             DialogResult = DialogResult.OK;
-            Close();
+            this.Close();
         }
 
-        private void lstPizzas_DoubleClick(object sender, EventArgs e)
+        private void listBox1_DoubleClick(object sender, EventArgs e)
         {
-            btnRemover_Click(sender, e);
+            button1_Click(sender, e);
         }
     }
 }

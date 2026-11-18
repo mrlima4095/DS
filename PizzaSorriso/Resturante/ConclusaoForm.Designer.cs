@@ -28,77 +28,91 @@ namespace Resturante
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtRecibo = new System.Windows.Forms.TextBox();
-            this.lblPergunta = new System.Windows.Forms.Label();
-            this.btnSim = new System.Windows.Forms.Button();
-            this.btnNao = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblTitulo
+            // label1
             // 
-            this.lblTitulo.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTitulo.Location = new System.Drawing.Point(12, 12);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(456, 30);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Pedido concluído! Obrigado pela preferência!";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(456, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Pedido concluído! Obrigado pela preferência!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtRecibo
+            // textBox1
             // 
-            this.txtRecibo.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.txtRecibo.Location = new System.Drawing.Point(12, 50);
-            this.txtRecibo.Multiline = true;
-            this.txtRecibo.Name = "txtRecibo";
-            this.txtRecibo.ReadOnly = true;
-            this.txtRecibo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtRecibo.Size = new System.Drawing.Size(456, 403);
-            this.txtRecibo.TabIndex = 1;
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.textBox1.Location = new System.Drawing.Point(12, 56);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(456, 333);
+            this.textBox1.TabIndex = 1;
             // 
-            // lblPergunta
+            // label2
             // 
-            this.lblPergunta.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.lblPergunta.Location = new System.Drawing.Point(13, 470);
-            this.lblPergunta.Name = "lblPergunta";
-            this.lblPergunta.Size = new System.Drawing.Size(215, 24);
-            this.lblPergunta.TabIndex = 2;
-            this.lblPergunta.Text = "Deseja fazer um novo pedido?";
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(13, 470);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(215, 24);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Deseja fazer um novo pedido?";
             // 
-            // btnSim
+            // button1
             // 
-            this.btnSim.DialogResult = System.Windows.Forms.DialogResult.Yes;
-            this.btnSim.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnSim.Location = new System.Drawing.Point(248, 470);
-            this.btnSim.Name = "btnSim";
-            this.btnSim.Size = new System.Drawing.Size(100, 32);
-            this.btnSim.TabIndex = 3;
-            this.btnSim.Text = "Sim";
-            this.btnSim.UseVisualStyleBackColor = true;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Yes;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.button1.Location = new System.Drawing.Point(248, 470);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 32);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Sim";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnNao
+            // button2
             // 
-            this.btnNao.DialogResult = System.Windows.Forms.DialogResult.No;
-            this.btnNao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.btnNao.Location = new System.Drawing.Point(368, 470);
-            this.btnNao.Name = "btnNao";
-            this.btnNao.Size = new System.Drawing.Size(100, 32);
-            this.btnNao.TabIndex = 4;
-            this.btnNao.Text = "Não";
-            this.btnNao.UseVisualStyleBackColor = true;
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.No;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.button2.Location = new System.Drawing.Point(368, 470);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 32);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Não";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.button3.Location = new System.Drawing.Point(12, 408);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(452, 46);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Salvar Nota";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ConclusaoForm
             // 
-            this.AcceptButton = this.btnSim;
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnNao;
+            this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(480, 520);
-            this.Controls.Add(this.btnNao);
-            this.Controls.Add(this.btnSim);
-            this.Controls.Add(this.lblPergunta);
-            this.Controls.Add(this.txtRecibo);
-            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = global::Resturante.Properties.Resources.logo;
             this.MaximizeBox = false;
@@ -113,10 +127,11 @@ namespace Resturante
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.TextBox txtRecibo;
-        private System.Windows.Forms.Label lblPergunta;
-        private System.Windows.Forms.Button btnSim;
-        private System.Windows.Forms.Button btnNao;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

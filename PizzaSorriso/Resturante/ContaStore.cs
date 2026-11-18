@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows.Forms;
 
 namespace Resturante
 {
@@ -13,61 +13,77 @@ namespace Resturante
         public string Email { get; set; }
         public string Cpf { get; set; }
         public DateTime Cadastro { get; set; }
+        public string Senha { get; set; }
     }
 
     public static class ContaStore
     {
-        private static readonly string Pasta = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-            "PizzariaSorriso");
-
-        private static readonly string Arquivo = Path.Combine(Pasta, "contas.dat");
-
-        public static string CaminhoArquivo
-        {
-            get { return Arquivo; }
-        }
-
         public static void Salvar(Conta conta)
         {
-            Directory.CreateDirectory(Pasta);
-            Esconder(Pasta);
+            string linha = conta.Nome + "\t" + conta.Email + "\t" + conta.Cpf + "\t" + conta.Cadastro.ToString("yyyy-MM-dd HH:mm:ss") + "\t" + conta.Senha;
 
-            File.AppendAllText(Arquivo, Formatar(conta) + Environment.NewLine, Encoding.UTF8);
-            Esconder(Arquivo);
+            File.AppendAllText(Application.StartupPath + "\\contas.txt", linha + Environment.NewLine, Encoding.UTF8);
         }
 
         public static List<Conta> Carregar()
         {
-            List<Conta> lista = new List<Conta>();
+            List<Conta> contas = new List<Conta>();
+            string caminho = Application.StartupPath + "\\contas.txt";
 
-            if (!File.Exists(Arquivo))
+            if (File.Exists(caminho) == false)
             {
-                return lista;
+                return contas;
             }
 
-            foreach (string linha in File.ReadAllLines(Arquivo, Encoding.UTF8))
-            {
-                Conta conta = Interpretar(linha);
+            string[] linhas = File.ReadAllLines(caminho, Encoding.UTF8);
 
-                if (conta != null)
+            for (int i = 0; i < linhas.Length; i++)
+            {
+                string[] campos = linhas[i].Split('\t');
+
+                if (campos.Length < 3)
                 {
-                    lista.Add(conta);
+                    continue;
                 }
+
+                Conta conta = new Conta();
+                DateTime data;
+
+                conta.Nome = campos[0];
+                conta.Email = campos[1];
+                conta.Cpf = campos[2];
+                conta.Senha = "";
+
+                if (campos.Length >= 4 && DateTime.TryParse(campos[3], out data))
+                {
+                    conta.Cadastro = data;
+                }
+                else
+                {
+                    conta.Cadastro = DateTime.MinValue;
+                }
+
+                if (campos.Length >= 5)
+                {
+                    conta.Senha = campos[4];
+                }
+
+                contas.Add(conta);
             }
 
-            return lista;
+            return contas;
         }
 
         public static Conta BuscarPorCpf(string cpf)
         {
             string procurado = SomenteDigitos(cpf);
+            List<Conta> contas = Carregar();
 
-            foreach (Conta conta in Carregar())
+            for (int i = 0; i < contas.Count; i++)
             {
-                if (SomenteDigitos(conta.Cpf) == procurado)
+                if (SomenteDigitos(contas[i].Cpf) == procurado)
                 {
-                    return conta;
+                    return contas[i];
                 }
             }
 
@@ -76,16 +92,37 @@ namespace Resturante
 
         public static bool CpfCadastrado(string cpf)
         {
-            return BuscarPorCpf(cpf) != null;
+            if (BuscarPorCpf(cpf) == null)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public static bool EmailCadastrado(string email)
         {
-            string procurado = (email ?? "").Trim().ToLowerInvariant();
+            string procurado = email;
 
-            foreach (Conta conta in Carregar())
+            if (procurado == null)
             {
-                if ((conta.Email ?? "").Trim().ToLowerInvariant() == procurado)
+                procurado = "";
+            }
+
+            procurado = procurado.Trim().ToLower();
+
+            List<Conta> contas = Carregar();
+
+            for (int i = 0; i < contas.Count; i++)
+            {
+                string emailConta = contas[i].Email;
+
+                if (emailConta == null)
+                {
+                    emailConta = "";
+                }
+
+                if (emailConta.Trim().ToLower() == procurado)
                 {
                     return true;
                 }
@@ -101,29 +138,17 @@ namespace Resturante
                 return "";
             }
 
-            StringBuilder digitos = new StringBuilder();
+            string digitos = "";
 
-            foreach (char c in texto)
+            for (int i = 0; i < texto.Length; i++)
             {
-                if (char.IsDigit(c))
+                if (char.IsDigit(texto[i]))
                 {
-                    digitos.Append(c);
+                    digitos += texto[i];
                 }
             }
 
-            return digitos.ToString();
-        }
-
-        public static string FormatarCpf(string cpf)
-        {
-            string digitos = SomenteDigitos(cpf);
-
-            if (digitos.Length != 11)
-            {
-                return (cpf ?? "").Trim();
-            }
-
-            return digitos.Substring(0, 3) + "." + digitos.Substring(3, 3) + "." + digitos.Substring(6, 3) + "-" + digitos.Substring(9, 2);
+            return digitos;
         }
 
         public static bool CpfValido(string cpf)
@@ -184,7 +209,12 @@ namespace Resturante
                 resto = 0;
             }
 
-            return resto == (d[10] - '0');
+            if (resto != (d[10] - '0'))
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public static bool EmailValido(string email)
@@ -194,12 +224,22 @@ namespace Resturante
                 return false;
             }
 
-            return Regex.IsMatch(email.Trim(), @"^[^@\s]+@[^@\s]+\.[A-Za-z]{2,}$");
+            if (Regex.IsMatch(email.Trim(), @"^[^@\s]+@[^@\s]+\.[A-Za-z]{2,}$") == false)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public static bool NomeValido(string nome)
         {
-            if (string.IsNullOrEmpty(nome) || Regex.IsMatch(nome, "[0-9]"))
+            if (string.IsNullOrEmpty(nome))
+            {
+                return false;
+            }
+
+            if (Regex.IsMatch(nome, "[0-9]"))
             {
                 return false;
             }
@@ -211,67 +251,17 @@ namespace Resturante
                 return false;
             }
 
-            return partes[0].Length >= 2 && partes[partes.Length - 1].Length >= 2;
-        }
-
-        private static string Formatar(Conta conta)
-        {
-            return string.Join("\t", new string[]
+            if (partes[0].Length < 2)
             {
-                Simples(conta.Nome),
-                Simples(conta.Email),
-                Simples(conta.Cpf),
-                conta.Cadastro.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)
-            });
-        }
-
-        private static Conta Interpretar(string linha)
-        {
-            if (string.IsNullOrWhiteSpace(linha))
-            {
-                return null;
+                return false;
             }
 
-            string[] campos = linha.Split('\t');
-
-            if (campos.Length < 3)
+            if (partes[partes.Length - 1].Length < 2)
             {
-                return null;
+                return false;
             }
 
-            Conta conta = new Conta();
-            DateTime data;
-
-            conta.Nome = campos[0];
-            conta.Email = campos[1];
-            conta.Cpf = campos[2];
-            conta.Cadastro = campos.Length >= 4 && DateTime.TryParse(campos[3], CultureInfo.InvariantCulture, DateTimeStyles.None, out data)
-                ? data
-                : DateTime.MinValue;
-
-            return conta;
-        }
-
-        private static string Simples(string texto)
-        {
-            if (texto == null)
-            {
-                return "";
-            }
-
-            return texto.Replace("\t", " ").Replace("\r", " ").Replace("\n", " ");
-        }
-
-        private static void Esconder(string caminho)
-        {
-            try
-            {
-                File.SetAttributes(caminho, File.GetAttributes(caminho) | FileAttributes.Hidden);
-            }
-            catch (Exception)
-            {
-
-            }
+            return true;
         }
     }
 }

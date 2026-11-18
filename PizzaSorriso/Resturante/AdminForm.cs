@@ -1,15 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Globalization;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Resturante
 {
-    /// <summary>
-    /// Tela do administrador: lista os pedidos salvos, mostra o detalhe de cada
-    /// um, permite apagar do histórico e acompanha o faturamento.
-    /// </summary>
     public partial class AdminForm : Form
     {
         private List<RegistroPedido> pedidos = new List<RegistroPedido>();
@@ -24,19 +25,19 @@ namespace Resturante
             Atualizar();
         }
 
-        private void btnAtualizar_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Atualizar();
         }
 
-        private void lstPedidos_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MostrarDetalhe(lstPedidos.SelectedIndex);
+            MostrarDetalhe(listBox1.SelectedIndex);
         }
 
-        private void btnApagar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            int indice = lstPedidos.SelectedIndex;
+            int indice = listBox1.SelectedIndex;
 
             if (indice < 0 || indice >= pedidos.Count)
             {
@@ -46,11 +47,10 @@ namespace Resturante
 
             RegistroPedido pedido = pedidos[indice];
 
-            DialogResult resposta = MessageBox.Show(
-                "Apagar o pedido de " + NomeDe(pedido) + " (" + pedido.Data.ToString("dd/MM/yyyy HH:mm") + ")?",
-                "Apagar pedido",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning);
+            string pergunta = "Apagar o pedido de " + NomeDe(pedido)
+                + " (" + pedido.Data.ToString("dd/MM/yyyy HH:mm") + ")?";
+
+            DialogResult resposta = MessageBox.Show(pergunta, "Apagar pedido", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (resposta != DialogResult.Yes)
             {
@@ -63,29 +63,29 @@ namespace Resturante
 
         private void Atualizar()
         {
-            int selecionado = lstPedidos.SelectedIndex;
+            int selecionado = listBox1.SelectedIndex;
 
             pedidos = PedidoStore.Carregar();
 
             double faturamento = 0.0;
 
-            lstPedidos.BeginUpdate();
-            lstPedidos.Items.Clear();
+            listBox1.BeginUpdate();
+            listBox1.Items.Clear();
 
             for (int i = 0; i < pedidos.Count; i++)
             {
                 faturamento += pedidos[i].Total;
-                lstPedidos.Items.Add(Resumo(pedidos[i]));
+                listBox1.Items.Add(Resumo(pedidos[i]));
             }
 
-            lstPedidos.EndUpdate();
+            listBox1.EndUpdate();
 
-            lblResumo.Text = "Pedidos: " + pedidos.Count
+            label2.Text = "Pedidos: " + pedidos.Count
                 + "     Faturamento: R$ " + faturamento.ToString("0.00");
 
             if (pedidos.Count == 0)
             {
-                txtDetalhe.Text = "Nenhum pedido registrado ainda.";
+                textBox1.Text = "Nenhum pedido registrado ainda.";
                 return;
             }
 
@@ -94,7 +94,7 @@ namespace Resturante
                 selecionado = pedidos.Count - 1;
             }
 
-            lstPedidos.SelectedIndex = selecionado;
+            listBox1.SelectedIndex = selecionado;
             MostrarDetalhe(selecionado);
         }
 
@@ -116,11 +116,18 @@ namespace Resturante
             texto.AppendLine(new string('-', 60));
             texto.AppendLine(pedido.Itens);
             texto.AppendLine(new string('-', 60));
+            texto.AppendLine("Subtotal: R$ " + pedido.Subtotal.ToString("0.00"));
+
+            if (pedido.Desconto > 0)
+            {
+                texto.AppendLine("Desconto: R$ " + pedido.Desconto.ToString("0.00") + (pedido.Cupom ? " (cupom)" : ""));
+            }
+
             texto.AppendLine("Total: R$ " + pedido.Total.ToString("0.00"));
 
-            txtDetalhe.Text = texto.ToString();
-            txtDetalhe.SelectionStart = 0;
-            txtDetalhe.ScrollToCaret();
+            textBox1.Text = texto.ToString();
+            textBox1.SelectionStart = 0;
+            textBox1.ScrollToCaret();
         }
 
         private static string Resumo(RegistroPedido pedido)
@@ -134,7 +141,7 @@ namespace Resturante
             return string.IsNullOrEmpty(pedido.Nome) ? "(sem nome)" : pedido.Nome;
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

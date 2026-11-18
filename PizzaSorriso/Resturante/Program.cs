@@ -14,22 +14,19 @@ namespace Resturante
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            using (Splash splash = new Splash())
-            {
-                splash.ShowDialog();
-            }
+            Splash splash = new Splash();
+            splash.ShowDialog();
 
             Conta usuario = null;
 
-            using (LoginForm login = new LoginForm())
-            {
-                if (login.ShowDialog() != DialogResult.OK)
-                {
-                    return;
-                }
+            LoginForm login = new LoginForm();
 
-                usuario = login.Usuario;
+            if (login.ShowDialog() != DialogResult.OK)
+            {
+                return;
             }
+
+            usuario = login.Usuario;
 
             Form1 form1 = new Form1();
             form1.UsuarioLogado = usuario;

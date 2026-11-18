@@ -124,4 +124,28 @@
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\logo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Peperoni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Peperoni.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Napolitana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Napolitana.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Portuguesa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Portuguesa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Frango Catupiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Frango Catupiry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3 Queijos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3 Queijos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calabresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calabresa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mussarela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mussarela.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chocolate.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

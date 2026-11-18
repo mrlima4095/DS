@@ -1,12 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Management.Instrumentation;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,12 +12,21 @@ namespace Resturante
 {
     public partial class Form1 : Form
     {
+        public enum FormaPagamento
+        {
+            Nenhuma,
+            CartaoCredito,
+            CartaoDebito,
+            Dinheiro,
+            Pix
+        }
+
         public string Sabor_Pizza = "";
         public double Sabor_Pizza_Preco = 0.0;
-        public string Forma_de_Pagamento = "";
-        public string[] Adicionais = new string[4] { "Borda Recheada", "Bacon", "Catupiry Extra", "Queijo Extra" };
-        public string[] Adicionais_Pedidos = new string[4] { null, null, null, null };
-        public double[] Adicionais_Preco = new double[4] { 7.0, 8.0, 6.0, 6.0 };
+        public FormaPagamento Forma_de_Pagamento = FormaPagamento.Nenhuma;
+        public string[] Adicionais = new string[2] { "Borda Recheada", "Recheio em dobro" };
+        public string[] Adicionais_Pedidos = new string[2] { null, null };
+        public double[] Adicionais_Preco = new double[2] { 7.0, 8.0 };
         public string[] Pedido_Acomp = new string[4] { null, null, null, null };
         public int[] Pedido_Acomp_Qntd = new int[4] { 0, 0, 0, 0 };
         public string[] Pedido_Bebidas = new string[8] { null, null, null, null, null, null, null, null };
@@ -71,7 +77,7 @@ namespace Resturante
                 return true;
             }
 
-            if (Forma_de_Pagamento != "" || Sabor_Pizza != "" || qntd_Pizza > 0)
+            if (Forma_de_Pagamento != FormaPagamento.Nenhuma || Sabor_Pizza != "" || qntd_Pizza > 0)
             {
                 return true;
             }
@@ -94,12 +100,7 @@ namespace Resturante
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult resposta = MessageBox.Show(
-                "Deseja realmente limpar tudo? O estado atual do pedido será perdido.",
-                "Limpar pedido",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning);
-
+            DialogResult resposta = MessageBox.Show("Deseja realmente limpar tudo? O estado atual do pedido será perdido.", "Limpar pedido", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); 
             if (resposta == DialogResult.Yes)
             {
                 limparPedido();
@@ -124,12 +125,11 @@ namespace Resturante
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             radioButton3.Checked = false;
+            radioButton4.Checked = false;
             listBox1.SelectedIndex = -1;
             pizzas.Clear();
             checkBox1.Checked = false;
             checkBox2.Checked = false;
-            checkBox3.Checked = false;
-            checkBox4.Checked = false;
             checkBox5.Checked = false;
             checkBox6.Checked = false;
             checkBox7.Checked = false;
@@ -145,7 +145,7 @@ namespace Resturante
 
             Sabor_Pizza = "";
             Sabor_Pizza_Preco = 0.0;
-            Forma_de_Pagamento = "";
+            Forma_de_Pagamento = FormaPagamento.Nenhuma;
             qntd_Pizza = 0;
             for (int i = 0; i < Adicionais_Pedidos.Length; i++) { Adicionais_Pedidos[i] = null; }
             for (int i = 0; i < Pedido_Acomp.Length; i++) { Pedido_Acomp[i] = null; Pedido_Acomp_Qntd[i] = 0; }
@@ -309,8 +309,6 @@ namespace Resturante
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e) { if (checkBox1.Checked) { Adicionais_Pedidos[0] = Adicionais[0]; } else { Adicionais_Pedidos[0] = null; } display(); }
         private void checkBox2_CheckedChanged(object sender, EventArgs e) { if (checkBox2.Checked) { Adicionais_Pedidos[1] = Adicionais[1]; } else { Adicionais_Pedidos[1] = null; } display(); }
-        private void checkBox3_CheckedChanged(object sender, EventArgs e) { if (checkBox3.Checked) { Adicionais_Pedidos[2] = Adicionais[2]; } else { Adicionais_Pedidos[2] = null; } display(); }
-        private void checkBox4_CheckedChanged(object sender, EventArgs e) { if (checkBox4.Checked) { Adicionais_Pedidos[3] = Adicionais[3]; } else { Adicionais_Pedidos[3] = null; } display(); }
 
 
 
@@ -328,8 +326,6 @@ namespace Resturante
             }
             checkBox1.Text = Adicionais[0];
             checkBox2.Text = Adicionais[1];
-            checkBox3.Text = Adicionais[2];
-            checkBox4.Text = Adicionais[3];
             checkBox5.Text = Acompanhamentos[0];
             checkBox6.Text = Acompanhamentos[1];
             checkBox7.Text = Acompanhamentos[2];
@@ -358,6 +354,7 @@ namespace Resturante
             comboBox18.Visible = false;
 
             atualizarTitulo();
+            display();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -367,6 +364,53 @@ namespace Resturante
             {
                 Sabor_Pizza = pratos_principais[index];
                 Sabor_Pizza_Preco = pratos_principais_preco[index];
+
+                switch (Sabor_Pizza)
+                {
+                    case "Mussarela":
+                        pictureBox1.Image = Properties.Resources.Mussarela;
+                        break;
+
+                    case "Calabresa":
+                        pictureBox1.Image = Properties.Resources.Calabresa;
+                        break;
+
+                    case "Frango com Catupiry":
+                        pictureBox1.Image = Properties.Resources.Frango_Catupiry;
+                        break;
+
+                    case "3 Queijos":
+                        pictureBox1.Image = Properties.Resources._3_Queijos;
+                        break;
+
+                    case "Portuguesa":
+                        pictureBox1.Image = Properties.Resources.Portuguesa;
+                        break;
+
+                    case "Napolitana":
+                        pictureBox1.Image = Properties.Resources.Napolitana;
+                        break;
+
+                    case "Pepperoni":
+                        pictureBox1.Image = Properties.Resources.Peperoni;
+                        break;
+
+                    case "Chocolate":
+                        pictureBox1.Image = Properties.Resources.Chocolate;
+                        break;
+
+                    default:
+                        pictureBox1.Image = null;
+                        break;
+                }
+
+                display();
+            }
+            else
+            {
+                Sabor_Pizza = "";
+                Sabor_Pizza_Preco = 0.0;
+                pictureBox1.Image = null;
                 display();
             }
         }
@@ -374,52 +418,43 @@ namespace Resturante
 
         private void display()
         {
-            atualizarPizzaAtual();
-            atualizarResumoPedido();
-        }
-
-        private void atualizarPizzaAtual()
-        {
             textBox2.Clear();
+
             if (Sabor_Pizza == "")
             {
                 textBox2.Text = "Nenhuma pizza selecionada.";
-                return;
             }
-
-            int qntd = qntd_Pizza > 0 ? qntd_Pizza : 1;
-            double total = qntd * (Sabor_Pizza_Preco + precoAdicionaisSelecionados());
-            textBox2.Text = Sabor_Pizza + " (" + qntd + "x) - R$ " + total.ToString("0.00");
-
-            string adicionais = "";
-            foreach (var adicional in Adicionais_Pedidos)
+            else
             {
-                if (adicional != null)
+                double preco_add = 0;
+                for (int i = 0; i < Adicionais_Pedidos.Length; i++)
                 {
-                    adicionais += (adicionais == "" ? "" : ", ") + adicional;
+                    if (Adicionais_Pedidos[i] != null)
+                    {
+                        preco_add += Adicionais_Preco[i];
+                    }
                 }
-            }
-            textBox2.Text += Environment.NewLine;
-            textBox2.Text += "Adicionais: " + (adicionais == "" ? "(nenhum)" : adicionais);
-        }
 
-        private double precoAdicionaisSelecionados()
-        {
-            double total = 0;
-            for (int i = 0; i < Adicionais_Pedidos.Length; i++)
-            {
-                if (Adicionais_Pedidos[i] != null)
+                int qntdPizza = qntd_Pizza > 0 ? qntd_Pizza : 1;
+                double total = qntdPizza * (Sabor_Pizza_Preco + preco_add);
+                textBox2.Text = Sabor_Pizza + " (" + qntdPizza + "x) - R$ " + total.ToString("0.00");
+
+                string adicionais = "";
+                foreach (var adicional in Adicionais_Pedidos)
                 {
-                    total += Adicionais_Preco[i];
+                    if (adicional != null)
+                    {
+                        adicionais += (adicionais == "" ? "" : ", ") + adicional;
+                    }
                 }
+                textBox2.Text += Environment.NewLine;
+                textBox2.Text += "Adicionais: " + (adicionais == "" ? "(nenhum)" : adicionais);
             }
-            return total;
-        }
 
-        private void atualizarResumoPedido()
-        {
+            double totalPedido = 0;
+            int qntd = 0;
+
             textBox1.Clear();
-            double total = 0;
 
             textBox1.Text += "Pizzas no Pedido:";
             textBox1.Text += Environment.NewLine;
@@ -432,7 +467,7 @@ namespace Resturante
             {
                 textBox1.Text += "    - " + pizza.ToString();
                 textBox1.Text += Environment.NewLine;
-                total += pizza.Total();
+                totalPedido += pizza.Total();
             }
 
             textBox1.Text += "Pastéis e Esfihas:";
@@ -442,10 +477,10 @@ namespace Resturante
             {
                 if (acompanhamento != null)
                 {
-                    int qntd = Pedido_Acomp_Qntd[index] > 0 ? Pedido_Acomp_Qntd[index] : 1;
+                    qntd = Pedido_Acomp_Qntd[index] > 0 ? Pedido_Acomp_Qntd[index] : 1;
                     double subtotal = qntd * Acompanhamentos_preco[index];
                     textBox1.Text += "    - " + acompanhamento + " (Qntd. " + qntd + ") - R$ " + subtotal.ToString("0.00") + Environment.NewLine;
-                    total += subtotal;
+                    totalPedido += subtotal;
                 }
                 index++;
             }
@@ -457,17 +492,23 @@ namespace Resturante
             {
                 if (bebida != null)
                 {
-                    int qntd = Pedido_Bebidas_Qntd[index] > 0 ? Pedido_Bebidas_Qntd[index] : 1;
+                    qntd = Pedido_Bebidas_Qntd[index] > 0 ? Pedido_Bebidas_Qntd[index] : 1;
                     double subtotal = qntd * Bebidas_preco[index];
                     textBox1.Text += "    - " + bebida + " (Qntd. " + qntd + ") - R$ " + subtotal.ToString("0.00") + Environment.NewLine;
-                    total += subtotal;
+                    totalPedido += subtotal;
                 }
                 index++;
             }
 
             textBox1.Text += Environment.NewLine;
-            textBox1.Text += "Forma de Pagamento: " + Forma_de_Pagamento + Environment.NewLine;
-            textBox1.Text += "Total: R$ " + total.ToString("0.00");
+            textBox1.Text += "Forma de Pagamento: " + NomeFormaPagamento() + Environment.NewLine;
+
+            double percentual = descontoPorValor(totalPedido);
+            double desconto = totalPedido * percentual / 100.0;
+
+            textBox1.Text += "Subtotal: R$ " + totalPedido.ToString("0.00") + Environment.NewLine;
+            textBox1.Text += "Desconto (" + percentual.ToString("0") + "%): R$ " + desconto.ToString("0.00") + Environment.NewLine;
+            textBox1.Text += "Total: R$ " + (totalPedido - desconto).ToString("0.00");
         }
 
         private bool pedidoVazio()
@@ -527,7 +568,22 @@ namespace Resturante
             return total;
         }
 
-        private string montarRecibo(double total, int parcelas, string nome, string cpf)
+        private double descontoPorValor(double subtotal)
+        {
+            if (subtotal >= 250.0)
+            {
+                return 10.0;
+            }
+
+            if (subtotal >= 100.0)
+            {
+                return 5.0;
+            }
+
+            return 0.0;
+        }
+
+        private string montarRecibo(double subtotal, double desconto, double total, int parcelas, string nome, string cpf, bool cupom)
         {
             string resumo = "Pedido" + Environment.NewLine;
             resumo += "Cliente: " + nome + Environment.NewLine;
@@ -565,40 +621,88 @@ namespace Resturante
             }
 
             resumo += Environment.NewLine;
-            resumo += "Forma de pagamento: " + Forma_de_Pagamento;
-            if (Forma_de_Pagamento == "Cartão de Credito")
+            resumo += "Subtotal: R$ " + subtotal.ToString("0.00") + Environment.NewLine;
+
+            if (desconto > 0)
             {
-                resumo += " (" + parcelas + "x de R$ " + (total / parcelas).ToString("0.00") + ")";
+                resumo += "Desconto: R$ " + desconto.ToString("0.00")
+                    + " (" + (desconto / subtotal * 100).ToString("0") + "%"
+                    + (cupom ? " - cupom" : "") + ")" + Environment.NewLine;
             }
-            resumo += Environment.NewLine;
-            resumo += "Total: R$ " + total.ToString("0.00");
+
+            resumo += "Total: R$ " + total.ToString("0.00") + Environment.NewLine;
+            resumo += "Forma de pagamento: " + DescreverPagamento(total, parcelas);
+
             return resumo;
         }
 
-        private int perguntarParcelas(double total)
+        private string NomeFormaPagamento()
         {
-            using (ParcelamentoForm dialogo = new ParcelamentoForm(total))
+            switch (Forma_de_Pagamento)
             {
-                if (dialogo.ShowDialog(this) == DialogResult.OK)
-                {
-                    return dialogo.Parcelas;
-                }
-            }
+                case FormaPagamento.CartaoCredito:
+                    return "Cartão de Credito";
 
-            return 0;
+                case FormaPagamento.CartaoDebito:
+                    return "Cartão de Debito";
+
+                case FormaPagamento.Dinheiro:
+                    return "Dinheiro";
+
+                case FormaPagamento.Pix:
+                    return "Pix";
+
+                default:
+                    return "";
+            }
         }
 
-        private bool mostrarConclusao(string recibo)
+        private string DescreverPagamento(double total, int parcelas)
         {
-            using (ConclusaoForm tela = new ConclusaoForm(recibo))
+            string nome = NomeFormaPagamento();
+
+            if (Forma_de_Pagamento == FormaPagamento.CartaoCredito)
             {
-                return tela.ShowDialog(this) == DialogResult.Yes;
+                return nome + " (" + parcelas + "x de R$ " + (total / parcelas).ToString("0.00") + ")";
             }
+
+            return nome;
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e) { Forma_de_Pagamento = "Cartão de Credito"; display(); }
-        private void radioButton2_CheckedChanged(object sender, EventArgs e) { Forma_de_Pagamento = "Cartão de Debito"; display(); }
-        private void radioButton3_CheckedChanged(object sender, EventArgs e) { Forma_de_Pagamento = "Dinheiro"; display(); }
+        private void radioButtonPagamento_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton opcao = (RadioButton) sender;
+
+            if (!opcao.Checked)
+            {
+                return;
+            }
+
+            switch (opcao.Name)
+            {
+                case "radioButton1":
+                    Forma_de_Pagamento = FormaPagamento.CartaoCredito;
+                    break;
+
+                case "radioButton2":
+                    Forma_de_Pagamento = FormaPagamento.CartaoDebito;
+                    break;
+
+                case "radioButton3":
+                    Forma_de_Pagamento = FormaPagamento.Dinheiro;
+                    break;
+
+                case "radioButton4":
+                    Forma_de_Pagamento = FormaPagamento.Pix;
+                    break;
+
+                default:
+                    Forma_de_Pagamento = FormaPagamento.Nenhuma;
+                    break;
+            }
+
+            display();
+        }
 
         private bool obterDadosCliente(out string nome, out string cpf)
         {
@@ -609,19 +713,18 @@ namespace Resturante
                 return true;
             }
 
-            using (ClienteForm cliente = new ClienteForm())
-            {
-                if (cliente.ShowDialog(this) != DialogResult.OK)
-                {
-                    nome = "";
-                    cpf = "";
-                    return false;
-                }
+            ClienteForm cliente = new ClienteForm();
 
-                nome = cliente.Nome;
-                cpf = cliente.Cpf;
-                return true;
+            if (cliente.ShowDialog(this) != DialogResult.OK)
+            {
+                nome = "";
+                cpf = "";
+                return false;
             }
+
+            nome = cliente.Nome;
+            cpf = cliente.Cpf;
+            return true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -632,24 +735,11 @@ namespace Resturante
                 return;
             }
 
-            if (Forma_de_Pagamento == "")
+            if (Forma_de_Pagamento == FormaPagamento.Nenhuma)
             {
                 MessageBox.Show("Selecione a forma de pagamento antes de concluir o pedido.", "Pedido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
-            DialogResult confirmacao = MessageBox.Show(
-                "Tem certeza que deseja concluir o pedido?",
-                "Concluir pedido",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
-
-            if (confirmacao != DialogResult.Yes)
-            {
-                return;
-            }
-
-            double total = totalPedido();
 
             string nomeCliente;
             string cpfNota;
@@ -659,34 +749,91 @@ namespace Resturante
                 return;
             }
 
-            int parcelas = 1;
-            if (Forma_de_Pagamento == "Cartão de Credito")
+            double subtotal = totalPedido();
+            double percentual = descontoPorValor(subtotal);
+            bool cupom = false;
+
+            if (percentual < 10.0 && cpfNota != "" && PedidoStore.TemCupom(cpfNota))
             {
-                parcelas = perguntarParcelas(total);
-                if (parcelas == 0)
+                double totalComCupom = subtotal * 0.90;
+
+                DialogResult usarCupom = MessageBox.Show(
+                    "Você tem um cupom de 10% de desconto!"
+                    + Environment.NewLine + Environment.NewLine
+                    + "Subtotal: R$ " + subtotal.ToString("0.00") + Environment.NewLine
+                    + "Com o cupom: R$ " + totalComCupom.ToString("0.00")
+                    + Environment.NewLine + Environment.NewLine
+                    + "Deseja usar o cupom neste pedido?",
+                    "Cupom de desconto",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                if (usarCupom == DialogResult.Yes)
                 {
-                    return;
+                    percentual = 10.0;
+                    cupom = true;
                 }
             }
 
-            string recibo = montarRecibo(total, parcelas, nomeCliente, cpfNota);
+            double desconto = subtotal * percentual / 100.0;
+            double total = subtotal - desconto;
 
-            string descricaoPagamento = Forma_de_Pagamento;
-            if (Forma_de_Pagamento == "Cartão de Credito")
+            DialogResult confirmacao = MessageBox.Show(
+                "Subtotal: R$ " + subtotal.ToString("0.00") + Environment.NewLine
+                + "Desconto: R$ " + desconto.ToString("0.00") + " (" + percentual.ToString("0") + "%)" + Environment.NewLine
+                + "Total: R$ " + total.ToString("0.00")
+                + Environment.NewLine + Environment.NewLine
+                + "Tem certeza que deseja concluir o pedido?",
+                "Concluir pedido",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (confirmacao != DialogResult.Yes)
             {
-                descricaoPagamento += " (" + parcelas + "x de R$ " + (total / parcelas).ToString("0.00") + ")";
+                return;
             }
+
+            int parcelas = 1;
+
+            switch (Forma_de_Pagamento)
+            {
+                case FormaPagamento.CartaoCredito:
+                    ParcelamentoForm parcelamento = new ParcelamentoForm(total);
+
+                    if (parcelamento.ShowDialog(this) != DialogResult.OK)
+                    {
+                        return;
+                    }
+
+                    parcelas = parcelamento.Parcelas;
+                    break;
+
+                case FormaPagamento.CartaoDebito:
+                case FormaPagamento.Dinheiro:
+                case FormaPagamento.Pix:
+                    parcelas = 1;
+                    break;
+            }
+
+            string recibo = montarRecibo(subtotal, desconto, total, parcelas, nomeCliente, cpfNota, cupom);
+
+            string descricaoPagamento = DescreverPagamento(total, parcelas);
 
             RegistroPedido registro = new RegistroPedido();
             registro.Data = DateTime.Now;
             registro.Nome = nomeCliente;
             registro.Cpf = cpfNota;
             registro.Pagamento = descricaoPagamento;
+            registro.Subtotal = subtotal;
+            registro.Desconto = desconto;
+            registro.Cupom = cupom;
             registro.Total = total;
             registro.Itens = recibo;
             PedidoStore.Salvar(registro);
 
-            if (mostrarConclusao(recibo))
+            ConclusaoForm conclusao = new ConclusaoForm(recibo);
+
+            if (conclusao.ShowDialog(this) == DialogResult.Yes)
             {
                 limparPedido();
             }
@@ -701,13 +848,13 @@ namespace Resturante
 
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             qntd_Pizza = comboBox1.SelectedIndex + 1;
             display();
         }
 
-        private void button4_Click_1(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             if (Sabor_Pizza == "")
             {
@@ -732,10 +879,14 @@ namespace Resturante
 
             checkBox1.Checked = false;
             checkBox2.Checked = false;
-            checkBox3.Checked = false;
-            checkBox4.Checked = false;
 
             display();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DescontosForm descontos = new DescontosForm();
+            descontos.ShowDialog(this);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -746,13 +897,12 @@ namespace Resturante
                 return;
             }
 
-            using (RemoverPizzaForm dialogo = new RemoverPizzaForm(pizzas))
+            RemoverPizzaForm dialogo = new RemoverPizzaForm(pizzas);
+
+            if (dialogo.ShowDialog(this) == DialogResult.OK)
             {
-                if (dialogo.ShowDialog(this) == DialogResult.OK)
-                {
-                    pizzas.RemoveAt(dialogo.IndiceSelecionado);
-                    display();
-                }
+                pizzas.RemoveAt(dialogo.IndiceSelecionado);
+                display();
             }
         }
 

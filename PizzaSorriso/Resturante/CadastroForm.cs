@@ -1,4 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Resturante
@@ -12,39 +19,46 @@ namespace Resturante
             InitializeComponent();
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            string nome = txtNome.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string cpf = ContaStore.FormatarCpf(txtCpf.Text);
+            string nome = textBox1.Text.Trim();
+            string email = textBox2.Text.Trim();
+            string cpf = ContaStore.SomenteDigitos(textBox3.Text);
+            string senha = textBox4.Text;
 
             if (!ContaStore.NomeValido(nome))
             {
-                Avisar("Informe o nome completo, com nome e sobrenome (sem números).", txtNome);
+                Avisar("Digite seu nome completo, com nome e sobrenome.", textBox1);
                 return;
             }
 
             if (!ContaStore.EmailValido(email))
             {
-                Avisar("Informe um e-mail válido, no formato nome@provedor.com.", txtEmail);
+                Avisar("Digite um e-mail válido.", textBox2);
                 return;
             }
 
             if (!ContaStore.CpfValido(cpf))
             {
-                Avisar("Esse CPF não é válido. Confira os números digitados.", txtCpf);
+                Avisar("Esse CPF não é válido. Confira os números.", textBox3);
+                return;
+            }
+
+            if (senha.Length < 4)
+            {
+                Avisar("A senha precisa ter pelo menos 4 caracteres.", textBox4);
                 return;
             }
 
             if (ContaStore.CpfCadastrado(cpf))
             {
-                Avisar("Já existe uma conta com esse CPF. Volte e faça login com ele.", txtCpf);
+                Avisar("Já existe uma conta com esse CPF. Faça login com ele.", textBox3);
                 return;
             }
 
             if (ContaStore.EmailCadastrado(email))
             {
-                Avisar("Já existe uma conta com esse e-mail.", txtEmail);
+                Avisar("Já existe uma conta com esse e-mail.", textBox2);
                 return;
             }
 
@@ -53,24 +67,16 @@ namespace Resturante
             conta.Email = email;
             conta.Cpf = cpf;
             conta.Cadastro = DateTime.Now;
+            conta.Senha = senha;
 
             ContaStore.Salvar(conta);
 
             ContaCadastrada = conta;
 
-            MessageBox.Show(
-                "Conta criada com sucesso! Bem-vindo(a), " + nome + ".",
-                "Pizzaria Sorriso",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            MessageBox.Show("Conta criada com sucesso! Bem-vindo(a), " + nome + ".", "Pizzaria Sorriso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             DialogResult = DialogResult.OK;
-            Close();
-        }
-
-        private void txtCpf_Leave(object sender, EventArgs e)
-        {
-            txtCpf.Text = ContaStore.FormatarCpf(txtCpf.Text);
+            this.Close();
         }
 
         private void Avisar(string mensagem, Control campo)

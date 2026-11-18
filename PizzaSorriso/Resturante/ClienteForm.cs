@@ -1,4 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Resturante
@@ -14,37 +21,32 @@ namespace Resturante
             InitializeComponent();
         }
 
-        private void btnOk_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            string nome = txtNome.Text.Trim();
+            string nome = textBox1.Text.Trim();
 
             if (nome.Length < 2)
             {
                 MessageBox.Show("Informe o nome do cliente para a nota.", "Cliente do pedido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtNome.Focus();
+                textBox1.Focus();
                 return;
             }
 
-            string cpf = ContaStore.SomenteDigitos(txtCpf.Text);
+            string cpf = ContaStore.SomenteDigitos(textBox2.Text);
 
             if (cpf != "" && !ContaStore.CpfValido(cpf))
             {
                 MessageBox.Show("Esse CPF não é válido. Deixe em branco se não quiser o CPF na nota.", "Cliente do pedido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtCpf.Focus();
-                txtCpf.SelectAll();
+                textBox2.Focus();
+                textBox2.SelectAll();
                 return;
             }
 
             Nome = nome;
-            Cpf = ContaStore.FormatarCpf(cpf);
+            Cpf = cpf;
 
             DialogResult = DialogResult.OK;
-            Close();
-        }
-
-        private void txtCpf_Leave(object sender, EventArgs e)
-        {
-            txtCpf.Text = ContaStore.FormatarCpf(txtCpf.Text);
+            this.Close();
         }
     }
 }

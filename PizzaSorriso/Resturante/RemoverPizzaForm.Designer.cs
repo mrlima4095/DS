@@ -28,56 +28,56 @@ namespace Resturante
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstPizzas = new System.Windows.Forms.ListBox();
-            this.btnRemover = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lstPizzas
+            // listBox1
             // 
-            this.lstPizzas.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.lstPizzas.FormattingEnabled = true;
-            this.lstPizzas.IntegralHeight = false;
-            this.lstPizzas.ItemHeight = 22;
-            this.lstPizzas.Location = new System.Drawing.Point(18, 20);
-            this.lstPizzas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lstPizzas.Name = "lstPizzas";
-            this.lstPizzas.Size = new System.Drawing.Size(592, 289);
-            this.lstPizzas.TabIndex = 0;
-            this.lstPizzas.DoubleClick += new System.EventHandler(this.lstPizzas_DoubleClick);
+            this.listBox1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.IntegralHeight = false;
+            this.listBox1.ItemHeight = 22;
+            this.listBox1.Location = new System.Drawing.Point(18, 20);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(592, 289);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
-            // btnRemover
+            // button1
             // 
-            this.btnRemover.Location = new System.Drawing.Point(18, 329);
-            this.btnRemover.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnRemover.Name = "btnRemover";
-            this.btnRemover.Size = new System.Drawing.Size(284, 49);
-            this.btnRemover.TabIndex = 1;
-            this.btnRemover.Text = "Remover";
-            this.btnRemover.UseVisualStyleBackColor = true;
-            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
+            this.button1.Location = new System.Drawing.Point(18, 329);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(284, 49);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Remover";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnCancelar
+            // button2
             // 
-            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(326, 329);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(284, 49);
-            this.btnCancelar.TabIndex = 2;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button2.Location = new System.Drawing.Point(326, 329);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(284, 49);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // RemoverPizzaForm
             // 
-            this.AcceptButton = this.btnRemover;
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCancelar;
+            this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(630, 404);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnRemover);
-            this.Controls.Add(this.lstPizzas);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = global::Resturante.Properties.Resources.logo;
@@ -93,8 +93,8 @@ namespace Resturante
 
         #endregion
 
-        private System.Windows.Forms.ListBox lstPizzas;
-        private System.Windows.Forms.Button btnRemover;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

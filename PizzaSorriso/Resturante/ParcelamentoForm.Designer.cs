@@ -28,66 +28,66 @@ namespace Resturante
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblPergunta = new System.Windows.Forms.Label();
-            this.cboParcelas = new System.Windows.Forms.ComboBox();
-            this.btnConfirmar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblPergunta
+            // label1
             // 
-            this.lblPergunta.AutoSize = true;
-            this.lblPergunta.Location = new System.Drawing.Point(18, 24);
-            this.lblPergunta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPergunta.Name = "lblPergunta";
-            this.lblPergunta.Size = new System.Drawing.Size(212, 17);
-            this.lblPergunta.TabIndex = 0;
-            this.lblPergunta.Text = "Em quantas vezes deseja parcelar?";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(212, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Em quantas vezes deseja parcelar?";
             // 
-            // cboParcelas
+            // comboBox1
             // 
-            this.cboParcelas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboParcelas.FormattingEnabled = true;
-            this.cboParcelas.Location = new System.Drawing.Point(18, 73);
-            this.cboParcelas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboParcelas.Name = "cboParcelas";
-            this.cboParcelas.Size = new System.Drawing.Size(493, 25);
-            this.cboParcelas.TabIndex = 1;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(18, 73);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(493, 25);
+            this.comboBox1.TabIndex = 1;
             // 
-            // btnConfirmar
+            // button1
             // 
-            this.btnConfirmar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnConfirmar.Location = new System.Drawing.Point(18, 131);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(236, 49);
-            this.btnConfirmar.TabIndex = 2;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
-            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.Location = new System.Drawing.Point(18, 131);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(236, 49);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Confirmar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnCancelar
+            // button2
             // 
-            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(289, 131);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(222, 49);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button2.Location = new System.Drawing.Point(289, 131);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(222, 49);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // ParcelamentoForm
             // 
-            this.AcceptButton = this.btnConfirmar;
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCancelar;
+            this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(540, 207);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.cboParcelas);
-            this.Controls.Add(this.lblPergunta);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = global::Resturante.Properties.Resources.logo;
@@ -104,9 +104,9 @@ namespace Resturante
 
         #endregion
 
-        private System.Windows.Forms.Label lblPergunta;
-        private System.Windows.Forms.ComboBox cboParcelas;
-        private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

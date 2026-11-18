@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblSobre.Text" xml:space="preserve">
-    <value>A Pizzaria Sorriso é um restaurante de bairro, com massa de fermentação natural assada em forno a lenha.
+  <data name="label3.Text" xml:space="preserve">
+    <value>Pizzaria de bairro, com massa de fermentação natural assada em forno a lenha.
 
-No cardápio temos pizzas salgadas e doces, pastéis, esfihas e bebidas geladas, com adicionais como borda recheada e bacon.
+No cardápio temos pizzas salgadas e doces, pastéis, esfihas e bebidas geladas. Os adicionais são borda recheada, bacon, catupiry extra e queijo extra.
 
 Crie sua conta para agilizar o pedido ou entre como convidado para pedir na hora.</value>
   </data>

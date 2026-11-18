@@ -30,70 +30,70 @@ namespace Resturante
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
-            this.faixaTopo = new System.Windows.Forms.Panel();
-            this.titulo = new System.Windows.Forms.Label();
-            this.descicao = new System.Windows.Forms.Label();
-            this.progresso = new System.Windows.Forms.ProgressBar();
-            this.loading = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // faixaTopo
+            // panel1
             // 
-            this.faixaTopo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
-            this.faixaTopo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.faixaTopo.Location = new System.Drawing.Point(0, 0);
-            this.faixaTopo.Name = "faixaTopo";
-            this.faixaTopo.Size = new System.Drawing.Size(520, 8);
-            this.faixaTopo.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(196)))), ((int)(((byte)(0)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(520, 19);
+            this.panel1.TabIndex = 0;
             // 
-            // titulo
+            // label1
             // 
-            this.titulo.BackColor = System.Drawing.Color.Transparent;
-            this.titulo.Font = new System.Drawing.Font("Segoe Script", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titulo.ForeColor = System.Drawing.Color.White;
-            this.titulo.Location = new System.Drawing.Point(0, 58);
-            this.titulo.Name = "titulo";
-            this.titulo.Size = new System.Drawing.Size(520, 72);
-            this.titulo.TabIndex = 1;
-            this.titulo.Text = "Pizzaria Sorriso";
-            this.titulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titulo.Click += new System.EventHandler(this.Splash_Click);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(520, 72);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Pizzaria Sorriso";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.Splash_Click);
             // 
-            // descicao
+            // label2
             // 
-            this.descicao.BackColor = System.Drawing.Color.Transparent;
-            this.descicao.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descicao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
-            this.descicao.Location = new System.Drawing.Point(0, 132);
-            this.descicao.Name = "descicao";
-            this.descicao.Size = new System.Drawing.Size(520, 30);
-            this.descicao.TabIndex = 2;
-            this.descicao.Text = "Sistema de Pedidos";
-            this.descicao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.descicao.Click += new System.EventHandler(this.Splash_Click);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
+            this.label2.Location = new System.Drawing.Point(0, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(520, 30);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Sistema de Pedidos";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.Splash_Click);
             // 
-            // progresso
+            // progressBar1
             // 
-            this.progresso.Location = new System.Drawing.Point(60, 200);
-            this.progresso.Name = "progresso";
-            this.progresso.Size = new System.Drawing.Size(400, 18);
-            this.progresso.TabIndex = 3;
-            this.progresso.Click += new System.EventHandler(this.Splash_Click);
+            this.progressBar1.Location = new System.Drawing.Point(60, 200);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(400, 18);
+            this.progressBar1.TabIndex = 3;
+            this.progressBar1.Click += new System.EventHandler(this.Splash_Click);
             // 
-            // loading
+            // label3
             // 
-            this.loading.BackColor = System.Drawing.Color.Transparent;
-            this.loading.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
-            this.loading.Location = new System.Drawing.Point(0, 226);
-            this.loading.Name = "loading";
-            this.loading.Size = new System.Drawing.Size(520, 20);
-            this.loading.TabIndex = 4;
-            this.loading.Text = "Carregando...";
-            this.loading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.loading.Click += new System.EventHandler(this.Splash_Click);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
+            this.label3.Location = new System.Drawing.Point(0, 226);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(520, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Carregando...";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.Splash_Click);
             // 
             // label4
             // 
@@ -122,11 +122,11 @@ namespace Resturante
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(520, 300);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.loading);
-            this.Controls.Add(this.progresso);
-            this.Controls.Add(this.descicao);
-            this.Controls.Add(this.titulo);
-            this.Controls.Add(this.faixaTopo);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = global::Resturante.Properties.Resources.logo;
@@ -141,11 +141,11 @@ namespace Resturante
 
         #endregion
 
-        private System.Windows.Forms.Panel faixaTopo;
-        private System.Windows.Forms.Label titulo;
-        private System.Windows.Forms.Label descicao;
-        private System.Windows.Forms.ProgressBar progresso;
-        private System.Windows.Forms.Label loading;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Timer timer1;
     }

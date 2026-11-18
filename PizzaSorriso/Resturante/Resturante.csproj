@@ -71,6 +71,12 @@
     <Compile Include="ConclusaoForm.Designer.cs">
       <DependentUpon>ConclusaoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DescontosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DescontosForm.Designer.cs">
+      <DependentUpon>DescontosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ContaStore.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -123,6 +129,9 @@
     <EmbeddedResource Include="ConclusaoForm.resx">
       <DependentUpon>ConclusaoForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DescontosForm.resx">
+      <DependentUpon>DescontosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,7 +174,32 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pizza.png" />
     <None Include="Resources\wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peperoni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Napolitana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Portuguesa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frango Catupiry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 Queijos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calabresa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mussarela.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

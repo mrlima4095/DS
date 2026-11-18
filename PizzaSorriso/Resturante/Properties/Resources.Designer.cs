@@ -19,7 +19,7 @@ namespace Resturante.Properties {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,20 +63,100 @@ namespace Resturante.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap wallpaper {
+        internal static System.Drawing.Bitmap _3_Queijos {
             get {
-                object obj = ResourceManager.GetObject("wallpaper", resourceCulture);
+                object obj = ResourceManager.GetObject("3 Queijos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Icon.
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Calabresa {
+            get {
+                object obj = ResourceManager.GetObject("Calabresa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Chocolate {
+            get {
+                object obj = ResourceManager.GetObject("Chocolate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Frango_Catupiry {
+            get {
+                object obj = ResourceManager.GetObject("Frango Catupiry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
         /// </summary>
         internal static System.Drawing.Icon logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mussarela {
+            get {
+                object obj = ResourceManager.GetObject("Mussarela", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Napolitana {
+            get {
+                object obj = ResourceManager.GetObject("Napolitana", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Peperoni {
+            get {
+                object obj = ResourceManager.GetObject("Peperoni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Portuguesa {
+            get {
+                object obj = ResourceManager.GetObject("Portuguesa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

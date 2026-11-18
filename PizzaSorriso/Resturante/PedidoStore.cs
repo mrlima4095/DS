@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Resturante
 {
@@ -12,52 +13,86 @@ namespace Resturante
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public string Pagamento { get; set; }
+        public double Subtotal { get; set; }
+        public double Desconto { get; set; }
+        public bool Cupom { get; set; }
         public double Total { get; set; }
         public string Itens { get; set; }
     }
 
     public static class PedidoStore
     {
-        private static readonly string Pasta = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-            "PizzariaSorriso");
-
-        private static readonly string Arquivo = Path.Combine(Pasta, "pedidos.dat");
-
-        public static string CaminhoArquivo
+        private static string Caminho
         {
-            get { return Arquivo; }
+            get { return Application.StartupPath + "\\pedidos.txt"; }
         }
 
         public static void Salvar(RegistroPedido pedido)
         {
-            Directory.CreateDirectory(Pasta);
-            Esconder(Pasta);
+            string separador = "";
 
-            File.AppendAllText(Arquivo, Formatar(pedido) + Environment.NewLine, Encoding.UTF8);
-            Esconder(Arquivo);
+            // O arquivo reescrito por Remover() termina com quebra de linha.
+            // Se o arquivo vier de uma versão antiga, acrescenta a quebra antes
+            // para não emendar dois pedidos na mesma linha.
+            if (File.Exists(Caminho))
+            {
+                string conteudo = File.ReadAllText(Caminho, Encoding.UTF8);
+
+                if (conteudo.Length > 0 && conteudo[conteudo.Length - 1] != '\n')
+                {
+                    separador = Environment.NewLine;
+                }
+            }
+
+            File.AppendAllText(Caminho, separador + Formatar(pedido) + Environment.NewLine, Encoding.UTF8);
         }
 
         public static List<RegistroPedido> Carregar()
         {
-            List<RegistroPedido> lista = new List<RegistroPedido>();
+            List<RegistroPedido> pedidos = new List<RegistroPedido>();
+            string caminho = Caminho;
 
-            if (!File.Exists(Arquivo))
+            if (!File.Exists(caminho))
             {
-                return lista;
+                return pedidos;
             }
 
-            foreach (string linha in File.ReadAllLines(Arquivo, Encoding.UTF8))
-            {
-                RegistroPedido pedido = Interpretar(linha);
+            string[] linhas = File.ReadAllLines(caminho, Encoding.UTF8);
 
-                if (pedido != null)
+            for (int i = 0; i < linhas.Length; i++)
+            {
+                string[] campos = linhas[i].Split('\t');
+
+                if (campos.Length < 9)
                 {
-                    lista.Add(pedido);
+                    continue;
                 }
+
+                RegistroPedido pedido = new RegistroPedido();
+                DateTime data;
+                double total;
+                double subtotal;
+                double desconto;
+
+                DateTime.TryParse(campos[0], CultureInfo.InvariantCulture, DateTimeStyles.None, out data);
+                double.TryParse(campos[4], NumberStyles.Any, CultureInfo.InvariantCulture, out total);
+                double.TryParse(campos[6], NumberStyles.Any, CultureInfo.InvariantCulture, out subtotal);
+                double.TryParse(campos[7], NumberStyles.Any, CultureInfo.InvariantCulture, out desconto);
+
+                pedido.Data = data;
+                pedido.Nome = campos[1];
+                pedido.Cpf = campos[2];
+                pedido.Pagamento = campos[3];
+                pedido.Total = total;
+                pedido.Itens = campos[5].Replace("\\n", Environment.NewLine);
+                pedido.Subtotal = subtotal;
+                pedido.Desconto = desconto;
+                pedido.Cupom = campos[8] == "1";
+
+                pedidos.Add(pedido);
             }
 
-            return lista;
+            return pedidos;
         }
 
         public static void Remover(int indice)
@@ -70,118 +105,92 @@ namespace Resturante
             }
 
             pedidos.RemoveAt(indice);
-            SalvarTodos(pedidos);
-        }
 
-        public static void SalvarTodos(List<RegistroPedido> pedidos)
-        {
-            Directory.CreateDirectory(Pasta);
-            Esconder(Pasta);
+            List<string> linhas = new List<string>();
 
-            StringBuilder texto = new StringBuilder();
-
-            foreach (RegistroPedido pedido in pedidos)
+            for (int i = 0; i < pedidos.Count; i++)
             {
-                texto.AppendLine(Formatar(pedido));
+                linhas.Add(Formatar(pedidos[i]));
             }
 
-            Mostrar(Arquivo);
-            File.WriteAllText(Arquivo, texto.ToString(), Encoding.UTF8);
-            Esconder(Arquivo);
+            string texto = "";
+
+            if (linhas.Count > 0)
+            {
+                // Sempre termina com quebra de linha para o próximo Salvar()
+                // começar em uma linha nova.
+                texto = string.Join(Environment.NewLine, linhas.ToArray()) + Environment.NewLine;
+            }
+
+            File.WriteAllText(Caminho, texto, Encoding.UTF8);
+        }
+
+        public static bool TemCupom(string cpf)
+        {
+            string procurado = ContaStore.SomenteDigitos(cpf);
+
+            if (procurado == "")
+            {
+                return false;
+            }
+
+            int pedidosValidos = 0;
+            int cuponsUsados = 0;
+
+            foreach (RegistroPedido pedido in Carregar())
+            {
+                if (ContaStore.SomenteDigitos(pedido.Cpf) != procurado)
+                {
+                    continue;
+                }
+
+                if (pedido.Subtotal >= 100.0)
+                {
+                    pedidosValidos++;
+                }
+
+                if (pedido.Cupom)
+                {
+                    cuponsUsados++;
+                }
+            }
+
+            return pedidosValidos / 5 > cuponsUsados;
         }
 
         private static string Formatar(RegistroPedido pedido)
         {
-            string itens = (pedido.Itens ?? "")
-                .Replace("\r\n", " | ")
-                .Replace("\r", " | ")
-                .Replace("\n", " | ")
-                .Replace("\t", " ");
+            string itens = pedido.Itens;
 
-            return string.Join("\t", new string[]
+            if (itens == null)
             {
-                pedido.Data.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture),
-                Simples(pedido.Nome),
-                Simples(pedido.Cpf),
-                Simples(pedido.Pagamento),
-                pedido.Total.ToString("0.00", CultureInfo.InvariantCulture),
-                itens
-            });
-        }
-
-        private static RegistroPedido Interpretar(string linha)
-        {
-            if (string.IsNullOrWhiteSpace(linha))
-            {
-                return null;
+                itens = "";
             }
 
-            string[] campos = linha.Split('\t');
+            itens = itens.Replace(Environment.NewLine, "\\n");
+            itens = itens.Replace("\r", "\\n");
+            itens = itens.Replace("\n", "\\n");
+            itens = itens.Replace("\t", " ");
 
-            RegistroPedido pedido = new RegistroPedido();
-            DateTime data;
-            double total;
+            string linha = pedido.Data.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+            linha += "\t" + pedido.Nome;
+            linha += "\t" + pedido.Cpf;
+            linha += "\t" + pedido.Pagamento;
+            linha += "\t" + pedido.Total.ToString("0.00", CultureInfo.InvariantCulture);
+            linha += "\t" + itens;
+            linha += "\t" + pedido.Subtotal.ToString("0.00", CultureInfo.InvariantCulture);
+            linha += "\t" + pedido.Desconto.ToString("0.00", CultureInfo.InvariantCulture);
 
-            if (campos.Length >= 6)
+            if (pedido.Cupom)
             {
-                pedido.Data = DateTime.TryParse(campos[0], CultureInfo.InvariantCulture, DateTimeStyles.None, out data) ? data : DateTime.MinValue;
-                pedido.Nome = campos[1];
-                pedido.Cpf = campos[2];
-                pedido.Pagamento = campos[3];
-                pedido.Total = double.TryParse(campos[4], NumberStyles.Any, CultureInfo.InvariantCulture, out total) ? total : 0.0;
-                pedido.Itens = campos[5];
-                return pedido;
+                linha += "\t1";
             }
-
-            if (campos.Length >= 4)
-            { 
-                pedido.Data = DateTime.TryParse(campos[0], CultureInfo.InvariantCulture, DateTimeStyles.None, out data) ? data : DateTime.MinValue;
-                pedido.Nome = "";
-                pedido.Cpf = "";
-                pedido.Pagamento = campos[1];
-                pedido.Total = double.TryParse(campos[2], NumberStyles.Any, CultureInfo.InvariantCulture, out total) ? total : 0.0;
-                pedido.Itens = campos[3];
-                return pedido;
-            }
-
-            return null;
-        }
-
-        private static string Simples(string texto)
-        {
-            if (texto == null)
+            else
             {
-                return "";
+                linha += "\t0";
             }
 
-            return texto.Replace("\t", " ").Replace("\r", " ").Replace("\n", " ");
-        }
-
-        private static void Esconder(string caminho)
-        {
-            try
-            {
-                File.SetAttributes(caminho, File.GetAttributes(caminho) | FileAttributes.Hidden);
-            }
-            catch (Exception)
-            {
-
-            }
-        }
-
-        private static void Mostrar(string caminho)
-        {
-            try
-            {
-                if (File.Exists(caminho))
-                {
-                    File.SetAttributes(caminho, File.GetAttributes(caminho) & ~FileAttributes.Hidden);
-                }
-            }
-            catch (Exception)
-            {
-
-            }
+            return linha;
         }
     }
 }

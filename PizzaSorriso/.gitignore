@@ -1,0 +1,8 @@
+# Visual Studio / build
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+packages/

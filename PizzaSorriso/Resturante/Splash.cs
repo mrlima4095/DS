@@ -1,13 +1,17 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Resturante
 {
     public partial class Splash : Form
     {
-        private const string SenhaAdmin = "1234";
-
         private int progressoAtual = 0;
 
         public Splash()
@@ -21,10 +25,8 @@ namespace Resturante
 
             if (PedirSenha())
             {
-                using (AdminForm admin = new AdminForm())
-                {
-                    admin.ShowDialog(this);
-                }
+                AdminForm admin = new AdminForm();
+                admin.ShowDialog(this);
 
                 Finalizar();
             }
@@ -38,29 +40,33 @@ namespace Resturante
         {
             progressoAtual += 1;
 
-            if (progressoAtual >= progresso.Maximum)
+            if (progressoAtual >= progressBar1.Maximum)
             {
-                progresso.Value = progresso.Maximum;
+                progressBar1.Value = progressBar1.Maximum;
                 Finalizar();
                 return;
             }
 
-            progresso.Value = progressoAtual;
+            progressBar1.Value = progressoAtual;
         }
 
         private bool PedirSenha()
         {
-            using (SenhaForm senha = new SenhaForm(SenhaAdmin))
+            SenhaForm senha = new SenhaForm();
+
+            if (senha.ShowDialog(this) == DialogResult.OK)
             {
-                return senha.ShowDialog(this) == DialogResult.OK;
+                return true;
             }
+
+            return false;
         }
 
         private void Finalizar()
         {
             timer1.Stop();
             DialogResult = DialogResult.OK;
-            Close();
+            this.Close();
         }
     }
 }
