@@ -83,7 +83,7 @@ namespace CRUD
             try
             {
                 strSQL = "DELETE FROM cad_cliente WHERE id = @id";
-
+                   
                 conn = new MySqlConnection(rconn);
                 cmd = new MySqlCommand(strSQL, conn);
                 cmd.Parameters.AddWithValue("@id", id.Text);
