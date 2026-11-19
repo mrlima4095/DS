@@ -969,6 +969,16 @@ namespace Resturante
             }
             display();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class PizzaPedido

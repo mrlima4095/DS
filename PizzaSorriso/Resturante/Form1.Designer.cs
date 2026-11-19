@@ -427,6 +427,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // comboBox18
             // 
@@ -623,6 +624,7 @@
             this.groupBox3.Size = new System.Drawing.Size(381, 610);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // comboBox2
             // 

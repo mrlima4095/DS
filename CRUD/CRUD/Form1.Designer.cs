@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.id = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabela = new System.Windows.Forms.DataGridView();
             this.newBtn = new System.Windows.Forms.Button();
             this.nome = new System.Windows.Forms.TextBox();
             this.numero = new System.Windows.Forms.TextBox();
@@ -40,7 +40,7 @@
             this.excBtn = new System.Windows.Forms.Button();
             this.cnsBtn = new System.Windows.Forms.Button();
             this.exiBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabela)).BeginInit();
             this.SuspendLayout();
             // 
             // id
@@ -52,14 +52,14 @@
             this.id.Size = new System.Drawing.Size(713, 33);
             this.id.TabIndex = 0;
             // 
-            // dataGridView1
+            // tabela
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 254);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(893, 281);
-            this.dataGridView1.TabIndex = 1;
+            this.tabela.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabela.Location = new System.Drawing.Point(22, 254);
+            this.tabela.Margin = new System.Windows.Forms.Padding(4);
+            this.tabela.Name = "tabela";
+            this.tabela.Size = new System.Drawing.Size(893, 281);
+            this.tabela.TabIndex = 1;
             // 
             // newBtn
             // 
@@ -180,13 +180,13 @@
             this.Controls.Add(this.numero);
             this.Controls.Add(this.nome);
             this.Controls.Add(this.newBtn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tabela);
             this.Controls.Add(this.id);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabela)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,7 +195,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox id;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView tabela;
         private System.Windows.Forms.Button newBtn;
         private System.Windows.Forms.TextBox nome;
         private System.Windows.Forms.TextBox numero;
